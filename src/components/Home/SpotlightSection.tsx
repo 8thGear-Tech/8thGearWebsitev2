@@ -17,7 +17,7 @@ export function SpotlightSection() {
         <div className="mx-auto w-full max-w-2xl px-4 md:w-10/12 lg:w-1/2 lg:px-0">
           <div
             onClick={() => !src && setSrc(EMBED_URL)}
-            className="cursor-pointer rounded-2xl bg-gradient-to-br from-[#7f00ff] to-[#e100ff] p-1 transition-transform hover:scale-[1.02] hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)]"
+            className="cursor-pointer rounded-2xl bg-linear-to-br from-[#7f00ff] to-[#e100ff] p-1 transition-transform hover:scale-[1.02] hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)]"
           >
             <div className="relative w-full overflow-hidden rounded-xl bg-[url('https://img.youtube.com/vi/zrjQ6HTlyEE/maxresdefault.jpg')] bg-cover bg-center pt-[56.25%]">
               {!src && (

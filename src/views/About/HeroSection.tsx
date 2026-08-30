@@ -16,7 +16,7 @@ export function HeroSection() {
       <div className="pointer-events-none absolute left-[35%] top-20 h-50 w-50 rounded-full bg-purple-400 opacity-15 blur-[90px]" />
       {/* Diagonal accent strip */}
       <div
-        className="pointer-events-none absolute inset-y-0 right-0 w-[42%] bg-gradient-to-br from-purple/[0.04] to-teal-dark/[0.06] [clip-path:polygon(18%_0%,100%_0%,100%_100%,0%_100%)]"
+        className="pointer-events-none absolute inset-y-0 right-0 w-[42%] bg-linear-to-br from-purple/[0.04] to-teal-dark/[0.06] [clip-path:polygon(18%_0%,100%_0%,100%_100%,0%_100%)]"
       />
 
       <div className="relative z-[1] mx-auto flex w-full max-w-300 flex-col items-center justify-between gap-12 px-6 py-20 text-center md:flex-row md:px-8 md:py-24 md:text-left">
@@ -62,7 +62,7 @@ export function HeroSection() {
 
         {/* Right: decorative stat cards */}
         <div className="relative hidden h-85 w-75 shrink-0 md:block">
-          <div className="absolute left-7.5 top-7.5 h-70 w-60 rotate-6 rounded-[20px] bg-gradient-to-br from-purple/[0.08] to-teal-dark/[0.08] shadow-brand" />
+          <div className="absolute left-7.5 top-7.5 h-70 w-60 rotate-6 rounded-[20px] bg-linear-to-br from-purple/[0.08] to-teal-dark/[0.08] shadow-brand" />
           <div className="absolute left-3.75 top-3.75 h-72.5 w-62.5 rotate-3 rounded-[20px] border border-black/5 bg-white shadow-brand" />
           <div className="absolute flex h-75 w-65 flex-col items-center justify-center gap-3 rounded-[20px] border border-black/[0.06] bg-white p-8 shadow-brand">
             <div className="flex flex-col items-center py-3 text-center">

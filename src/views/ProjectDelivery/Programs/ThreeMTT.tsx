@@ -39,7 +39,7 @@ export function ThreeMTT() {
 
 function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-[rgba(139,28,141,0.03)] to-[rgba(139,28,141,0.08)] pt-20 pb-15 md:pt-25 md:pb-20">
+    <section className="relative bg-linear-to-br from-[rgba(139,28,141,0.03)] to-[rgba(139,28,141,0.08)] pt-20 pb-15 md:pt-25 md:pb-20">
       <div className="mx-auto max-w-350 px-4">
         <div className="flex flex-wrap items-center gap-8">
           <div className="w-full lg:w-1/2">
@@ -74,7 +74,7 @@ function HeroSection() {
                 href="https://forms.gle/ehFzYU6fiDFyZ2Qb7"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mb-3.75 inline-block w-full rounded-lg bg-gradient-to-br from-[#8B1C8D] to-[#A52FA7] px-9 py-3 text-center text-[1.1rem] font-bold text-white no-underline shadow-[0_6px_20px_rgba(139,28,141,0.35)] transition-all duration-300 hover:-translate-y-0.75 hover:from-[#A52FA7] hover:to-[#8B1C8D] hover:text-white hover:shadow-[0_8px_25px_rgba(139,28,141,0.45)] md:mb-0 md:w-auto"
+                className="mb-3.75 inline-block w-full rounded-lg bg-linear-to-br from-[#8B1C8D] to-[#A52FA7] px-9 py-3 text-center text-[1.1rem] font-bold text-white no-underline shadow-[0_6px_20px_rgba(139,28,141,0.35)] transition-all duration-300 hover:-translate-y-0.75 hover:from-[#A52FA7] hover:to-[#8B1C8D] hover:text-white hover:shadow-[0_8px_25px_rgba(139,28,141,0.45)] md:mb-0 md:w-auto"
               >
                 Get Talent Now
               </a>
@@ -115,7 +115,7 @@ function ProgrammeOverview() {
           <h3 className="mb-3.75 text-[1.75rem] font-extrabold text-[#1a1a1a] md:text-[1.9rem] lg:text-[2.2rem]">
             About the 3MTT Talent Programme
           </h3>
-          <div className="mx-auto h-1 w-20 rounded-[2px] bg-gradient-to-r from-[#8B1C8D] via-[#1F7A1F] to-[#C8D500]" />
+          <div className="mx-auto h-1 w-20 rounded-[2px] bg-linear-to-r from-[#8B1C8D] via-[#1F7A1F] to-[#C8D500]" />
           <p className="mt-3">
             Nigeria&apos;s largest government-backed initiative to train tech professionals for MSMEs
           </p>
@@ -140,7 +140,7 @@ function ProgrammeOverview() {
           <div className="w-full lg:w-1/2">
             <div className="flex flex-col gap-5">
               <div className="rounded-[15px] border-l-4 border-[#1F7A1F] bg-[#f8f9fa] p-6.25 transition-all duration-300 hover:-translate-x-2.5 hover:bg-white hover:shadow-[0_8px_25px_rgba(139,28,141,0.15)]">
-                <div className="mb-3.75 flex h-12.5 w-12.5 items-center justify-center rounded-xl bg-gradient-to-br from-[#1F7A1F] to-[#2A9D2A]">
+                <div className="mb-3.75 flex h-12.5 w-12.5 items-center justify-center rounded-xl bg-linear-to-br from-[#1F7A1F] to-[#2A9D2A]">
                   <BsLightningCharge className="text-[1.5rem] text-white" />
                 </div>
                 <h5 className="mb-2.5 text-[1.2rem] font-bold text-[#1a1a1a]">Faster Time to Productivity</h5>
@@ -149,7 +149,7 @@ function ProgrammeOverview() {
                 </p>
               </div>
               <div className="rounded-[15px] border-l-4 border-[#1F7A1F] bg-[#f8f9fa] p-6.25 transition-all duration-300 hover:-translate-x-2.5 hover:bg-white hover:shadow-[0_8px_25px_rgba(139,28,141,0.15)]">
-                <div className="mb-3.75 flex h-12.5 w-12.5 items-center justify-center rounded-xl bg-gradient-to-br from-[#1F7A1F] to-[#2A9D2A]">
+                <div className="mb-3.75 flex h-12.5 w-12.5 items-center justify-center rounded-xl bg-linear-to-br from-[#1F7A1F] to-[#2A9D2A]">
                   <BsShieldCheck className="text-[1.5rem] text-white" />
                 </div>
                 <h5 className="mb-2.5 text-[1.2rem] font-bold text-[#1a1a1a]">Quality Assurance</h5>
@@ -158,7 +158,7 @@ function ProgrammeOverview() {
                 </p>
               </div>
               <div className="rounded-[15px] border-l-4 border-[#1F7A1F] bg-[#f8f9fa] p-6.25 transition-all duration-300 hover:-translate-x-2.5 hover:bg-white hover:shadow-[0_8px_25px_rgba(139,28,141,0.15)]">
-                <div className="mb-3.75 flex h-12.5 w-12.5 items-center justify-center rounded-xl bg-gradient-to-br from-[#1F7A1F] to-[#2A9D2A]">
+                <div className="mb-3.75 flex h-12.5 w-12.5 items-center justify-center rounded-xl bg-linear-to-br from-[#1F7A1F] to-[#2A9D2A]">
                   <BsGraphUpArrow className="text-[1.5rem] text-white" />
                 </div>
                 <h5 className="mb-2.5 text-[1.2rem] font-bold text-[#1a1a1a]">Competitive Edge</h5>
@@ -210,7 +210,7 @@ function WhyPartnerWithUs() {
           <h3 className="mb-3.75 text-[1.75rem] font-extrabold text-[#1a1a1a] md:text-[1.9rem] lg:text-[2.2rem]">
             Why This Matters for Your Business
           </h3>
-          <div className="mx-auto h-1 w-20 rounded-[2px] bg-gradient-to-r from-[#8B1C8D] via-[#1F7A1F] to-[#C8D500]" />
+          <div className="mx-auto h-1 w-20 rounded-[2px] bg-linear-to-r from-[#8B1C8D] via-[#1F7A1F] to-[#C8D500]" />
           <p className="mt-3">Strategic advantages that help MSMEs compete in the digital economy</p>
         </div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -219,7 +219,7 @@ function WhyPartnerWithUs() {
               key={title}
               className="h-full rounded-[18px] border-2 border-transparent bg-white px-7.5 py-8.75 shadow-[0_5px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1.5 hover:border-[#8B1C8D] hover:shadow-[0_12px_35px_rgba(139,28,141,0.2)]"
             >
-              <div className="mb-5 flex h-16.25 w-16.25 items-center justify-center rounded-[15px] bg-gradient-to-br from-[rgba(139,28,141,0.15)] to-[rgba(139,28,141,0.25)]">
+              <div className="mb-5 flex h-16.25 w-16.25 items-center justify-center rounded-[15px] bg-linear-to-br from-[rgba(139,28,141,0.15)] to-[rgba(139,28,141,0.25)]">
                 <Icon className="text-[2rem] text-[#8B1C8D]" />
               </div>
               <h5 className="mb-3 text-[1.15rem] font-bold text-[#1a1a1a]">{title}</h5>
@@ -234,7 +234,7 @@ function WhyPartnerWithUs() {
 
 function TalentAccessCTA() {
   return (
-    <section className="bg-gradient-to-br from-[rgba(139,28,141,0.05)] to-[rgba(139,28,141,0.1)] py-20">
+    <section className="bg-linear-to-br from-[rgba(139,28,141,0.05)] to-[rgba(139,28,141,0.1)] py-20">
       <div className="mx-auto max-w-350 px-4">
         <div className="rounded-[25px] bg-white px-6.25 py-8.75 shadow-[0_20px_60px_rgba(0,0,0,0.1)] md:px-7.5 md:py-10 lg:p-15">
           <div className="flex flex-wrap items-center gap-8">
@@ -264,7 +264,7 @@ function TalentAccessCTA() {
                 href="https://forms.gle/ehFzYU6fiDFyZ2Qb7"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block w-full rounded-lg bg-gradient-to-br from-[#8B1C8D] to-[#A52FA7] px-9 py-3 text-center text-[1.1rem] font-bold text-white no-underline shadow-[0_6px_20px_rgba(139,28,141,0.35)] transition-all duration-300 hover:-translate-y-0.75 hover:from-[#A52FA7] hover:to-[#8B1C8D] hover:text-white hover:shadow-[0_8px_25px_rgba(139,28,141,0.45)] lg:w-auto"
+                className="inline-block w-full rounded-lg bg-linear-to-br from-[#8B1C8D] to-[#A52FA7] px-9 py-3 text-center text-[1.1rem] font-bold text-white no-underline shadow-[0_6px_20px_rgba(139,28,141,0.35)] transition-all duration-300 hover:-translate-y-0.75 hover:from-[#A52FA7] hover:to-[#8B1C8D] hover:text-white hover:shadow-[0_8px_25px_rgba(139,28,141,0.45)] lg:w-auto"
               >
                 Get Talent Now
               </a>
@@ -304,11 +304,11 @@ function TalentApplicationSection() {
       <div className="mx-auto max-w-350 px-4">
         <div className="mx-auto max-w-4xl rounded-[25px] bg-white px-5 py-7.5 shadow-[0_15px_50px_rgba(0,0,0,0.08)] md:px-7.5 md:py-10 lg:p-12.5">
           <div className="mb-4 text-center">
-            <span className="inline-block rounded-[25px] bg-gradient-to-br from-[rgba(139,28,141,0.15)] to-[rgba(200,213,0,0.15)] px-5 py-2 text-[0.85rem] font-semibold tracking-[0.5px] text-[#8B1C8D] uppercase">
+            <span className="inline-block rounded-[25px] bg-linear-to-br from-[rgba(139,28,141,0.15)] to-[rgba(200,213,0,0.15)] px-5 py-2 text-[0.85rem] font-semibold tracking-[0.5px] text-[#8B1C8D] uppercase">
               Aspiring Tech Professionals
             </span>
             <h3 className="mt-3">Want to Join the Talent Pipeline?</h3>
-            <div className="mx-auto h-1 w-20 rounded-[2px] bg-gradient-to-r from-[#8B1C8D] via-[#1F7A1F] to-[#C8D500]" />
+            <div className="mx-auto h-1 w-20 rounded-[2px] bg-linear-to-r from-[#8B1C8D] via-[#1F7A1F] to-[#C8D500]" />
             <p className="mt-3 text-secondary">
               If you&apos;re looking to develop in-demand AI and Data Science skills, apply to join the 3MTT
               programme. Training is 100% FREE and government-certified.
@@ -319,7 +319,7 @@ function TalentApplicationSection() {
             <button
               className={`w-full cursor-pointer rounded-full border-2 px-7.5 py-3 text-base font-semibold transition-all duration-300 md:w-auto ${
                 activeTab === "overview"
-                  ? "border-[#8B1C8D] bg-gradient-to-br from-[#8B1C8D] to-[#A52FA7] text-white shadow-[0_4px_15px_rgba(139,28,141,0.3)]"
+                  ? "border-[#8B1C8D] bg-linear-to-br from-[#8B1C8D] to-[#A52FA7] text-white shadow-[0_4px_15px_rgba(139,28,141,0.3)]"
                   : "border-[#e0e0e0] bg-transparent text-[#4a4a4a] hover:border-[#8B1C8D] hover:text-[#8B1C8D]"
               }`}
               onClick={() => setActiveTab("overview")}
@@ -329,7 +329,7 @@ function TalentApplicationSection() {
             <button
               className={`w-full cursor-pointer rounded-full border-2 px-7.5 py-3 text-base font-semibold transition-all duration-300 md:w-auto ${
                 activeTab === "benefits"
-                  ? "border-[#8B1C8D] bg-gradient-to-br from-[#8B1C8D] to-[#A52FA7] text-white shadow-[0_4px_15px_rgba(139,28,141,0.3)]"
+                  ? "border-[#8B1C8D] bg-linear-to-br from-[#8B1C8D] to-[#A52FA7] text-white shadow-[0_4px_15px_rgba(139,28,141,0.3)]"
                   : "border-[#e0e0e0] bg-transparent text-[#4a4a4a] hover:border-[#8B1C8D] hover:text-[#8B1C8D]"
               }`}
               onClick={() => setActiveTab("benefits")}
@@ -339,7 +339,7 @@ function TalentApplicationSection() {
             <button
               className={`w-full cursor-pointer rounded-full border-2 px-7.5 py-3 text-base font-semibold transition-all duration-300 md:w-auto ${
                 activeTab === "location"
-                  ? "border-[#8B1C8D] bg-gradient-to-br from-[#8B1C8D] to-[#A52FA7] text-white shadow-[0_4px_15px_rgba(139,28,141,0.3)]"
+                  ? "border-[#8B1C8D] bg-linear-to-br from-[#8B1C8D] to-[#A52FA7] text-white shadow-[0_4px_15px_rgba(139,28,141,0.3)]"
                   : "border-[#e0e0e0] bg-transparent text-[#4a4a4a] hover:border-[#8B1C8D] hover:text-[#8B1C8D]"
               }`}
               onClick={() => setActiveTab("location")}
@@ -399,7 +399,7 @@ function TalentApplicationSection() {
             )}
           </div>
 
-          <div className="mt-12 rounded-2xl border-2 border-[rgba(139,28,141,0.2)] bg-gradient-to-br from-[rgba(139,28,141,0.08)] to-[rgba(200,213,0,0.08)] p-8.75">
+          <div className="mt-12 rounded-2xl border-2 border-[rgba(139,28,141,0.2)] bg-linear-to-br from-[rgba(139,28,141,0.08)] to-[rgba(200,213,0,0.08)] p-8.75">
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div>
                 <h5 className="mb-2">Ready to Build Your Tech Career?</h5>
@@ -413,7 +413,7 @@ function TalentApplicationSection() {
                   href={applicationLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mb-3.75 inline-block w-full rounded-lg bg-gradient-to-br from-[#C8D500] to-[#A8B500] px-9 py-3 text-center text-[0.9rem] font-bold whitespace-nowrap text-[#1a1a1a] no-underline shadow-[0_6px_20px_rgba(200,213,0,0.35)] transition-all duration-300 hover:-translate-y-0.75 hover:from-[#A8B500] hover:to-[#C8D500] hover:text-[#1a1a1a] hover:shadow-[0_8px_25px_rgba(200,213,0,0.45)] md:mb-0 md:w-auto"
+                  className="mb-3.75 inline-block w-full rounded-lg bg-linear-to-br from-[#C8D500] to-[#A8B500] px-9 py-3 text-center text-[0.9rem] font-bold whitespace-nowrap text-[#1a1a1a] no-underline shadow-[0_6px_20px_rgba(200,213,0,0.35)] transition-all duration-300 hover:-translate-y-0.75 hover:from-[#A8B500] hover:to-[#C8D500] hover:text-[#1a1a1a] hover:shadow-[0_8px_25px_rgba(200,213,0,0.45)] md:mb-0 md:w-auto"
                 >
                   Apply Now
                 </a>

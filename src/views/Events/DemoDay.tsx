@@ -46,7 +46,7 @@ function EventsSection() {
   const events: { id: number; name: string }[] = [];
 
   return (
-    <section id="events-section" className="bg-gradient-to-b from-white to-[#f8fafc] py-12">
+    <section id="events-section" className="bg-linear-to-b from-white to-[#f8fafc] py-12">
       <div className="mx-auto max-w-350 px-4">
         {events.length === 0 && (
           <div className="mx-auto max-w-md py-4 text-center text-[#666]">

@@ -58,7 +58,7 @@ function JointheTeam() {
             rel="noopener noreferrer"
             className="flex items-center gap-4 rounded-2xl border border-purple/15 bg-white px-5 py-4 shadow-brand transition-all hover:translate-x-1 hover:border-purple hover:shadow-[0_6px_24px_rgba(130,30,107,0.15)]"
           >
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[10px] bg-gradient-to-br from-fuchsia-500 to-purple text-xl text-white">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[10px] bg-linear-to-br from-fuchsia-500 to-purple text-xl text-white">
               <BsPeopleFill />
             </div>
             <div className="flex flex-1 flex-col">
@@ -74,7 +74,7 @@ function JointheTeam() {
             rel="noopener noreferrer"
             className="flex items-center gap-4 rounded-2xl border border-purple/15 bg-white px-5 py-4 shadow-brand transition-all hover:translate-x-1 hover:border-purple hover:shadow-[0_6px_24px_rgba(130,30,107,0.15)]"
           >
-            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[10px] bg-gradient-to-br from-cyan-500 to-cyan-700 text-xl text-white">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-[10px] bg-linear-to-br from-cyan-500 to-cyan-700 text-xl text-white">
               <BsJournalText />
             </div>
             <div className="flex flex-1 flex-col">

@@ -39,8 +39,8 @@ export function VentureStudio() {
 
 function Hero() {
   return (
-    <div className="flex h-[16.5rem] w-full items-center bg-[url('/images/ventureStudio/mobileHero.png')] bg-cover bg-center bg-no-repeat px-6 md:h-[20rem] md:px-10 md:bg-[url('/images/ventureStudio/tabHero.png')] xl:h-[34rem] xl:px-16 xl:bg-[url('/images/ventureStudio/heroImage1.png')]">
-      <div className="max-w-[20rem] md:max-w-[34rem] xl:max-w-[50rem]">
+    <div className="flex h-66 w-full items-center bg-[url('/images/ventureStudio/mobileHero.png')] bg-cover bg-center bg-no-repeat px-6 md:h-80 md:px-10 md:bg-[url('/images/ventureStudio/tabHero.png')] xl:h-136 xl:px-16 xl:bg-[url('/images/ventureStudio/heroImage1.png')]">
+      <div className="max-w-[20rem] md:max-w-136 xl:max-w-200">
         <h1 className="text-xl font-bold leading-7.2 text-white md:text-3xl md:leading-9.6 xl:text-5xl xl:leading-14">
           Transforming visionary ideas into thriving sustainable ventures with precision and passion
         </h1>
@@ -99,7 +99,7 @@ function CoreServices() {
       <h3 className="pb-8 text-center font-heading text-purple">SHARED SERVICES</h3>
       <div
         ref={scrollerRef}
-        className="scrollbar-none -mx-4 flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-6 [scroll-padding-inline:1rem]"
+        className="scrollbar-none -mx-4 flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-6 scroll-px-4"
       >
         {loopedCoreServices.map(({ icon: Icon, label }, index) => (
           <div
@@ -267,7 +267,7 @@ function PortfolioCompanies() {
         {portfolioCompanies.map((c) => (
           <div
             key={c.headText}
-            className="flex flex-col overflow-hidden rounded-2xl border border-black/[0.06] bg-white text-left shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-2 hover:shadow-[0_12px_32px_rgba(110,0,106,0.15)]"
+            className="flex flex-col overflow-hidden rounded-2xl border border-black/6 bg-white text-left shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-2 hover:shadow-[0_12px_32px_rgba(110,0,106,0.15)]"
           >
             <div className="flex min-h-45 items-center justify-center bg-[linear-gradient(180deg,#f9f9f9_0%,#ffffff_100%)] px-5 pb-5 pt-10">
               <div className="relative h-30 w-35">
@@ -285,7 +285,7 @@ function PortfolioCompanies() {
 
               <p className="mb-4 flex-1 text-sm text-secondary">{c.body}</p>
 
-              <div className="flex flex-wrap gap-2 border-t border-black/[0.06] pt-4">
+              <div className="flex flex-wrap gap-2 border-t border-black/6 pt-4">
                 {c.tags.map((tag) => (
                   <span key={tag} className="rounded-full bg-grey-bg px-3 py-1.5 text-xs font-medium text-secondary">
                     {tag}

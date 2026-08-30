@@ -63,7 +63,7 @@ const REVEAL_DELAYS = [
 const revealDelay = (i: number) => REVEAL_DELAYS[Math.min(i, 3)];
 
 const progCardBase =
-  "relative overflow-hidden rounded-xl border-[1.5px] border-grey-border bg-grey-bg p-7 transition-[border-color,box-shadow,transform] duration-250 hover:-translate-y-0.75 hover:border-teal/28 hover:shadow-[0_8px_28px_rgba(0,0,0,0.11)] before:absolute before:inset-x-0 before:top-0 before:h-0.5 before:bg-gradient-to-r before:from-teal before:to-purple before:content-['']";
+  "relative overflow-hidden rounded-xl border-[1.5px] border-grey-border bg-grey-bg p-7 transition-[border-color,box-shadow,transform] duration-250 hover:-translate-y-0.75 hover:border-teal/28 hover:shadow-[0_8px_28px_rgba(0,0,0,0.11)] before:absolute before:inset-x-0 before:top-0 before:h-0.5 before:bg-linear-to-r before:from-teal before:to-purple before:content-['']";
 
 function progCardClass(isLast: boolean) {
   const layout = isLast
@@ -226,7 +226,7 @@ export function IDICE() {
               data-reveal
               className={`relative overflow-hidden rounded-xl border-[1.5px] border-grey-border bg-white p-8 shadow-[0_2px_12px_rgba(0,0,0,0.07),0_1px_3px_rgba(0,0,0,0.05)] ${REVEAL_BASE} ${revealDelay(1)}`}
             >
-              <div className="absolute inset-x-0 top-0 h-0.75 bg-gradient-to-r from-teal to-purple" />
+              <div className="absolute inset-x-0 top-0 h-0.75 bg-linear-to-r from-teal to-purple" />
               <p className="mb-3 font-heading text-[0.7rem] font-bold tracking-[0.14em] text-teal uppercase">
                 Programme Snapshot
               </p>
@@ -341,7 +341,7 @@ export function IDICE() {
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-teal to-teal-dark py-16 sm:py-22 before:pointer-events-none before:absolute before:inset-0 before:bg-[radial-gradient(ellipse_50%_70%_at_85%_50%,rgba(255,255,255,0.07)_0%,transparent_55%),radial-gradient(ellipse_40%_60%_at_10%_60%,rgba(130,30,107,0.14)_0%,transparent_55%)] before:content-['']">
+      <section className="relative overflow-hidden bg-linear-to-br from-teal to-teal-dark py-16 sm:py-22 before:pointer-events-none before:absolute before:inset-0 before:bg-[radial-gradient(ellipse_50%_70%_at_85%_50%,rgba(255,255,255,0.07)_0%,transparent_55%),radial-gradient(ellipse_40%_60%_at_10%_60%,rgba(130,30,107,0.14)_0%,transparent_55%)] before:content-['']">
         <div className="mx-auto w-full max-w-285 px-5 sm:px-8">
           <div className="relative z-1 mx-auto max-w-180 text-center">
             <span

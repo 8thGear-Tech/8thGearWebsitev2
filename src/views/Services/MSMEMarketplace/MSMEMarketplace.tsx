@@ -170,7 +170,7 @@ const PARTNER_LOGOS: StaticImageData[] = [legalmologo, trulancelogo, mtnlogo, zo
 export function MSMEMarketplace() {
   return (
     <div>
-      <section className="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-br from-purple via-teal to-teal-dark pt-17.5 pb-25">
+      <section className="relative flex min-h-screen items-center overflow-hidden bg-linear-to-br from-purple via-teal to-teal-dark pt-17.5 pb-25">
         <div className="pointer-events-none absolute left-[5%] top-[10%] h-75 w-75 rounded-full bg-white/10 blur-[40px]" />
         <div className="pointer-events-none absolute bottom-[15%] right-[8%] h-62.5 w-62.5 rounded-full bg-white/[0.08] blur-[30px]" />
         <div className="pointer-events-none absolute right-[15%] top-1/2 h-37.5 w-37.5 rounded-full bg-white/5 blur-[20px]" />
@@ -181,7 +181,7 @@ export function MSMEMarketplace() {
               <div className="mb-5 inline-flex items-center gap-2.5 rounded-full border border-white/20 bg-white/15 px-5 py-2 font-body text-[11px] font-bold uppercase tracking-widest text-white shadow-[0_4px_20px_rgba(0,0,0,0.1)] backdrop-blur-[10px]">
                 MSME Marketplace
               </div>
-              <h1 className="mb-6 block bg-gradient-to-tr from-white to-white/80 bg-clip-text font-heading text-[clamp(1.9rem,4vw,2.6rem)] font-extrabold leading-[1.1] tracking-[-0.03em] text-transparent">
+              <h1 className="mb-6 block bg-linear-to-tr from-white to-white/80 bg-clip-text font-heading text-[clamp(1.9rem,4vw,2.6rem)] font-extrabold leading-[1.1] tracking-[-0.03em] text-transparent">
                 Transform Your Business with Cutting-Edge Solutions
               </h1>
               <p className="mb-8 max-w-125 font-body font-light text-white/[0.78]">
@@ -213,8 +213,8 @@ export function MSMEMarketplace() {
       </section>
 
       <section className="relative bg-grey-bg pb-20 pt-25">
-        <div className="pointer-events-none absolute left-[10%] top-[20%] h-50 w-50 rounded-full bg-gradient-to-tr from-teal/[0.07] to-purple/[0.07] opacity-30 blur-[60px]" />
-        <div className="pointer-events-none absolute bottom-[15%] right-[8%] h-37.5 w-37.5 rounded-full bg-gradient-to-tr from-purple/[0.07] to-teal/[0.07] opacity-20 blur-[40px]" />
+        <div className="pointer-events-none absolute left-[10%] top-[20%] h-50 w-50 rounded-full bg-linear-to-tr from-teal/[0.07] to-purple/[0.07] opacity-30 blur-[60px]" />
+        <div className="pointer-events-none absolute bottom-[15%] right-[8%] h-37.5 w-37.5 rounded-full bg-linear-to-tr from-purple/[0.07] to-teal/[0.07] opacity-20 blur-[40px]" />
 
         <div className="relative z-[1] mx-auto max-w-350 px-4">
           <div className="mb-12 text-center">
@@ -252,7 +252,7 @@ export function MSMEMarketplace() {
                   <p className="m-0 flex-grow font-body text-[0.95rem] font-light text-secondary">{f.desc}</p>
                   <div
                     className={`absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100 ${
-                      purple ? "bg-gradient-to-r from-purple to-purple/50" : "bg-gradient-to-r from-teal to-teal/50"
+                      purple ? "bg-linear-to-r from-purple to-purple/50" : "bg-linear-to-r from-teal to-teal/50"
                     }`}
                   />
                 </div>
@@ -279,7 +279,7 @@ export function MSMEMarketplace() {
             {SOLUTIONS.map((sol) => {
               const purple = sol.accent === "purple";
               const bodyClass = `flex flex-grow flex-col px-4.5 pt-2.5 pb-4.5 ${
-                purple ? "bg-gradient-to-b from-purple/[0.13] to-purple/[0.05]" : "bg-gradient-to-b from-teal/[0.13] to-teal/[0.05]"
+                purple ? "bg-linear-to-b from-purple/[0.13] to-purple/[0.05]" : "bg-linear-to-b from-teal/[0.13] to-teal/[0.05]"
               }`;
               const btnClass = `inline-flex items-center justify-center gap-2 self-start rounded-xl px-5.5 py-2.75 font-body text-[13px] font-bold text-white no-underline transition-[transform,filter] duration-200 hover:-translate-y-0.5 hover:brightness-105 focus-visible:-translate-y-0.5 focus-visible:brightness-105 ${
                 purple ? "bg-purple" : "bg-teal"

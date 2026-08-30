@@ -110,7 +110,7 @@ function AdvisoryCard({ image, name, position, link }: AdvisoryMember) {
         sizes="300px"
         className="object-cover transition-transform duration-500 group-hover:scale-105"
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-end gap-1 bg-gradient-to-t from-black/80 via-black/10 to-transparent p-4 pb-6 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+      <div className="absolute inset-0 flex flex-col items-center justify-end gap-1 bg-linear-to-t from-black/80 via-black/10 to-transparent p-4 pb-6 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
         <p className="text-sm font-bold text-white">{name}</p>
         <p className="text-xs text-white">{position}</p>
         <a href={link} target="_blank" rel="noopener noreferrer" aria-label={`${name} on LinkedIn`} className="mt-1 text-lg text-white">

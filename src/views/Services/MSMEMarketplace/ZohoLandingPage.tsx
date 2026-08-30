@@ -379,7 +379,7 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
           {plan.features.map((f) => (
             <li
               key={f}
-              className={`flex items-start gap-2 border-b py-1.75 font-body text-[0.98rem] font-normal before:mt-px before:flex-shrink-0 before:font-bold before:content-['✓'] ${
+              className={`flex items-start gap-2 border-b py-1.75 font-body text-[0.98rem] font-normal before:mt-px before:shrink-0 before:font-bold before:content-['✓'] ${
                 featured ? "border-white/10 before:text-white/90" : "border-black/5 before:text-[#920f84]"
               }`}
             >
@@ -451,8 +451,8 @@ function FaqItem({ item }: { item: Faq }) {
       >
         <span>{item.q}</span>
         <span
-          className={`flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full text-[1.1rem] font-bold transition duration-300 ease-in-out ${
-            open ? "bg-[#920f84] text-white" : "bg-[#920f84]/[0.08] text-[#920f84]"
+          className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[1.1rem] font-bold transition duration-300 ease-in-out ${
+            open ? "bg-[#920f84] text-white" : "bg-[#920f84]/8 text-[#920f84]"
           }`}
         >
           {open ? "−" : "+"}
@@ -475,12 +475,12 @@ export function ZohoLandingPage() {
     <div className="text-ink">
       {/* Hero */}
       <section className="relative overflow-hidden bg-[linear-gradient(145deg,#3a0535_0%,#6b0a60_35%,#920f84_70%,#b8178a_100%)] pt-10 pb-30 before:absolute before:inset-0 before:bg-[radial-gradient(ellipse_55%_70%_at_75%_50%,rgba(255,255,255,0.18)_0%,transparent_65%),radial-gradient(ellipse_30%_40%_at_15%_80%,rgba(130,30,107,0.25)_0%,transparent_60%)] before:content-[''] after:absolute after:inset-x-0 after:-bottom-0.5 after:h-20 after:bg-white after:[clip-path:ellipse(55%_100%_at_50%_100%)] after:content-[''] md:pt-20 md:pb-25">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[length:60px_60px]" />
-        <div className="relative z-[2] mx-auto max-w-350 px-4">
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-size-[60px_60px]" />
+        <div className="relative z-2 mx-auto max-w-350 px-4">
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
             <Reveal variant={fadeRight}>
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/15 px-4 py-1.5 text-[13px] font-semibold text-white backdrop-blur-[8px]">
-                <span className="block h-2 w-2 rounded-full bg-[#4ade80] [animation:zoho-pulse_2s_infinite]" /> Trusted Zoho Partner in
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/15 px-4 py-1.5 text-[13px] font-semibold text-white backdrop-blur-sm">
+                <span className="block h-2 w-2 rounded-full bg-[#4ade80] animate-[zoho-pulse_2s_infinite]" /> Trusted Zoho Partner in
                 Nigeria
               </div>
               <h1 className="mb-5 font-heading text-[clamp(2.2rem,5vw,3.6rem)] font-semibold leading-[1.15] text-white">
@@ -501,7 +501,7 @@ export function ZohoLandingPage() {
             </Reveal>
 
             <Reveal variant={fadeLeft} delay={0.15} className="mt-12 md:mt-0">
-              <div className="relative rounded-[24px] border border-white/40 bg-white/[0.22] p-10 text-center shadow-[0_32px_80px_rgba(0,0,0,0.15)] backdrop-blur-[6px]">
+              <div className="relative rounded-3xl border border-white/40 bg-white/22 p-10 text-center shadow-[0_32px_80px_rgba(0,0,0,0.15)] backdrop-blur-[6px]">
                 <div className="absolute -top-4.5 right-5 whitespace-nowrap rounded-full bg-white px-5 py-2.5 text-[13px] font-bold text-ink shadow-[0_8px_32px_rgba(146,15,132,0.14)]">
                   <span className="text-[15px] text-[#920f84]">150M+</span> Users Globally
                 </div>
@@ -619,7 +619,7 @@ export function ZohoLandingPage() {
       {/* Final CTA */}
       <section className="relative overflow-hidden bg-[linear-gradient(145deg,#3a0535_0%,#6b0a60_40%,#920f84_80%,#b8178a_100%)] pt-15 before:absolute before:inset-0 before:bg-[url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nNjAnIGhlaWdodD0nNjAnIHZpZXdCb3g9JzAgMCA2MCA2MCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48ZyBmaWxsPSdub25lJyBmaWxsLXJ1bGU9J2V2ZW5vZGQnPjxnIGZpbGw9JyNmZmZmZmYnIGZpbGwtb3BhY2l0eT0nMC4wNCc+PHBhdGggZD0nTTM2IDM0di00aC0ydjRoLTR2Mmg0djRoMnYtNGg0di0yaC00em0wLTMwVjBoLTJ2NGgtNHYyaDR2NGgyVjZoNFY0aC00ek02IDM0di00SDR2NEgwdjJoNHY0aDJ2LTRoNHYtMkg2ek02IDRWMEg0djRIMHYyaDR2NGgyVjZoNFY0SDZ6Jy8+PC9nPjwvZz48L3N2Zz4=)] before:content-['']">
         <Reveal>
-          <div className="relative z-[2] mx-auto max-w-350 px-4 pb-12.5 text-center">
+          <div className="relative z-2 mx-auto max-w-350 px-4 pb-12.5 text-center">
             <h2 className="mb-4 font-heading text-[clamp(1.8rem,4vw,2.8rem)] font-semibold text-white">Start Using Zoho Today</h2>
             <p className="mb-10 font-body text-[1.05rem] leading-7 text-white/80">
               Join thousands of Nigerian businesses growing smarter with Zoho.

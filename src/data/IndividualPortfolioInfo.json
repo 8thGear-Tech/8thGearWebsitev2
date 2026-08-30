@@ -1,0 +1,160 @@
+{
+  "allPortfolioInfo": [
+    {
+      "id": 1,
+      "link": "https://innkeeper.work/",
+      "img": "../../images/portfoliologo/innkeeperlogo.png",
+      "about": "Innkeeper is a job-tech venture that provides talent development and matching services to corporations and startups in other to support them with top African talents for tech and tech-related roles. Innkeeper focuses on upskilling youths with in-demand tech skills for improved employability and to close talent skill gaps",
+      "role": "CEO",
+      "fullname": "Olarewaju Olasunkanmi",
+      "year": "Year - 2021",
+      "website": "www.innkeeper.work"
+    }
+  ],
+  "allPortfolioTractions": [
+    {
+      "id": 1,
+      "number": "+300",
+      "title": "Tech talent trained.",
+      "details": "Since February 2021, innkeepers have trained over 300+ young African talents for tech and tech-related roles."
+    },
+    {
+      "id": 2,
+      "number": "+ 80%",
+      "title": "Alumni employed",
+      "details": "Innkeeper has placed over 80% of our trainees in jobs, either internships or entry roles."
+    },
+    {
+      "id": 3,
+      "number": "+40",
+      "title": "Offtakers",
+      "details": "Innkeeper has placed her product in top-notch partner organizations across corporate and startups globally."
+    }
+  ],
+  "HavenPortfolioInfo": [
+    {
+      "id": 1,
+      "link": "https://haveneduservices.com/",
+      "img": "/assets/haventwo.png",
+      "about": "Haven Edu-Services is an extra-curricular childhood educational organization focused on providing training content related to Technology, Languages, and Arts for children/Pre-teenagers ages 4-16.",
+      "role": "CEO",
+      "fullname": "Omowunmi Obidairo",
+      "year": "Year - 2019",
+      "website": "www.haveneduservices.com"
+    }
+  ],
+  "HavenPortfolioTractions": [
+    {
+      "id": 1,
+      "number": " +4",
+      "title": " Active school partnerships",
+      "details": "Haven Edu Services partners with schools to facilitate tech and art curriculum."
+    },
+    {
+      "id": 2,
+      "number": "+7",
+      "title": "Summer Programs",
+      "details": "Haven Edu services has had over 7 successful summer programs (Haven Creative summer, Haven Teen Tech and Partner School Summer)."
+    },
+    {
+      "id": 3,
+      "number": "+1000",
+      "title": "Outsourced sessions",
+      "details": "Leveraging on school partnership programs. Haven has trained over a 1000 students in robotics, coding, language and Taekwondo."
+    }
+  ],
+  "MindAfrikPortfolioInfo": [
+    {
+      "id": 1,
+      "img": "../../images/portfoliologo/mindafrik.png",
+      "about": "MindAfrik is an online platform focused on mental health that connects certified and qualified counselors to people who need their services.",
+      "role": "CEO",
+      "fullname": "Ruth Ijere",
+      "year": "Year - 2022",
+      "website": ""
+    }
+  ],
+  "MindAfrikPortfolioTractions": [
+    {
+      "id": 1,
+      "number": "+2",
+      "title": "Surveys",
+      "details": "Mind Afrik has conducted surveys to identify the core areas of interest where counseling would be required to help people improve their mental health."
+    },
+    {
+      "id": 2,
+      "number": "+2",
+      "title": "Consultants",
+      "details": "A team of multi-talented and professional counselors has been onboarded to attend to clients."
+    }
+  ],
+  "EaseSoilessPortfolioInfo": [
+    {
+      "id": 1,
+      "img": "../../images/portfoliologo/easesoiless.jpg",
+      "about": "Ease soilless is a company dedicated to adding value to modern farming through the use of sustainable, environment-friendly soilless technology. We hope to make urban farming attractive to households and Nigerian youth.",
+      "role": "CEO",
+      "fullname": " Ademola Olatunde",
+      "year": "Year - 2022",
+      "website": ""
+    }
+  ],
+  "EaseSoilessPortfolioTractions": [
+    {
+      "id": 1,
+      "number": "$1.35M",
+      "title": "Products Developed",
+      "details": "The Venture Studio model for entrepreneurship, combining comapny building with venture funding.The Venture Studio model for entrepreneurship, combining comapny building with venture funding.The Venture Studio model for entrepreneurship, combining comapny building with venture funding"
+    },
+    {
+      "id": 2,
+      "number": "$1.35M",
+      "title": "Funds Raised",
+      "details": "The Venture Studio model for entrepreneurship, combining comapny building with venture funding.The Venture Studio model for entrepreneurship, combining comapny building with venture funding.The Venture Studio model for entrepreneurship, combining comapny building with venture funding"
+    },
+    {
+      "id": 3,
+      "number": "$1.35M",
+      "title": "Funds Raised",
+      "details": "The Venture Studio model for entrepreneurship, combining comapny building with venture funding.The Venture Studio model for entrepreneurship, combining comapny building with venture funding.The Venture Studio model for entrepreneurship, combining comapny building with venture funding"
+    }
+  ],
+  "LegalMoPortfolioInfo": [
+    {
+      "id": 1,
+      "link": "https://www.legalmo.biz/",
+      "img": "../../images/portfoliologo/legalmo.png",
+      "about": "LegalMO is a legal tech venture, promoting the legal health and promotion of SMEs and Startups by creating a platform where Startups and SMEs can access affordable legal services.",
+      "role": "CEO",
+      "fullname": "Bukola Lasabi",
+      "year": "Year - 2023",
+      "website": "www.legalmo.biz"
+    }
+  ],
+  "TrulancePortfolioInfo": [
+    {
+      "id": 1,
+      "link": "https://trulance.io/",
+      "img": "../../images/portfoliologo/trulance.png",
+      "about": "TruLance is a global marketplace that provides credible technology solutions to businesses and startups, by leveraging on its affiliate communities of vetted freelance developers, designers, content creators and digital marketers. TruLance ensures value is served by taking full responsibility for the quality and timely delivery of agreed outputs.",
+      "role": "CEO",
+      "fullname": "Adebanjo Adeniji",
+      "year": "Year - 2023",
+      "website": "trulance.io"
+    }
+  ],
+  "TrulancePortfolioTractions": [
+    {
+      "id": 1,
+      "number": "4",
+      "title": "Service Category",
+      "details": "TruLance currently offers these four (4) technology solutions to businesses globally: Product development (web and mobile application development), Product design, Digital marketing and Creative content development."
+    },
+    {
+      "id": 2,
+      "number": "+500",
+      "title": "Talents",
+      "details": "Access to 500+ talent in the Affiliate Communities (Egglin and Innkeeper) of vetted freelance developers, designers, content creators and digital marketers."
+    }
+  ]
+}

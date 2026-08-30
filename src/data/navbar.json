@@ -1,0 +1,190 @@
+{
+  "landingpage": [
+    {
+      "id": 1,
+      "heading": "8thGear Hub"
+    }
+  ],
+
+  "portfolio": [
+    {
+      "id": 1,
+      "heading": "Portfolio"
+    }
+  ],
+
+  "portfolios": [
+    {
+      "id": 1,
+      "heading": "Portfolio"
+    }
+  ],
+
+  "projectdelivery": [
+    {
+      "id": 1,
+      "heading": "Projects"
+    }
+  ],
+
+  "hubservices": [
+    {
+      "id": 1,
+      "heading": "Hub Services"
+    }
+  ],
+
+  "digitalmarketing": [
+    {
+      "id": 1,
+      "heading": "Digital Marketing"
+    }
+  ],
+
+  "legal": [
+    {
+      "id": 1,
+      "heading": "Legal"
+    }
+  ],
+
+  "productdevelopment": [
+    {
+      "id": 1,
+      "heading": "Product Development"
+    }
+  ],
+
+  "accounting": [
+    {
+      "id": 1,
+      "heading": "Accounting"
+    }
+  ],
+  "coworkingspace": [
+    {
+      "id": 1,
+      "heading": "Coworking"
+    }
+  ],
+  "ourmodel": [
+    {
+      "id": 1,
+      "heading": "Our Model"
+    }
+  ],
+  "growthasaservices": [
+    {
+      "id": 1,
+      "heading": "Growth-as-a-Service"
+    }
+  ],
+  "about": [
+    {
+      "id": 1,
+      "heading": "About Us"
+    }
+  ],
+  "ourteam": [
+    {
+      "id": 1,
+      "heading": "Our Team"
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "heading": "Blog"
+    }
+  ],
+  "faq": [
+    {
+      "id": 1,
+      "heading": "FAQ"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "heading": "Events"
+    }
+  ],
+  "foundermeetup": [
+    {
+      "id": 1,
+      "heading": "Founders Meetup"
+    }
+  ],
+  "demoday": [
+    {
+      "id": 1,
+      "heading": "Demo Day"
+    }
+  ],
+  "projectdeliverygallery": [
+    {
+      "id": 1,
+      "heading": "Gallery"
+    }
+  ],
+  "eventgallery": [
+    {
+      "id": 1,
+      "heading": "Event Gallery"
+    }
+  ],
+  "resources": [
+    {
+      "id": 1,
+      "heading": "Resources"
+    }
+  ],
+  "FUTATechpic": [
+    {
+      "id": 1,
+      "heading": "FUTA-Techpic"
+    }
+  ],
+  "Careers": [
+    {
+      "id": 1,
+      "heading": "Careers"
+    }
+  ],
+  "TalentPlacement": [
+    {
+      "id": 1,
+      "heading": "Talent Placement"
+    }
+  ],
+  "GearUpExpose": [
+    {
+      "id": 1,
+      "heading": "GearUp Expose"
+    }
+  ],
+  "DigiPlus": [
+    {
+      "id": 1,
+      "heading": "DigiPlus"
+    }
+  ],
+  "GearUpShowcase": [
+    {
+      "id": 1,
+      "heading": "GearUp Showcase"
+    }
+  ],
+  "newEvent": [
+    {
+      "id": 1,
+      "heading": "Events"
+    }
+  ],
+  "newAbout": [
+    {
+      "id": 1,
+      "heading": "About"
+    }
+  ]
+}

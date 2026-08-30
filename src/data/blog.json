@@ -1,0 +1,116 @@
+{
+  "mainCard": [
+    {
+      "id": 1,
+      "image": "./images/blogCardImg/blogcard.jpg",
+      "title": "Lorem ipsum dolor sit amet consectetur adip  labore et dolore magna aliqua",
+      "date": "14 MARCH 2022",
+      "text": "dolor in reprehenderit in voluptate velit esse, cillum dolore eu fugiat nulla dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla reprehenderit in voluptate velit esse",
+      "heroImage":"./images/Rectangle2.png",
+      "dateIn": "14 MARCH 2022",
+      "text1": "Lorem ipsum dolor sit amet consectetur adip  labore et dolore magna aliqua",
+      "text2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla",
+      "text3": "adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel friv",
+      "bodyImage": "../images/Rectangle9.png",
+      "text4": "lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel friv lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel friv"
+    }
+  ],
+  "sideCrads": [
+    {
+      "id": 1,
+      "image": "./images/blogCardImg/sidecard1.jpg",
+      "date": "24 may 2022",
+      "text": "laboris nisi utaliquip ex ea commodo sint occaecat cupidatat non",
+      "heroImage":"./images/blogCardImg/sidecard1.jpg",
+      "dateIn": "1 MARCH 2022",
+      "text1": "Lorem ipsum dolor sit amet consectetur adip  labore et dolore magna aliqua",
+      "text2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla",
+      "text3": "adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel friv",
+      "bodyImage": "../images/Rectangle9.png",
+      "text4": "lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel friv lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel friv"
+    },
+    {
+      "id": 2,
+      "image": "./images/blogCardImg/sidecard2.jpg",
+      "date": "19 may 2022",
+      "text": "laboris nisi utaliquip ex ea commodo sint occaecat cupidatat non"
+    },
+
+    {
+      "id": 3,
+      "image": "./images/blogCardImg/sidecard3.jpg",
+      "date": "14 may 2022",
+      "text": "laboris nisi utaliquip ex ea commodo sint occaecat cupidatat non"
+    },
+
+    {
+      "id": 4,
+      "image": "./images/blogCardImg/sidecard4.jpg",
+      "date": "10 may 2022",
+      "text": "laboris nisi utaliquip ex ea commodo sint occaecat cupidatat non"
+    },
+
+    {
+      "id": 5,
+      "image": "./images/blogCardImg/sidecard1.jpg",
+      "date": "10 may 2022",
+      "text": "laboris nisi utaliquip ex ea commodo sint occaecat cupidatat non"
+    }
+  ],
+  "subCards": [
+    {
+      "id": 1,
+      "image": "./images/blogCardImg/main1.jpg",
+      "title": "Lorem ipsum dolor sit amet ",
+      "text": "dolor in reprehenderit in voluptate velit esse, cillum dolore eu fugiat nulla dolor."
+    },
+
+    {
+      "id": 2,
+      "image": "./images/blogCardImg/main2.jpg",
+      "title": "Lorem ipsum dolor sit amet ",
+      "text": "dolor in reprehenderit in voluptate velit esse, cillum dolore eu fugiat nulla dolor."
+    },
+
+    {
+      "id": 3,
+      "image": "./images/blogCardImg/main3.jpg",
+      "title": "Lorem ipsum dolor sit amet ",
+      "text": "dolor in reprehenderit in voluptate velit esse, cillum dolore eu fugiat nulla dolor."
+    },
+
+    {
+      "id": 4,
+      "image": "./images/blogCardImg/main4.jpg",
+      "title": "Lorem ipsum dolor sit amet ",
+      "text": "dolor in reprehenderit in voluptate velit esse, cillum dolore eu fugiat nulla dolor."
+    }
+  ],
+
+  
+
+  "manageServiceData": [
+    {
+      "id": 1,
+      "image": "./images/manageServicesImage/Mserviceimg1.jpg",
+      "title": "Digital Marketing"
+    },
+    {
+      "id": 2,
+      "image": "./images/manageServicesImage/Mserviceimg2.jpg",
+      "title": "Legal"
+    },
+
+    {
+      "id": 3,
+      "image": "./images/manageServicesImage/Mserviceimg3.jpg",
+      "title": "Accounting"
+    },
+
+    {
+      "id": 4,
+      "image": "./images/manageServicesImage/Mserviceimg4.jpg",
+      "title": "Tech"
+    }
+  ]
+}

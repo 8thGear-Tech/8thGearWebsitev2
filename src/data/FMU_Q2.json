@@ -1,0 +1,68 @@
+{
+    "foundersMeetup24Q2": [
+      {
+        "id": 1,
+        "image": "/images/FMU_24_Q2/FMU_Q2_1.PNG"
+        
+      },
+      {
+        "id": 2,
+        "image": "/images/FMU_24_Q2/FMU_Q2_11.PNG"
+      },
+      {
+        "id": 3,
+        "image": "/images/FMU_24_Q2/FMU_Q2_12.PNG"
+      },
+      {
+        "id": 4,
+        "image": "/images/FMU_24_Q2/FMU_Q2_4.PNG"
+      },
+      {
+        "id": 5,
+        "image": "/images/FMU_24_Q2/FMU_Q2_5.PNG"
+      },
+      {
+        "id": 6,
+        "image": "/images/FMU_24_Q2/FMU_Q2_9.PNG"
+      },
+      {
+        "id": 7,
+        "image": "/images/FMU_24_Q2/FMU_Q2_7 - Copy.PNG"
+      },
+      {
+        "id": 8,
+        "image": "/images/FMU_24_Q2/FMU_Q2_8.PNG"
+      },
+      {
+        "id": 9,
+        "image": "/images/FMU_24_Q2/FMU_Q2_6.PNG"
+      },
+      {
+        "id": 10,
+        "image": "/images/FMU_24_Q2/FMU_Q2_2.PNG"
+      },
+      {
+        "id": 11,
+        "image": "/images/FMU_24_Q2/FMU_Q2_10.PNG"
+      },
+      {
+        "id": 12,
+        "image": "/images/FMU_24_Q2/FMU_Q2_3.PNG"
+      }
+    ],
+    "fourthAnniversaryVideo": [
+      {
+        "id": 1,
+        "video": "https://www.youtube.com/embed/1VzsewXbQdg"
+      },
+      {
+        "id": 2,
+        "video": "https://www.youtube.com/embed/2GCAP-4QzgM"
+      },
+      {
+        "id": 3,
+        "video": "https://www.youtube.com/embed/-_UUX-NKUSg"
+      }
+    ]
+  }
+  

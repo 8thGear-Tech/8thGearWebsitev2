@@ -1,0 +1,51 @@
+{
+  "galleryInnkeeper": [
+    {
+      "id": 1,
+      "image": "../../images/galleryinnkeeperhackathon/hackathon1.JPG"
+    },
+    {
+      "id": 2,
+      "image": "../../images/galleryinnkeeperhackathon/hackathon2.JPG"
+    },
+    {
+      "id": 3,
+      "image": "../../images/galleryinnkeeperhackathon/hackathon3.JPG"
+    },
+
+    {
+      "id": 4,
+      "image": "../../images/galleryinnkeeperhackathon/hackathon4.jpg"
+    },
+    {
+      "id": 5,
+      "image": "../../images/galleryinnkeeperhackathon/hackathon5.JPG"
+    },
+    {
+      "id": 6,
+      "image": "../../images/galleryinnkeeperhackathon/hackathon6.JPG"
+    },
+    {
+      "id": 7,
+      "image": "../../images/galleryinnkeeperhackathon/hackathon7.JPG"
+    }
+  ],
+  "InnkeeperVideo": [
+    {
+      "id": 2,
+      "video": " https://www.youtube.com/embed/J0VLOPUIsi4",
+      "text": "Video session from founders meetup program"
+    },
+
+    {
+      "id": 1,
+      "video": " https://www.youtube.com/embed/J0VLOPUIsi4",
+      "text": "Video session from demoday"
+    },
+    {
+      "id": 2,
+      "video": " https://www.youtube.com/embed/J0VLOPUIsi4",
+      "text": "video session from meeting"
+    }
+  ]
+}

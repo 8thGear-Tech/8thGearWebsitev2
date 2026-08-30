@@ -1,0 +1,58 @@
+{
+  "Videoresources": [
+    {
+      "id": 1,
+      "video": "https://www.youtube.com/embed/yqzORs5XlNw",
+      "title": "Value Proposition",
+      "articletype": "2 Min"
+    },
+    {
+      "id": 2,
+      "video": "https://www.youtube.com/embed/wJRBSeEB3FQ",
+      "title": "Customer Segmentation",
+      "articletype": "1:56 Min"
+    },
+    {
+      "id": 3,
+      "video": "https://www.youtube.com/embed/kawxXTBXKuw",
+      "title": "Channel",
+      "articletype": "1:33 Min"
+    },
+    {
+      "id": 4,
+      "video": "https://www.youtube.com/embed/iIFyis9J4Zs",
+      "title": "Customer Relationship",
+      "articletype": "2:38 Min"
+    },
+    {
+      "id": 5,
+      "video": "https://www.youtube.com/embed/DolVQR0xl5U",
+      "title": "Key Partners",
+      "articletype": "1:49 Min"
+    },
+    {
+      "id": 6,
+      "video": "https://www.youtube.com/embed/VMVL4eN-G90",
+      "title": "Key Activities",
+      "articletype": "1:56 Min"
+    },
+    {
+      "id": 7,
+      "video": "https://www.youtube.com/embed/grFYonW9CH8",
+      "title": "Key Resource",
+      "articletype": "1:10 Min"
+    },
+    {
+      "id": 8,
+      "video": "https://www.youtube.com/embed/sDGXyFOABs0",
+      "title": "Cost",
+      "articletype": "1:26 Min"
+    },
+    {
+      "id": 9,
+      "video": "https://www.youtube.com/embed/CzHXgWpijkM",
+      "title": "Revenue",
+      "articletype": "1:35 Min"
+    }
+  ]
+}

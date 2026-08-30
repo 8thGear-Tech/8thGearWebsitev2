@@ -1,0 +1,28 @@
+{
+  "portFolioHero": [
+    {
+      "id": 1,
+      "text": "We identify problems that are pain points, develop them into solutions, spin  off as ventures, and build them into great and sustainable businesses."
+    }
+  ],
+  "ourTeam": [
+    {
+      "id": 1,
+      "title": "8thGearians",
+      "text": "At 8thGear, we aspire to be Africa’s leading development and enterprise support provider. To help us succeed, we’ve created an unusual employee culture. You learn a lot at 8thGear working on hard problems with stunning colleagues, and that increases your market value."
+    }
+  ],
+  "founderMeetup": [
+    {
+      "id": 1,
+      "image": "../../images/Herodemoday.jpg",
+      "text": "It is important to travel the lonely path of entrepreneurship with like-minded individuals. Synergy is created when founders collaborate, and individuals are inspired, motivated, and challenged to pursue their dreams."
+    }
+  ],
+  "demoDay": [
+    {
+      "id": 1,
+      "text": "A value-packed day where every member of the ecosystem is represented with the sole objective of witnessing the beauty of the creative mind and hearing great ideas that can scale being pitched. It is a quarterly event where businesses are admitted into the 8thGear Venture studio."
+    }
+  ]
+}

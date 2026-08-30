@@ -1,0 +1,53 @@
+{
+  "pastEvents": [
+    {
+      "id": 1,
+      "date": "January 2024",
+      "event": "Founders Meetup Q1",
+      "link": "/fmu-q1-gallery",
+      "format": "Physical and Virtual",
+      "time": "3pm - 6pm"
+    },
+    {
+      "id": 2,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentytwentythree/foundersmeetup.jpg",
+      "event": "Founders Meetup Q2",
+      "link": "/fmu-q2-gallery",
+      "text": "Founders Meetup Q2 2024",
+      "format": "Physical and Virtual",
+      "time": "3pm - 6pm",
+      "date": "June 2024"
+    },
+    {
+      "id": 3,
+      "image": "",
+      "event": "Employer's Forum",
+      "link": "/fmu-q3-gallery",
+      "text": "Founders Meetup Q3 2024",
+      "format": "Physical and Virtual",
+      "time": "11am - 1pm",
+      "date": "30th July, 2024"
+    },
+    {
+      "id": 4,
+      "image": "",
+      "event": "Talent Fair",
+      "link": "/talent-fair-gallery",
+      "text": "Talent Fair 2024",
+      "format": "Physical and Virtual",
+      "time": "9am",
+      "date": "2nd August, 2024"
+    }
+  ],
+
+  "newFutureEvents": [
+    {
+      "id": 1,
+      "date": "TBD",
+      "event": "...",
+      "link": "...",
+      "format": "Hybrid",
+      "time": "..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "gallerylseftvisit": [
+    {
+      "id": 1,
+      "image": "./images/gallerylsetfvisit/1lsetfvisit.jpg"
+    },
+
+    {
+      "id": 2,
+      "image": "./images/gallerylsetfvisit/2lsetfvisit.jpg"
+    },
+    {
+      "id": 3,
+      "image": "./images/gallerylsetfvisit/3lsetfvisit.jpg"
+    },
+
+    {
+      "id": 4,
+      "image": "./images/gallerylsetfvisit/4lsetfvisit.jpg"
+    },
+    {
+      "id": 5,
+      "image": "./images/gallerylsetfvisit/5lsetfvisit.jpg"
+    },
+    {
+      "id": 6,
+      "image": "./images/gallerylsetfvisit/6lsetfvisit.jpg"
+    },
+    {
+      "id": 7,
+      "image": "./images/gallerylsetfvisit/7lsetfvisit.jpg"
+    },
+    {
+      "id": 8,
+      "image": "./images/gallerylsetfvisit/8lsetfvisit.jpg"
+    },
+    {
+      "id": 9,
+      "image": "./images/gallerylsetfvisit/9lsetfvisit.jpg"
+    },
+    {
+      "id": 10,
+      "image": "./images/gallerylsetfvisit/10lsetfvisit.jpg"
+    },
+
+    {
+      "id": 12,
+      "image": "./images/gallerylsetfvisit/11lsetfvisit.jpg"
+    }
+  ],
+  "Lsetfvisit": [
+    {
+      "id": 1,
+      "video": " https://www.youtube.com/embed/J0VLOPUIsi4",
+      "text": "video session from meeting"
+    }
+  ]
+}

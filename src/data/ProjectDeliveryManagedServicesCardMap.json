@@ -1,0 +1,55 @@
+{
+  "ProjectDeliveryContent": [
+    {
+      "image": "../../images/projectdelivery/enterprisesupport.jpg",
+      "title": "Business Enterprise Support and Mentorship",
+      "description": "We have a range of support services and programs designed to assist MSMEs. We also have experienced advisors and mentors who can guide startups.",
+      "id": "staticBackdrop1",
+      "readmoretitle": "Enterprise Support",
+      "readmoretext": "Business Enterprise Support is a program designed to assist small and medium-sized businesses with a range of support services. We offer resources such as access to funding, mentorship, and networking opportunities to help businesses grow and thrive. Whether you're a startup or an established company looking to expand, we can help you navigate the challenges of entrepreneurship and achieve your goals."
+    }
+  ],
+
+  "ProjectDeliveryContentTwo": [
+    {
+      "image": "../../images/projectdelivery/training.jpg",
+      "title": "Talent Development and Employment",
+      "description": "At  8thGear, we are committed to providing exceptional Talent Management  to individuals  and organizations alike.",
+      "id": "staticBackdrop3",
+      "readmoretitle": "Talent Development and Employment",
+      "readmoretext": "At  8thGear, we are committed to providing exceptional Talent Management  to individuals and organizations alike. Whether you're a job seeker looking to take the next step in your career, or a company seeking top talent to fuel your growth, we have the expertise and resources to help you succeed. Our Career  services are designed to help individuals reach their full potential, with a range of programs and resources that support learning, growth, and career advancement. From skills assessments and training programs to mentorship and coaching, we provide a comprehensive suite of services that empower individuals to achieve their goals and excel in their careers."
+    }
+  ],
+  "ManagedServicesContent": [
+    {
+      "id": 1,
+      "link": "/digitalmarketing",
+      "image": "../../images/managedservices/digitalmarketing.jpg",
+      "title": "Digital Marketing"
+    },
+    {
+      "id": 2,
+      "link": "/product-development",
+      "image": "../../images/managedservices/tech.png",
+      "title": "Product Development"
+    },
+    {
+      "id": 3,
+      "link": "/hub-services",
+      "image": "../../images/managedservices/talentacquisition.jpg",
+      "title": "Talent Acquisition"
+    },
+    {
+      "id": 4,
+      "link": "/accounting",
+      "image": "../../images/managedservices/accounting.jpg",
+      "title": "Accounting & Book Keeping"
+    },
+    {
+      "id": 5,
+      "link": "/legal",
+      "image": "../../images/managedservices/legal.png",
+      "title": "Legal"
+    }
+  ]
+}

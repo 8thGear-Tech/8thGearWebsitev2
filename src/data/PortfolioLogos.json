@@ -1,0 +1,34 @@
+{
+  "PortfolioLogos": [
+    {
+      "id": 1,
+      "logo": "../../images/innkeeperlogo.png",
+      "link": "/innkeeper"
+    },
+    {
+      "id": 2,
+      "logo": "/assets/havenone.png",
+      "link": "/haven"
+    },
+    {
+      "id": 3,
+      "logo": "../../images/mindafrik.png",
+      "link": "/mind-afrik"
+    },
+    {
+      "id": 4,
+      "logo": "../../images/ease.png",
+      "link": "/ease-soiless"
+    },
+    {
+      "id": 5,
+      "logo": "../../images/legalmo.png",
+      "link": "/legalmo"
+    },
+    {
+      "id": 6,
+      "logo": "../../images/trulance.png",
+      "link": "/trulance"
+    }
+  ]
+}

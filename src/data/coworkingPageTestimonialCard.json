@@ -1,0 +1,18 @@
+{
+  "cardData": [
+    {
+      "id": 1,
+      "image": "./images/testimonialCard/ijeoma.jpg",
+      "name": "AMINAT OKUNUGA",
+      "position": "Software Developer, Roaddo Nigeria",
+      "text": "The 8thGear space is a wonderful workspace. The serene environment, stable power supply , internet facilities, co-working spirit and fun-fridays will definitely make you enjoy your stay "
+    },
+    {
+      "id": 2,
+      "image": "./images/testimonialCard/ijeoma.jpg",
+      "name": "NWAFEJOUNKWU EWERE PRECIOUS",
+      "position": "Customer Service Officer, Concrete Colors and Chemicals Nigeria Limited",
+      "text": "The few days I spent at the 8thGear Hub were very remarkable. The work environment was very conducive stable power supply and fast internet. The warm reception was superb, I got more than I expected. Thank you, 8thGear Hub. You guys are awesome."
+    }
+  ]
+}

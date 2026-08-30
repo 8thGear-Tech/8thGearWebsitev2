@@ -1,0 +1,39 @@
+{
+  "galleryGIZ": [
+    {
+      "id": 1,
+      "image": "./images/galleryimagecardsEmployabilityGIZ/employability1.jpg"
+    },
+
+    {
+      "id": 2,
+      "image": "./images/galleryimagecardsEmployabilityGIZ/employability2.jpg"
+    },
+    {
+      "id": 3,
+      "image": "./images/galleryimagecardsEmployabilityGIZ/employability3.jpg"
+    },
+
+    {
+      "id": 4,
+      "image": "./images/galleryimagecardsEmployabilityGIZ/employability4.jpg"
+    },
+    {
+      "id": 5,
+      "image": "./images/galleryimagecardsEmployabilityGIZ/employability5.jpg"
+    }
+  ],
+  "GIZVideo": [
+    {
+      "id": 2,
+      "video": " https://www.youtube.com/embed/J0VLOPUIsi4",
+      "text": "video session from meeting"
+    },
+
+    {
+      "id": 2,
+      "video": " https://www.youtube.com/embed/J0VLOPUIsi4",
+      "text": "video session from meeting"
+    }
+  ]
+}

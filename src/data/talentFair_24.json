@@ -1,0 +1,90 @@
+{
+  "talentfair24": [
+    {
+      "id": 1,
+      "image": "/images/talent_fair_2024/talent_fair_1.png"
+    },
+    {
+      "id": 2,
+      "image": "/images/talent_fair_2024/talent_fair_2.JPG"
+    },
+    {
+      "id": 3,
+      "image": "/images/talent_fair_2024/talent_fair_3.JPG"
+    },
+    {
+      "id": 4,
+      "image": "/images/talent_fair_2024/talent_fair_4.JPG"
+    },
+    {
+      "id": 5,
+      "image": "/images/talent_fair_2024/talent_fair_5.JPG"
+    },
+    {
+      "id": 6,
+      "image": "/images/talent_fair_2024/talent_fair_6.JPG"
+    },
+    {
+      "id": 7,
+      "image": "/images/talent_fair_2024/talent_fair_7.JPG"
+    },
+    {
+      "id": 8,
+      "image": "/images/talent_fair_2024/talent_fair_8.JPG"
+    },
+    {
+      "id": 9,
+      "image": "/images/talent_fair_2024/talent_fair_9.JPG"
+    },
+    {
+      "id": 10,
+      "image": "/images/talent_fair_2024/talent_fair_10.JPG"
+    },
+    {
+      "id": 11,
+      "image": "/images/talent_fair_2024/talent_fair_11.JPG"
+    },
+    {
+      "id": 12,
+      "image": "/images/talent_fair_2024/talent_fair_12.JPG"
+    },
+    {
+      "id": 13,
+      "image": "/images/talent_fair_2024/talent_fair_13.JPG"
+    },
+    {
+      "id": 16,
+      "image": "/images/talent_fair_2024/talent_fair_16.JPG"
+    },
+    {
+      "id": 17,
+      "image": "/images/talent_fair_2024/talent_fair_17.JPG"
+    },
+    {
+      "id": 18,
+      "image": "/images/talent_fair_2024/talent_fair_18.JPG"
+    },
+    {
+      "id": 19,
+      "image": "/images/talent_fair_2024/talent_fair_19.JPG"
+    },
+    {
+      "id": 21,
+      "image": "/images/talent_fair_2024/talent_fair_21.JPG"
+    }
+  ],
+  "fourthAnniversaryVideo": [
+    {
+      "id": 1,
+      "video": "https://www.youtube.com/embed/1VzsewXbQdg"
+    },
+    {
+      "id": 2,
+      "video": "https://www.youtube.com/embed/2GCAP-4QzgM"
+    },
+    {
+      "id": 3,
+      "video": "https://www.youtube.com/embed/-_UUX-NKUSg"
+    }
+  ]
+}

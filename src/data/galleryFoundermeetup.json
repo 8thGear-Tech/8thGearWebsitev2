@@ -1,0 +1,148 @@
+{
+  "galleryFoundermeetup": [
+    {
+      "id": 1,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupone.jpg"
+    },
+
+    {
+      "id": 2,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwo.jpg"
+    },
+    {
+      "id": 3,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupthree.jpg"
+    },
+
+    {
+      "id": 4,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupfour.jpg"
+    },
+    {
+      "id": 5,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupfive.jpg"
+    },
+    {
+      "id": 6,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupsix.jpg"
+    },
+    {
+      "id": 7,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupseven.jpg"
+    },
+    {
+      "id": 8,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupeight.jpg"
+    },
+    {
+      "id": 9,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupnine.jpg"
+    },
+    {
+      "id": 10,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupten.jpg"
+    },
+    {
+      "id": 11,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupeleven.jpg"
+    },
+    {
+      "id": 12,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwelve.jpg"
+    },
+    {
+      "id": 13,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupthirteen.jpg"
+    },
+    {
+      "id": 14,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupfourteen.jpg"
+    },
+    {
+      "id": 15,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupfifteen.jpg"
+    },
+    {
+      "id": 16,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupsixteen.jpg"
+    },
+    {
+      "id": 17,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupseventeen.jpg"
+    },
+    {
+      "id": 18,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupeighteen.jpg"
+    },
+    {
+      "id": 19,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetupnineteen.jpg"
+    },
+    {
+      "id": 20,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwenty.jpg"
+    },
+    {
+      "id": 21,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentyone.jpg"
+    }
+  ],
+  "galleryvideocards": [
+    {
+      "id": 1,
+      "video": "https://www.youtube.com/embed/RH-Sv2J1PCU"
+    }
+  ],
+  "galleryFoundermeetuptwo": [
+    {
+      "id": 1,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentytwentythree/foundersmeetupone.jpg"
+    },
+
+    {
+      "id": 2,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentytwentythree/foundersmeetuptwo.jpg"
+    },
+    {
+      "id": 3,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentytwentythree/foundersmeetupthree.jpg"
+    },
+
+    {
+      "id": 4,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentytwentythree/foundersmeetupfour.jpg"
+    },
+    {
+      "id": 5,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentytwentythree/foundersmeetupfive.jpg"
+    },
+    {
+      "id": 6,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentytwentythree/foundersmeetupsix.jpg"
+    },
+    {
+      "id": 7,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentytwentythree/foundersmeetupseven.jpg"
+    },
+    {
+      "id": 8,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentytwentythree/foundersmeetupeight.jpg"
+    },
+    {
+      "id": 9,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentytwentythree/foundersmeetupnine.jpg"
+    },
+    {
+      "id": 10,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentytwentythree/foundersmeetupten.jpg"
+    },
+    {
+      "id": 11,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentytwentythree/foundersmeetupeleven.jpg"
+    },
+    {
+      "id": 12,
+      "image": "../../images/galleryFoundersmeetup/foundersmeetuptwentytwentythree/foundersmeetuptwelve.jpg"
+    } 
+  ]
+}

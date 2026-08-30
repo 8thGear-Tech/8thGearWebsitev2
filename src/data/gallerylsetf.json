@@ -1,0 +1,31 @@
+{
+  "gallerylseft": [
+    {
+      "id": 1,
+      "image": "./images/gallerylsetf/lsetf1.jpg"
+    },
+    {
+      "id": 2,
+      "image": "./images/gallerylsetf/lsetf2.jpg"
+    },
+
+    {
+      "id": 3,
+      "image": "./images/gallerylsetf/lsetf3.jpg"
+    }
+  ],
+  "galleryvideocards": [
+    {
+      "id": 1,
+      "video": "https://www.youtube.com/embed/eTQOxk3Wzqw"
+    },
+    {
+      "id": 2,
+      "video": "https://www.youtube.com/embed/d_X-SxgeK_A"
+    },
+    {
+      "id": 3,
+      "video": "https://www.youtube.com/embed/MmizDJaXKFo"
+    }
+  ]
+}

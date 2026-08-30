@@ -1,0 +1,89 @@
+{
+  "advisoryimage": [
+    {
+      "id": 1,
+      "image": "../../images/team/olatutusholeye.png"
+    },
+    {
+      "id": 2,
+      "image": "../../images/team/yinkaogunleye.png"
+    },
+    {
+      "id": 3,
+      "image": "../../images/team/sutinyang.png"
+    },
+    {
+       "id": 4,
+       "image": "../../images/team/seyibioku.png"
+    }
+   
+  ],
+  "FirstHoverCard": [
+    {
+      "id": 1,
+      "image": "../images/advisoryImage/olatutusholeye.png",
+      "name": "DR OLATUTU SHOLEYE",
+      "position": "GOVERNANCE & ETHICS ADVISOR",
+      "link": "https://www.linkedin.com/pulse/8thgear-advisory-council-member-dr-olatutu-o-sholeye-8thgearhub"
+    },
+    {
+      "id": 2,
+      "image": "../images/advisoryImage/yinkaogunleye.png",
+      "name": "MR YINKA OGUNLEYE",
+      "position": "STRATEGY ADVISOR",
+      "link": "https://linkedin.com/"
+    },
+  
+    {
+      "id": 3,
+      "image": "../images/advisoryImage/sutinyang.png",
+      "name": "SUTIN YANG",
+      "position": "PARTNERSHIPS ADVISOR",
+      "link": "https://www.linkedin.com/in/sutiny/"
+    },
+    {
+      "id": 4,
+      "image": "../images/advisoryImage/seyibioku.png",
+      "name": "SEYI BIOKU",
+      "position": "ADVISOR & BOARD SECRETARY",
+      "link": "https://www.linkedin.com/in/seyi-bioku-870539116/"
+    }
+  ],
+  "ProjectDeliveryHoverCard": [
+    {
+      "id": 1,
+      "image": "../../images/projectdelivery/ecosystem.jpg",
+      "title": "ENTERPRISE SUPPORT",
+      "text": "The Venture Studio model for entrepreneurship, combining comapny building with venture funding.",
+      "link": "https://www.linkedin.com/in/seyi-bioku-870539116/"
+    },
+    {
+      "id": 2,
+      "image": "../../images/projectdelivery/ecosystem.jpg",
+      "title": "ECOSYSTEM EVENTS",
+      "text": "The Venture Studio model for entrepreneurship, combining comapny building with venture funding.",
+      "link": "https://www.linkedin.com/in/abimbola-adebakin-9a225013/"
+    },
+    {
+      "id": 3,
+      "image": "../../images/projectdelivery/training.jpg",
+      "title": "TRAINING",
+      "text": "The Venture Studio model for entrepreneurship, combining comapny building with venture funding.",
+      "link": "https://linkedin.com/"
+    },
+    {
+      "id": 4,
+      "image": "../../images/projectdelivery/employability.jpg",
+      "title": "EMPLOYABILITY",
+      "text": "The Venture Studio model for entrepreneurship, combining comapny building with venture funding.",
+      "link": "https://www.linkedin.com/"
+    },
+    {
+      "id": 5,
+      "image": "../../images/projectdelivery/employability.jpg",
+      "title": "TALENT ACQUISITION",
+      "text": "The Venture Studio model for entrepreneurship, combining comapny building with venture funding.",
+      "link": "https://www.linkedin.com/"
+    }
+  ]
+}

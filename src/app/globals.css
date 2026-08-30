@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --banner-height: 0px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Brand palette (ported from the CRA app's src/sassfiles/_colors.scss) */
+  --color-teal: #00a495;
+  --color-teal-dark: #007d71;
+  --color-purple: #821e6b;
+  --color-purple-hover: #6b185a;
+  --color-mint: #b2f5ea;
+  --color-ink: #0f172a;
+  --color-slate: #1e293b;
+  --color-primary: #0f172a;
+  --color-secondary: #475569;
+  --color-muted: #94a3b8;
+  --color-grey-bg: #f4f6f8;
+  --color-grey-border: #e2e8f0;
+
+  --shadow-brand: 0 2px 14px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-brand-md: 0 6px 24px rgba(0, 0, 0, 0.09);
+  --shadow-brand-lg: 0 16px 44px rgba(0, 0, 0, 0.14);
+
+  --radius-brand: 12px;
+  --radius-brand-sm: 8px;
+
+  --font-ui: var(--font-poppins);
+  --font-heading: var(--font-rubik);
+  --font-body: var(--font-open-sans);
+
+  /* Bootstrap-equivalent breakpoints, so `lg:` etc. keep matching the old d-lg-* logic */
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+/* Hides the scrollbar on horizontally-scrolling snap carousels while keeping them scrollable. */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes banner-ease-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient-slide {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+@keyframes pulse-pop {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 10px 20px rgba(31, 33, 25, 0.8);
+  }
+}
+
+@keyframes fade-down {
+  from {
+    opacity: 0;
+    transform: translateY(-14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.5);
+  }
+}
+
+/* Used by the Zoho landing page's hero "live" status dot. */
+@keyframes zoho-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}

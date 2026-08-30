@@ -1,0 +1,32 @@
+{
+  "card": [
+    {
+      "Id": 1,
+      "Images": "./images/testimonialCard/circle2.png",
+      "Name": "Olasunkanmi Olarenwaju",
+      "Position": "CEO Innnkeeper",
+      "Text": "We at 8thGear are helpmates to your business and because we believe in the uniqueness of every individual and business, we tailor our solutions to suit"
+    },
+    {
+      "Id": 2,
+      "Images": "./images/testimonialCard/circle2.png",
+      "Name": "Olasunkanmi Olarenwaju",
+      "Position": "CEO Innnkeeper",
+      "Text": "We at 8thGear are helpmates to your business and because we believe in the uniqueness of every individual and business, we tailor our solutions to suit"
+    },
+    {
+      "Id": 3,
+      "Images": "./images/testimonialCard/circle2.png",
+      "Name": "Olasunkanmi Olarenwaju",
+      "Position": "CEO Innnkeeper",
+      "Text": "We at 8thGear are helpmates to your business and because we believe in the uniqueness of every individual and business, we tailor our solutions to suit"
+    },
+    {
+      "Id": 4,
+      "Images": "./images/testimonialCard/circle2.png",
+      "Name": "Olasunkanmi Olarenwaju",
+      "Position": "CEO Innnkeeper",
+      "Text": "We at 8thGear are helpmates to your business and because we believe in the uniqueness of every individual and business, we tailor our solutions to suit"
+    }
+  ]
+}

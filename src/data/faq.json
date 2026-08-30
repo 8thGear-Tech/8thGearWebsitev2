@@ -1,0 +1,46 @@
+{
+  "information": [
+    {
+      "id": 1,
+      "heading": "Managed Services",
+      "target": "headingOne",
+      "collapse": " #collapseOne",
+      "tool": "collapseOne"
+    },
+    {
+      "id": 2,
+      "heading": "Co-Working space",
+      "target": "headingTwo",
+      "collapse": " #collapseTwo",
+      "tool": "collapseTwo"
+    },
+    {
+      "id": 3,
+      "heading": " Growth As A Service",
+      "target": "headingThree",
+      "collapse": " #collapseThree",
+      "tool": "collapseThree"
+    },
+    {
+      "id": 4,
+      "heading": "Project Delivery",
+      "target": "headingFour",
+      "collapse": " #collapseFour",
+      "tool": "collapseFour"
+    },
+    {
+      "id": 5,
+      "heading": "Venture Studio",
+      "target": "headingFive",
+      "collapse": " #collapseFive",
+      "aria": "collapseFive"
+    },
+    {
+      "id": 6,
+      "heading": "Events",
+      "target": "headingSix",
+      "collapse": " #collapseSix",
+      "aria": "collapseSix"
+    }
+  ]
+}

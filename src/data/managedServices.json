@@ -1,0 +1,26 @@
+{
+  "digitalMarketing": [
+    {
+      "id": 1,
+      "title": "Digital marketing"
+    }
+  ],
+  "legal": [
+    {
+      "id": 1,
+      "title": "Legal"
+    }
+  ],
+  "accounting": [
+    {
+      "id": 1,
+      "title": "Accounting"
+    }
+  ],
+  "productdevelopment": [
+    {
+      "id": 1,
+      "title": "Product Development"
+    }
+  ]
+}

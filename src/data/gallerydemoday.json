@@ -1,0 +1,41 @@
+{
+  "gallerydemoday": [
+    {
+      "id": 1,
+      "image": "../../images/gallerydemoday/demodayone.JPG"
+    },
+    {
+      "id": 2,
+      "image": "../../images/gallerydemoday/demodaytwo.JPG"
+    },
+    {
+      "id": 3,
+      "image": "../../images/gallerydemoday/demodaythree.JPG"
+    },
+    {
+      "id": 4,
+      "image": "../../images/gallerydemoday/demodayfour.JPG"
+    },
+    {
+      "id": 5,
+      "image": "../../images/gallerydemoday/demodayfive.JPG"
+    },
+    {
+      "id": 6,
+      "image": "../../images/gallerydemoday/demodaysix.JPG"
+    }
+  ],
+  "Demovideo": [
+    {
+      "id": 1,
+      "video": " https://www.youtube.com/embed/vsfp35Zt99Y",
+      "text": "video session from meeting"
+    },
+
+    {
+      "id": 2,
+      "video": "https://www.youtube.com/embed/GoVRCH8A7zI",
+      "text": "video session from meeting"
+    }
+  ]
+}

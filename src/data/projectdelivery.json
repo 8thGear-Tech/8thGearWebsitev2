@@ -1,0 +1,99 @@
+{
+  "projectdelivery": [
+    {
+      "id": 1,
+      "image": "./images/projectdelivery/projectgallery1.jpg",
+      "text": "photo session from founders meetup program"
+    },
+
+    {
+      "id": 2,
+      "image": "./images/projectdelivery/projectgallery5.jpg",
+      "text": "photo session from founders meetup program"
+    },
+    {
+      "id": 3,
+      "image": "./images/projectdelivery/projectgallery7.jpg",
+      "text": "photo session from founders meetup program"
+    },
+
+    {
+      "id": 4,
+      "image": "./images/projectdelivery/projectgallery4.jpg",
+      "text": "photo session from founders meetup program"
+    },
+    {
+      "id": 5,
+      "image": "./images/projectdelivery/projectgallery5.jpg",
+      "text": "photo session from founders meetup program"
+    },
+    {
+      "id": 6,
+      "image": "./images/projectdelivery/projectgallery6.jpg",
+      "text": "photo session from founders meetup program"
+    },
+    {
+      "id": 7,
+      "image": "./images/projectdelivery/projectgallery7.jpg",
+      "text": "photo session from founders meetup program"
+    },
+    {
+      "id": 8,
+      "image": "./images/projectdelivery/projectgallery8.jpg",
+      "text": "photo session from founders meetup program"
+    },
+    {
+      "id": 9,
+      "image": "./images/projectdelivery/projectgallery9.jpg",
+      "text": "photo session from founders meetup program"
+    },
+    {
+      "id": 10,
+      "image": "./images/projectdelivery/projectgallery10.jpg",
+      "text": "photo session from founders meetup program"
+    },
+    {
+      "id": 11,
+      "image": "./images/projectdelivery/projectgallery11.jpg",
+      "text": "photo session from founders meetup program"
+    },
+    {
+      "id": 12,
+      "image": "./images/projectdelivery/projectgallery12.jpg",
+      "text": "photo session from founders meetup program"
+    }
+  ],
+  "ProjectVideo": [
+    {
+      "id": 2,
+      "video": " https://www.youtube.com/embed/J0VLOPUIsi4",
+      "text": "Video session from founders meetup program"
+    },
+
+    {
+      "id": 1,
+      "video": " https://www.youtube.com/embed/J0VLOPUIsi4",
+      "text": "Video session from demoday"
+    },
+    {
+      "id": 1,
+      "video": " https://www.youtube.com/embed/J0VLOPUIsi4",
+      "text": "Video session from demoday"
+    },
+    {
+      "id": 5,
+      "video": " https://www.youtube.com/embed/J0VLOPUIsi4",
+      "text": "Video session from demoday"
+    },
+    {
+      "id": 1,
+      "video": " https://www.youtube.com/embed/J0VLOPUIsi4",
+      "text": "Video session from demoday"
+    },
+    {
+      "id": 6,
+      "video": " https://www.youtube.com/embed/J0VLOPUIsi4",
+      "text": "video session from meeting"
+    }
+  ]
+}

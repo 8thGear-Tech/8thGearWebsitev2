@@ -1,0 +1,57 @@
+{
+  "responsibilityMatrix": [
+    {
+      "id": 1,
+      "role": "Consortium Lead",
+      "company": "8thGear Hub & Venture Studio",
+      "offerings": "(Technology & Innovation Hub)",
+      "paragraphOne": "Project Management Consortium Operations",
+      "paragraphTwo": "Access to Tech Infrastructure",
+      "paragraphThree": "Test before Invest",
+      "imageUrl": "../../images/responsibilitymatrix/eightgear.png"
+    },
+    {
+      "id": 2,
+      "company": "Federal University of Technology Akure",
+      "offerings": "(Academic, Research & Development Institute)",
+      "paragraphOne": "Research Pool (Research Commercialization)",
+      "paragraphTwo": "Talent Pool",
+      "paragraphThree": "Hardware Innovation",
+      "imageUrl": "../../images/responsibilitymatrix/futa.png"
+    },
+    {
+      "id": 3,
+      "company": "Sterling Bank Plc",
+      "offerings": "(Public Funding/Finance Organization)",
+      "paragraphOne": "Access to Finance",
+      "paragraphTwo": "Financial Advisory",
+      "paragraphThree": "Access to Subject Matter Experts",
+      "imageUrl": "../../images/responsibilitymatrix/sterling.png"
+    },
+    {
+      "id": 4,
+      "company": "Innkeeper Talent Accelerator Ltd",
+      "offerings": "(Vocational Training Center (Digital Skills))",
+      "paragraphOne": "Digital Skills Training",
+      "paragraphTwo": "Talent Management (Tech Talent Pool)",
+      "imageUrl": "../../images/responsibilitymatrix/innkeeper.png"
+    },
+    {
+      "id": 5,
+      "company": "PearlMutual Consulting Ltd",
+      "offerings": "(Research & Development Institute (Consultancy))",
+      "paragraphOne": "Business/Management Training",
+      "paragraphTwo": "Business Development Services",
+      "paragraphThree": "Investment Readiness",
+      "imageUrl": "../../images/responsibilitymatrix/pearlmutual.png"
+    },
+    {
+      "id": 6,
+      "company": "Small & Medium Entreprise Development Agency of Nigeria",
+      "offerings": "(Trade Associations)",
+      "paragraphOne": "Access to MSME clusters",
+      "paragraphTwo": "Policy Formation support and implementation",
+      "imageUrl": "../../images/responsibilitymatrix/smedan.png"
+    }
+  ]
+}

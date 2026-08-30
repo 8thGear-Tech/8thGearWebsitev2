@@ -21,17 +21,17 @@ const SIGNUP_URL =
 const CARD_BORDER = "border-[#e8d4e8]";
 
 const SECTION_TITLE = "mb-3 text-center font-heading text-[clamp(1.7rem,3.5vw,2.4rem)] font-semibold text-ink";
-const SECTION_SUB = "mx-auto mb-[52px] max-w-[560px] text-center text-[1.05rem] font-light text-[#64748b]";
+const SECTION_SUB = "mx-auto mb-13 max-w-140 text-center text-[1.05rem] font-light text-[#64748b]";
 const DIVIDER = "mx-auto mt-3 h-1 w-14 rounded bg-[#920f84]";
 
 const CTA_PRIMARY =
-  "inline-block rounded-full border-0 bg-white px-8 py-[14px] font-heading text-base font-bold text-[#920f84] no-underline shadow-[0_8px_24px_rgba(0,0,0,0.18)] transition duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-[#fff8fe] hover:text-[#6b0a60] hover:shadow-[0_12px_32px_rgba(0,0,0,0.25)]";
+  "inline-block rounded-full border-0 bg-white px-8 py-3.5 font-heading text-base font-bold text-[#920f84] no-underline shadow-[0_8px_24px_rgba(0,0,0,0.18)] transition duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-[#fff8fe] hover:text-[#6b0a60] hover:shadow-[0_12px_32px_rgba(0,0,0,0.25)]";
 const CTA_PRIMARY_LARGE =
   "inline-block rounded-full border-0 bg-white px-5 py-4 font-heading text-[1.05rem] font-bold text-[#920f84] no-underline shadow-[0_8px_24px_rgba(0,0,0,0.18)] transition duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-[#fff8fe] hover:text-[#6b0a60] hover:shadow-[0_12px_32px_rgba(0,0,0,0.25)]";
 const CTA_SECONDARY =
-  "mt-3 block rounded-full border-2 border-white/50 bg-transparent px-7 py-[13px] text-center font-heading text-base font-semibold text-white no-underline transition duration-300 ease-in-out hover:border-white hover:bg-white/15 hover:text-white md:mt-0 md:inline-block md:text-left";
+  "mt-3 block rounded-full border-2 border-white/50 bg-transparent px-7 py-3.25 text-center font-heading text-base font-semibold text-white no-underline transition duration-300 ease-in-out hover:border-white hover:bg-white/15 hover:text-white md:mt-0 md:inline-block md:text-left";
 const SEE_ALL =
-  "inline-block rounded-full border-[1.5px] border-[#920f84] px-7 py-[10px] font-heading text-[0.9rem] font-semibold text-[#920f84] no-underline transition duration-300 ease-in-out hover:bg-[#920f84] hover:text-white";
+  "inline-block rounded-full border-[1.5px] border-[#920f84] px-7 py-2.5 font-heading text-[0.9rem] font-semibold text-[#920f84] no-underline transition duration-300 ease-in-out hover:bg-[#920f84] hover:text-white";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 28 },
@@ -321,16 +321,16 @@ function ProductCard({ product }: { product: Product }) {
   return (
     <motion.div variants={fadeUp} className="h-full">
       <div
-        className={`group relative flex h-full flex-col overflow-hidden rounded-2xl border ${CARD_BORDER} bg-white px-6 py-7 transition duration-300 ease-in-out before:absolute before:inset-x-0 before:top-0 before:h-[3px] before:origin-left before:scale-x-0 before:bg-[#920f84] before:transition-transform before:duration-[350ms] before:content-[''] hover:-translate-y-1.5 hover:border-[#b8178a] hover:shadow-[0_20px_60px_rgba(146,15,132,0.18)] group-hover:before:scale-x-100`}
+        className={`group relative flex h-full flex-col overflow-hidden rounded-2xl border ${CARD_BORDER} bg-white px-6 py-7 transition duration-300 ease-in-out before:absolute before:inset-x-0 before:top-0 before:h-0.75 before:origin-left before:scale-x-0 before:bg-[#920f84] before:transition-transform before:duration-350 before:content-[''] hover:-translate-y-1.5 hover:border-[#b8178a] hover:shadow-[0_20px_60px_rgba(146,15,132,0.18)] group-hover:before:scale-x-100`}
       >
         <Image src={product.logo} alt={product.name} className="mb-5 h-16 self-start object-contain object-left" />
-        <h5 className="mb-[10px] font-heading text-base font-medium text-ink">{product.name}</h5>
+        <h5 className="mb-2.5 font-heading text-base font-medium text-ink">{product.name}</h5>
         <p className="flex-1 font-body text-[0.9rem] font-light leading-[1.65] text-[#64748b]">{product.desc}</p>
         <a
           href={product.link}
           target="_blank"
           rel="noreferrer"
-          className="mt-5 inline-block w-auto self-start rounded-full border-0 bg-[#920f84] px-6 py-[10px] font-heading text-[0.875rem] font-semibold text-white no-underline shadow-[0_4px_14px_rgba(146,15,132,0.3)] transition duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-[#6b0a60] hover:text-white hover:shadow-[0_6px_20px_rgba(146,15,132,0.4)]"
+          className="mt-5 inline-block w-auto self-start rounded-full border-0 bg-[#920f84] px-6 py-2.5 font-heading text-[0.875rem] font-semibold text-white no-underline shadow-[0_4px_14px_rgba(146,15,132,0.3)] transition duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-[#6b0a60] hover:text-white hover:shadow-[0_6px_20px_rgba(146,15,132,0.4)]"
         >
           Get {product.name} →
         </a>
@@ -347,7 +347,7 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
         className={`relative flex h-full flex-col overflow-hidden rounded-2xl px-7 py-8 transition duration-300 ease-in-out ${
           featured
             ? "border border-transparent bg-[linear-gradient(160deg,#6b0a60_0%,#920f84_60%,#b8178a_100%)] text-white"
-            : `border-[1.5px] ${CARD_BORDER} bg-white hover:-translate-y-[5px] hover:border-[#920f84] hover:shadow-[0_20px_60px_rgba(146,15,132,0.18)]`
+            : `border-[1.5px] ${CARD_BORDER} bg-white hover:-translate-y-1.25 hover:border-[#920f84] hover:shadow-[0_20px_60px_rgba(146,15,132,0.18)]`
         }`}
       >
         {plan.badge && (
@@ -355,8 +355,8 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
             {plan.badge}
           </span>
         )}
-        <Image src={plan.logo} alt={plan.name} className="mb-[18px] h-11 object-contain" />
-        <h4 className={`mb-[6px] font-heading text-[1.3rem] font-semibold ${featured ? "text-white/90" : "text-ink"}`}>{plan.name}</h4>
+        <Image src={plan.logo} alt={plan.name} className="mb-4.5 h-11 object-contain" />
+        <h4 className={`mb-1.5 font-heading text-[1.3rem] font-semibold ${featured ? "text-white/90" : "text-ink"}`}>{plan.name}</h4>
         <p className={`mb-5 font-body text-[0.85rem] font-light ${featured ? "text-white/90" : "text-[#64748b]"}`}>{plan.tagline}</p>
         <div className="mb-5">
           <span className={`mb-1 block font-heading text-[0.72rem] font-semibold uppercase tracking-[0.06em] ${featured ? "text-white/60" : "text-[#b8178a]"}`}>
@@ -379,7 +379,7 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
           {plan.features.map((f) => (
             <li
               key={f}
-              className={`flex items-start gap-2 border-b py-[7px] font-body text-[0.98rem] font-normal before:mt-px before:flex-shrink-0 before:font-bold before:content-['✓'] ${
+              className={`flex items-start gap-2 border-b py-1.75 font-body text-[0.98rem] font-normal before:mt-px before:flex-shrink-0 before:font-bold before:content-['✓'] ${
                 featured ? "border-white/10 before:text-white/90" : "border-black/5 before:text-[#920f84]"
               }`}
             >
@@ -411,7 +411,7 @@ function WhyCard({ item }: { item: (typeof WHY_US)[number] }) {
         className={`h-full rounded-2xl border ${CARD_BORDER} bg-white px-7 py-8 text-center transition duration-300 ease-in-out hover:-translate-y-1 hover:border-[#920f84] hover:shadow-[0_8px_32px_rgba(146,15,132,0.14)]`}
       >
         <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-[18px] bg-[#920f84]/[0.07] text-[1.8rem]">{item.icon}</div>
-        <h5 className="mb-[10px] font-heading text-base font-medium text-ink">{item.label}</h5>
+        <h5 className="mb-2.5 font-heading text-base font-medium text-ink">{item.label}</h5>
         <p className="m-0 font-body text-[0.875rem] font-medium leading-[1.7] text-[#64748b]">{item.desc}</p>
       </div>
     </motion.div>
@@ -474,12 +474,12 @@ export function ZohoLandingPage() {
   return (
     <div className="text-ink">
       {/* Hero */}
-      <section className="relative overflow-hidden bg-[linear-gradient(145deg,#3a0535_0%,#6b0a60_35%,#920f84_70%,#b8178a_100%)] pt-10 pb-[120px] before:absolute before:inset-0 before:bg-[radial-gradient(ellipse_55%_70%_at_75%_50%,rgba(255,255,255,0.18)_0%,transparent_65%),radial-gradient(ellipse_30%_40%_at_15%_80%,rgba(130,30,107,0.25)_0%,transparent_60%)] before:content-[''] after:absolute after:inset-x-0 after:-bottom-[2px] after:h-20 after:bg-white after:[clip-path:ellipse(55%_100%_at_50%_100%)] after:content-[''] md:pt-20 md:pb-[100px]">
+      <section className="relative overflow-hidden bg-[linear-gradient(145deg,#3a0535_0%,#6b0a60_35%,#920f84_70%,#b8178a_100%)] pt-10 pb-30 before:absolute before:inset-0 before:bg-[radial-gradient(ellipse_55%_70%_at_75%_50%,rgba(255,255,255,0.18)_0%,transparent_65%),radial-gradient(ellipse_30%_40%_at_15%_80%,rgba(130,30,107,0.25)_0%,transparent_60%)] before:content-[''] after:absolute after:inset-x-0 after:-bottom-0.5 after:h-20 after:bg-white after:[clip-path:ellipse(55%_100%_at_50%_100%)] after:content-[''] md:pt-20 md:pb-25">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[length:60px_60px]" />
-        <div className="relative z-[2] mx-auto max-w-[1400px] px-4">
+        <div className="relative z-[2] mx-auto max-w-350 px-4">
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
             <Reveal variant={fadeRight}>
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/15 px-4 py-[6px] text-[13px] font-semibold text-white backdrop-blur-[8px]">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/15 px-4 py-1.5 text-[13px] font-semibold text-white backdrop-blur-[8px]">
                 <span className="block h-2 w-2 rounded-full bg-[#4ade80] [animation:zoho-pulse_2s_infinite]" /> Trusted Zoho Partner in
                 Nigeria
               </div>
@@ -502,11 +502,11 @@ export function ZohoLandingPage() {
 
             <Reveal variant={fadeLeft} delay={0.15} className="mt-12 md:mt-0">
               <div className="relative rounded-[24px] border border-white/40 bg-white/[0.22] p-10 text-center shadow-[0_32px_80px_rgba(0,0,0,0.15)] backdrop-blur-[6px]">
-                <div className="absolute -top-[18px] right-5 whitespace-nowrap rounded-full bg-white px-5 py-[10px] text-[13px] font-bold text-ink shadow-[0_8px_32px_rgba(146,15,132,0.14)]">
+                <div className="absolute -top-4.5 right-5 whitespace-nowrap rounded-full bg-white px-5 py-2.5 text-[13px] font-bold text-ink shadow-[0_8px_32px_rgba(146,15,132,0.14)]">
                   <span className="text-[15px] text-[#920f84]">150M+</span> Users Globally
                 </div>
-                <Image src={zohologo} alt="Zoho" className="mx-auto w-full max-w-[320px]" />
-                <div className="absolute -bottom-[18px] left-5 whitespace-nowrap rounded-full bg-white px-5 py-[10px] text-[13px] font-bold text-ink shadow-[0_8px_32px_rgba(146,15,132,0.14)]">
+                <Image src={zohologo} alt="Zoho" className="mx-auto w-full max-w-80" />
+                <div className="absolute -bottom-4.5 left-5 whitespace-nowrap rounded-full bg-white px-5 py-2.5 text-[13px] font-bold text-ink shadow-[0_8px_32px_rgba(146,15,132,0.14)]">
                   🇳🇬 <span className="text-[15px] text-[#920f84]">Billed in ₦ Naira</span>
                 </div>
               </div>
@@ -516,9 +516,9 @@ export function ZohoLandingPage() {
       </section>
 
       {/* Stats Bar */}
-      <div className="relative z-10 mx-auto mb-5 max-w-[1400px] px-4 -mt-[50px]">
+      <div className="relative z-10 mx-auto mb-5 max-w-350 px-4 -mt-12.5">
         <Reveal>
-          <div className="relative z-10 -mt-[50px] rounded-2xl bg-white px-5 py-6 shadow-[0_4px_24px_rgba(0,0,0,0.07)] md:px-10 md:py-8">
+          <div className="relative z-10 -mt-12.5 rounded-2xl bg-white px-5 py-6 shadow-[0_4px_24px_rgba(0,0,0,0.07)] md:px-10 md:py-8">
             <div className="grid grid-cols-2 items-center justify-around gap-3 md:grid-cols-4">
               {STATS.map((s) => (
                 <div key={s.label} className="text-center">
@@ -533,7 +533,7 @@ export function ZohoLandingPage() {
 
       {/* Products */}
       <section className="py-10">
-        <div className="mx-auto max-w-[1400px] px-4">
+        <div className="mx-auto max-w-350 px-4">
           <SectionHeader title="Zoho Products" sub="Choose the tools that power your business or get all of them with Zoho One." />
           <StaggerGrid>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -559,7 +559,7 @@ export function ZohoLandingPage() {
 
       {/* Pricing */}
       <section className="bg-[#fdf0fc] py-10" id="pricing">
-        <div className="mx-auto max-w-[1400px] px-4">
+        <div className="mx-auto max-w-350 px-4">
           <SectionHeader title="Zoho Pricing in Nigeria" sub="All prices shown are starting from the lowest monthly plan. Annual billing saves you up to 15%." />
           <StaggerGrid>
             <div className="grid grid-cols-1 items-stretch gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -590,7 +590,7 @@ export function ZohoLandingPage() {
 
       {/* Why Us */}
       <section className="py-10">
-        <div className="mx-auto max-w-[1400px] px-4">
+        <div className="mx-auto max-w-350 px-4">
           <SectionHeader title="Why Get Zoho From Us" sub="We're not just resellers, we're your local Zoho Growth Partner." />
           <StaggerGrid>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -604,7 +604,7 @@ export function ZohoLandingPage() {
 
       {/* FAQ */}
       <section className="bg-[#fdf0fc] py-10">
-        <div className="mx-auto max-w-[1400px] px-4">
+        <div className="mx-auto max-w-350 px-4">
           <SectionHeader title="Frequently Asked Questions" sub="Everything you need to know about Zoho in Nigeria." />
           <div className="flex justify-center">
             <div className="w-full max-w-3xl">
@@ -619,7 +619,7 @@ export function ZohoLandingPage() {
       {/* Final CTA */}
       <section className="relative overflow-hidden bg-[linear-gradient(145deg,#3a0535_0%,#6b0a60_40%,#920f84_80%,#b8178a_100%)] pt-15 before:absolute before:inset-0 before:bg-[url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nNjAnIGhlaWdodD0nNjAnIHZpZXdCb3g9JzAgMCA2MCA2MCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48ZyBmaWxsPSdub25lJyBmaWxsLXJ1bGU9J2V2ZW5vZGQnPjxnIGZpbGw9JyNmZmZmZmYnIGZpbGwtb3BhY2l0eT0nMC4wNCc+PHBhdGggZD0nTTM2IDM0di00aC0ydjRoLTR2Mmg0djRoMnYtNGg0di0yaC00em0wLTMwVjBoLTJ2NGgtNHYyaDR2NGgyVjZoNFY0aC00ek02IDM0di00SDR2NEgwdjJoNHY0aDJ2LTRoNHYtMkg2ek02IDRWMEg0djRIMHYyaDR2NGgyVjZoNFY0SDZ6Jy8+PC9nPjwvZz48L3N2Zz4=)] before:content-['']">
         <Reveal>
-          <div className="relative z-[2] mx-auto max-w-[1400px] px-4 pb-[50px] text-center">
+          <div className="relative z-[2] mx-auto max-w-350 px-4 pb-12.5 text-center">
             <h2 className="mb-4 font-heading text-[clamp(1.8rem,4vw,2.8rem)] font-semibold text-white">Start Using Zoho Today</h2>
             <p className="mb-10 font-body text-[1.05rem] leading-7 text-white/80">
               Join thousands of Nigerian businesses growing smarter with Zoho.

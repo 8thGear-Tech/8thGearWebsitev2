@@ -47,7 +47,7 @@ function EventsSection() {
 
   return (
     <section id="events-section" className="bg-gradient-to-b from-white to-[#f8fafc] py-12">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         {events.length === 0 && (
           <div className="mx-auto max-w-md py-4 text-center text-[#666]">
             <BsCalendarX className="mx-auto mb-4 text-5xl text-purple" />
@@ -71,7 +71,7 @@ function DemoSection({
   imageTwo: import("next/image").StaticImageData;
 }) {
   return (
-    <div className="mx-auto max-w-[1400px] px-4 py-12">
+    <div className="mx-auto max-w-350 px-4 py-12">
       <div className="mb-10 text-center">
         <h3 className="font-heading">8thGear Hub Demo Day</h3>
         <p className="mx-auto max-w-2xl text-[#64748b]">

@@ -68,8 +68,8 @@ export function YDOS() {
 
       {/* MAIN PROGRAM CONTENT */}
       <section className="bg-[linear-gradient(135deg,#f8f9fa_0%,#e9ecef_100%)] py-12">
-        <div className="mx-auto max-w-[1200px] px-4">
-          <div className="mx-auto max-w-[1000px]">
+        <div className="mx-auto max-w-300 px-4">
+          <div className="mx-auto max-w-250">
             <div className="mb-12 text-center">
               <h3 className="bg-[linear-gradient(135deg,#821E6B,#00A495)] bg-clip-text font-bold text-transparent">
                 YDOS 2026 OPEN INNOVATION CHALLENGE
@@ -124,7 +124,7 @@ export function YDOS() {
               <button
                 type="button"
                 onClick={() => setFlyerOpen(true)}
-                className="mx-auto block max-w-[400px] cursor-pointer overflow-hidden rounded-[10px] shadow-brand-md"
+                className="mx-auto block max-w-100 cursor-pointer overflow-hidden rounded-[10px] shadow-brand-md"
               >
                 <Image src={ydosFlyer} alt="YDOS 2026 Flyer" className="w-full" />
               </button>
@@ -155,7 +155,7 @@ export function YDOS() {
 
       {/* FOOTER CTA SECTION */}
       <section className="pb-12 pt-12 text-center">
-        <div className="mx-auto max-w-[1400px] px-4">
+        <div className="mx-auto max-w-350 px-4">
           <h3 className="mb-3 font-bold">Don&apos;t Just Dream It. Build It. Pitch It. Win It.</h3>
           <p className="mb-4 text-lg text-secondary">
             Take the first step toward transforming your idea into a real-world solution.

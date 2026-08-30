@@ -5,9 +5,9 @@ import { JointheTeamBtn } from "@/components/Buttons/PillButtons";
 
 export function BDandVentureStudioOfficer() {
   return (
-    <div className="mx-auto max-w-[1400px] px-6 py-12 sm:px-10">
+    <div className="mx-auto max-w-350 px-6 py-12 sm:px-10">
       <Link href="/">
-        <Image src={logos} alt="" width={90} height={110} className="h-[110px] w-[90px]" />
+        <Image src={logos} alt="" width={90} height={110} className="h-27.5 w-22.5" />
       </Link>
 
       <h1 className="mt-4 font-heading text-2xl">Business Development/Venture Studio Officer</h1>

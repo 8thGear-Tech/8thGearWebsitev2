@@ -4,7 +4,7 @@
 
 function ArticleVideo({ src, title }: { src: string; title: string }) {
   return (
-    <div className="mx-auto aspect-[2/1] w-full max-w-[800px] overflow-hidden rounded-xl shadow-brand">
+    <div className="mx-auto aspect-[2/1] w-full max-w-200 overflow-hidden rounded-xl shadow-brand">
       <iframe
         src={src}
         title={title}
@@ -25,7 +25,7 @@ function ArticleLayout({
   paragraphs: string[];
 }) {
   return (
-    <div className="mx-auto max-w-[1400px] px-4 py-12">
+    <div className="mx-auto max-w-350 px-4 py-12">
       <ArticleVideo src={videoSrc} title={videoTitle} />
       <div className="mx-auto mt-8 max-w-3xl space-y-4 text-secondary">
         {paragraphs.map((paragraph, index) => (

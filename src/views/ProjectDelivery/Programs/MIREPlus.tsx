@@ -64,8 +64,8 @@ export function MIREPlus() {
       </section>
 
       <section className="bg-[linear-gradient(135deg,#f8f9fa_0%,#e9ecef_100%)] py-12">
-        <div className="mx-auto max-w-[1200px] px-4">
-          <div className="mx-auto max-w-[1000px]">
+        <div className="mx-auto max-w-300 px-4">
+          <div className="mx-auto max-w-250">
             <div className="mb-12 text-center">
               <h3 className="bg-[linear-gradient(135deg,#821E6B,#00A495)] bg-clip-text font-bold text-transparent">
                 GET UP TO ₦5,000,000
@@ -133,13 +133,13 @@ export function MIREPlus() {
           <div className="pt-6">
             <h5 className="mb-4 text-base font-bold italic text-[#333]">SUPPORTED BY</h5>
             <div className="flex flex-wrap items-center gap-6">
-              <div className="relative h-[50px] w-[160px]">
+              <div className="relative h-12.5 w-40">
                 <Image src={digiplusalliance} alt="DigiPlus Alliance" fill className="object-contain object-left" />
               </div>
-              <div className="relative h-[42px] w-[140px]">
+              <div className="relative h-10.5 w-35">
                 <Image src={avonafrica} alt="Avon Africa" fill className="object-contain object-left" />
               </div>
-              <div className="relative h-[42px] w-[140px]">
+              <div className="relative h-10.5 w-35">
                 <Image src={meristem} alt="Meristem" fill className="object-contain object-left" />
               </div>
             </div>
@@ -148,9 +148,9 @@ export function MIREPlus() {
       </section>
 
       <section className="bg-[#f9f9f9] py-12 text-center">
-        <div className="mx-auto max-w-[1400px] px-4">
+        <div className="mx-auto max-w-350 px-4">
           <div className="flex flex-wrap justify-center gap-4">
-            <div className="relative h-[568px] w-[320px]">
+            <div className="relative h-142 w-80">
               <iframe
                 width="100%"
                 height="100%"
@@ -160,7 +160,7 @@ export function MIREPlus() {
                 allowFullScreen
               />
             </div>
-            <div className="relative h-[568px] w-[320px]">
+            <div className="relative h-142 w-80">
               <iframe
                 width="100%"
                 height="100%"
@@ -175,7 +175,7 @@ export function MIREPlus() {
       </section>
 
       <section className="bg-[linear-gradient(135deg,#821E6B_0%,#00A495_100%)] py-12 text-white">
-        <div className="mx-auto max-w-[1400px] px-4">
+        <div className="mx-auto max-w-350 px-4">
           <div className="flex flex-wrap items-start gap-8">
             <div className="w-full md:w-1/2">
               <h3 className="mb-3 font-bold">If clarity is worth anything to you and your business, read on.</h3>
@@ -221,7 +221,7 @@ export function MIREPlus() {
       </section>
 
       <section className="pb-3 pt-12 text-center">
-        <div className="mx-auto max-w-[1400px] px-4">
+        <div className="mx-auto max-w-350 px-4">
           <h3 className="mb-3 font-bold">Ready to Accelerate Your Growth?</h3>
           <p className="mb-4 text-lg text-secondary">
             Secure your spot in our next MIRE cohort and transform your business.

@@ -92,7 +92,7 @@ export const ReadMoreInsights = ({ post }: { post: BlogPost }) => {
 
 function Header({ post }: { post: BlogPost }) {
   return (
-    <div className="mx-auto max-w-[1400px] px-4 py-12">
+    <div className="mx-auto max-w-350 px-4 py-12">
       <p className="mb-2 font-bold uppercase text-[#A83EAA]">{post.category}</p>
       <h1 className="mb-3 font-heading text-2xl font-bold sm:text-3xl">{post.title}</h1>
       <p className="text-[#A83EAA]">
@@ -111,14 +111,14 @@ function Header({ post }: { post: BlogPost }) {
 function QuoteSection({ quoteText, quoteImage }: { quoteText: string; quoteImage: string }) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
-      <div className="relative h-[300px] w-full">
+      <div className="relative h-75 w-full">
         <Image src={toPublicImagePath(quoteImage)} alt="Discussion" fill className="object-cover" />
       </div>
       <div className="relative flex items-center justify-center overflow-hidden bg-purple p-8 text-white sm:p-12">
         <Image
           src={openingquote}
           alt=""
-          className="absolute left-4 top-4 hidden w-8 sm:w-[50px] lg:block"
+          className="absolute left-4 top-4 hidden w-8 sm:w-12.5 lg:block"
           aria-hidden
         />
         <Image src={openingquote} alt="" className="absolute left-5 top-5 w-8 lg:hidden" aria-hidden />
@@ -126,7 +126,7 @@ function QuoteSection({ quoteText, quoteImage }: { quoteText: string; quoteImage
         <Image
           src={closingquote}
           alt=""
-          className="absolute bottom-3 right-[90px] hidden w-[200px] lg:block"
+          className="absolute bottom-3 right-22.5 hidden w-50 lg:block"
           aria-hidden
         />
         <Image src={closingquote} alt="" className="absolute bottom-3 right-3 w-20 lg:hidden" aria-hidden />
@@ -191,7 +191,7 @@ function FullBlogPost({
   sources?: string[];
 }) {
   return (
-    <div className="mx-auto max-w-[1400px] px-4 py-8">
+    <div className="mx-auto max-w-350 px-4 py-8">
       <div className="my-3">
         <h2 className="font-heading text-xl font-semibold">{introductionTitle}</h2>
         <div className="mt-3 space-y-4 text-secondary">
@@ -274,7 +274,7 @@ function FullBlogPost({
 
 function AuthorSection({ author }: { author?: string }) {
   return (
-    <div className="mx-auto max-w-[1400px] px-4 py-12 text-center">
+    <div className="mx-auto max-w-350 px-4 py-12 text-center">
       <div className="mb-4 flex justify-center gap-6 text-2xl text-[#A83EAA]">
         <a href="https://www.facebook.com" aria-label="Facebook">
           <FaFacebook />

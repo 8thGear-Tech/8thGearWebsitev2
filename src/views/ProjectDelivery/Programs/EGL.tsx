@@ -20,7 +20,7 @@ export function EGL() {
 function EGLHero() {
   return (
     <div className="bg-[linear-gradient(135deg,#6E006A_0%,#9B1B96_100%)]">
-      <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-center px-4 md:px-12">
+      <div className="mx-auto flex max-w-350 flex-wrap items-center justify-center px-4 md:px-12">
         <div className="w-full py-12 text-white md:w-1/2">
           <span className="mb-3 inline-block rounded-full bg-white px-3 py-2 text-base font-light text-ink">
             Quarterly Sessions
@@ -34,8 +34,8 @@ function EGLHero() {
             Quarterly masterclasses featuring hands-on digital tools and practical strategies for sales and
             marketing, accounting and bookkeeping, business IP protection, and team optimization.
           </p>
-          <div className="flex max-w-[450px] flex-col gap-3 md:max-w-[600px] md:flex-row md:gap-4">
-            <a href="#schedule" className="w-full md:max-w-[210px] md:flex-1">
+          <div className="flex max-w-112.5 flex-col gap-3 md:max-w-150 md:flex-row md:gap-4">
+            <a href="#schedule" className="w-full md:max-w-52.5 md:flex-1">
               <button className="w-full rounded-lg bg-white px-6 py-3 text-base font-bold text-[#6E006A] transition-all hover:-translate-y-0.5 hover:shadow-[0_6px_16px_rgba(0,0,0,0.15)]">
                 View Schedule →
               </button>
@@ -44,7 +44,7 @@ function EGLHero() {
               href="https://forms.gle/deVsWi1aGdpeJg7E9"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full md:max-w-[210px] md:flex-1"
+              className="w-full md:max-w-52.5 md:flex-1"
             >
               <button className="w-full rounded-lg bg-white px-6 py-3 text-base font-bold text-[#6E006A] transition-all hover:-translate-y-0.5 hover:shadow-[0_6px_16px_rgba(0,0,0,0.15)]">
                 Apply Now
@@ -53,7 +53,7 @@ function EGLHero() {
           </div>
         </div>
         <div className="hidden w-1/2 md:block">
-          <Image src={EGLImage} alt="Entrepreneurs Growth Lab" className="max-h-[500px] rounded object-cover" />
+          <Image src={EGLImage} alt="Entrepreneurs Growth Lab" className="max-h-125 rounded object-cover" />
         </div>
       </div>
     </div>
@@ -63,7 +63,7 @@ function EGLHero() {
 function EGLAbout() {
   return (
     <div className="bg-[#f5f5f5] py-12">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mx-auto max-w-3xl text-center">
           <h4 className="mb-3 text-[1.2rem] font-bold text-[#6E006A]">ABOUT THE PROGRAM</h4>
           <p className="text-base leading-[1.8] text-secondary">
@@ -89,7 +89,7 @@ const modules = [
       "Setting up and managing an online store to sell your products and services",
     ],
     accentClass: "text-[#E91E63]",
-    borderClass: "border-l-[6px] border-l-[#E91E63]",
+    borderClass: "border-l-6 border-l-[#E91E63]",
     bgClass: "bg-[linear-gradient(135deg,#FFE5E5_0%,#FFF0F5_100%)]",
     icon: "💼",
   },
@@ -105,7 +105,7 @@ const modules = [
       "Introduction to accounting and bookkeeping softwares",
     ],
     accentClass: "text-[#9C27B0]",
-    borderClass: "border-l-[6px] border-l-[#9C27B0]",
+    borderClass: "border-l-6 border-l-[#9C27B0]",
     bgClass: "bg-[linear-gradient(135deg,#F3E5F5_0%,#FCE4EC_100%)]",
     icon: "💰",
   },
@@ -119,7 +119,7 @@ const modules = [
       "HR and recruitment software for managing your team",
     ],
     accentClass: "text-[#3F51B5]",
-    borderClass: "border-l-[6px] border-l-[#3F51B5]",
+    borderClass: "border-l-6 border-l-[#3F51B5]",
     bgClass: "bg-[linear-gradient(135deg,#E8EAF6_0%,#F3E5F5_100%)]",
     icon: "🛡️",
   },
@@ -128,7 +128,7 @@ const modules = [
 function EGLModules() {
   return (
     <div className="bg-white py-12">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mx-auto max-w-4xl">
           <div className="flex flex-col gap-4">
             {modules.map((module) => (
@@ -238,7 +238,7 @@ function SessionBadge({ session }: { session: Session }) {
 
 function SessionCard({ session }: { session: Session }) {
   return (
-    <div className="rounded-xl border border-[#e8e8e8] bg-white px-[18px] py-3.5 transition-colors hover:border-[#bbb]">
+    <div className="rounded-xl border border-[#e8e8e8] bg-white px-4.5 py-3.5 transition-colors hover:border-[#bbb]">
       <div className="flex flex-col gap-2 sm:hidden">
         <div className="flex items-center justify-between">
           <div>
@@ -251,7 +251,7 @@ function SessionCard({ session }: { session: Session }) {
       </div>
 
       <div className="hidden items-center gap-4 sm:flex">
-        <div className="min-w-[64px] shrink-0">
+        <div className="min-w-16 shrink-0">
           <div className="text-[0.88rem] font-semibold text-[#222]">{session.date}</div>
           <div className="mt-px text-[0.72rem] text-[#999]">{session.year}</div>
         </div>
@@ -270,7 +270,7 @@ function EGLSchedule() {
 
   return (
     <div id="schedule" className="bg-[#f5f5f5] py-12">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mx-auto max-w-3xl">
           <div className="mb-4">
             <h3 className="mb-1 text-[1.2rem] font-bold text-[#6E006A]">2026 Quarterly Schedule</h3>
@@ -291,7 +291,7 @@ function EGLSchedule() {
               <button
                 key={q.id}
                 onClick={() => setActiveQuarter(q.id)}
-                className={`rounded-lg border px-[18px] py-[7px] text-[clamp(0.75rem,2vw,0.85rem)] transition-all ${
+                className={`rounded-lg border px-4.5 py-1.75 text-[clamp(0.75rem,2vw,0.85rem)] transition-all ${
                   activeQuarter === q.id
                     ? "border-[#6E006A] bg-[#6E006A] font-medium text-white"
                     : "border-[#ccc] bg-white text-[#555]"
@@ -333,7 +333,7 @@ const offices = [
 function EGLOffices() {
   return (
     <div className="bg-white py-12">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mx-auto max-w-4xl">
           <div className="mb-12 text-center">
             <h3 className="text-[1.2rem] font-bold text-[#6E006A]">OUR LOCATIONS</h3>
@@ -361,7 +361,7 @@ function EGLOffices() {
 function EGLCallToAction() {
   return (
     <div className="bg-[linear-gradient(135deg,#6E006A_0%,#9B1B96_100%)] py-12">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mx-auto max-w-3xl px-3 text-center text-white">
           <h3 className="mb-4 text-[clamp(1.3rem,5vw,1.5rem)] font-bold">Ready to Transform Your Business?</h3>
           <p className="mb-4 text-[clamp(0.9rem,3vw,1.05rem)] leading-[1.8] text-white">

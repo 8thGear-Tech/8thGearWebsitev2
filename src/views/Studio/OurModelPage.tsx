@@ -51,7 +51,7 @@ const whatWeDoItems = [
 function WhatWeDo() {
   return (
     <div className="bg-teal/[0.07] px-4 py-12">
-      <div className="mx-auto max-w-[1400px]">
+      <div className="mx-auto max-w-350">
         <h3 className="font-heading">What We Do</h3>
         <p className="max-w-3xl">
           We firmly believe in creating enterprises with a sustainable business strategy at our venture studio. At
@@ -110,7 +110,7 @@ const howWeDoItStages: { number: string; icon: StaticImageData; title: string; b
 function HowWeDoIt() {
   return (
     <div className="px-4 py-12">
-      <div className="mx-auto max-w-[1000px]">
+      <div className="mx-auto max-w-250">
         <h3 className="font-heading">How We Do It</h3>
         <p>
           A business&apos;s development is not a simple stroll in the park; it requires a great deal of grit, guts,
@@ -147,7 +147,7 @@ const tractions = [
 function OurModelTractions() {
   return (
     <div className="bg-teal/[0.07] px-4 py-12 text-center">
-      <div className="mx-auto grid max-w-[1400px] grid-cols-2 gap-8 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-350 grid-cols-2 gap-8 lg:grid-cols-4">
         {tractions.map((t) => (
           <div key={t.label}>
             <h1 className="font-heading">{t.value}</h1>

@@ -149,7 +149,7 @@ export function GrowthAsAService() {
 function GaaSHero() {
   return (
     <div className="bg-[linear-gradient(135deg,#061b52,#010b23)] px-4 py-10 md:px-12">
-      <div className="mx-auto flex max-w-[1400px] flex-col items-center gap-8 text-center md:flex-row md:text-left">
+      <div className="mx-auto flex max-w-350 flex-col items-center gap-8 text-center md:flex-row md:text-left">
         <div className="w-full md:w-1/2">
           <h1 className="font-heading text-3xl text-white md:text-[2.6rem]">
             Great people building <span className="text-[#00d2ff]">enduring ventures.</span>
@@ -179,11 +179,11 @@ function WhyChooseUs() {
   return (
     <div className="px-4 py-12 text-center">
       <h4 className="mb-8 text-center uppercase text-purple">Why Choose Us</h4>
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-6 md:grid-cols-3">
+      <div className="mx-auto grid max-w-300 grid-cols-1 gap-6 md:grid-cols-3">
         {whyChooseData.map((item) => (
           <div key={item.title} className="flex h-full flex-col rounded-xl bg-white p-6 shadow-brand-md">
-            <div className="mx-auto mb-4 flex h-[100px] w-[100px] items-center justify-center rounded-full bg-white shadow-[0_0_0_20px_#F0E4EF]">
-              <Image src={item.image} alt={item.title} width={60} height={60} className="h-[60px] w-[60px]" />
+            <div className="mx-auto mb-4 flex h-25 w-25 items-center justify-center rounded-full bg-white shadow-[0_0_0_20px_#F0E4EF]">
+              <Image src={item.image} alt={item.title} width={60} height={60} className="h-15 w-15" />
             </div>
             <h5 className="mt-2 font-bold text-black">{item.title}</h5>
             <hr className="my-2" />
@@ -199,15 +199,15 @@ function WhatWeDo() {
   return (
     <div className="bg-[#f7f2f7] px-4 py-12 text-center md:px-12">
       <h4 className="mb-8 text-center uppercase text-purple">What We Do</h4>
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-6 justify-items-center sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-300 grid-cols-1 gap-6 justify-items-center sm:grid-cols-2 lg:grid-cols-4">
         {whatWeDoItems.map((item) => (
-          <div key={item.title} className="flex h-full w-full max-w-[250px] flex-col border-0">
+          <div key={item.title} className="flex h-full w-full max-w-62.5 flex-col border-0">
             <Image
               src={item.imageUrl}
               alt={item.title}
               width={250}
               height={200}
-              className="h-[200px] w-full object-cover"
+              className="h-50 w-full object-cover"
             />
             <div className="p-4 text-left">
               <h5 className="mb-1 text-lg">{item.title}</h5>
@@ -236,16 +236,16 @@ function OurGrowthPrograms() {
         <h4 className="text-center uppercase text-purple">Our Programs</h4>
         <p className="text-[#6c757d]">Choose your growth path</p>
       </div>
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-300 grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {programs.map((program) => (
           <div
             key={program.title}
-            className="border-l-[6px] border-purple bg-white p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-brand-lg"
+            className="border-l-6 border-purple bg-white p-8 transition-transform duration-300 hover:-translate-y-1 hover:shadow-brand-lg"
           >
             <div className="mb-4 text-5xl">{program.icon}</div>
             <h4 className="mb-2 font-bold text-[#1a1a1a]">{program.title}</h4>
             <p className="mb-4 text-[#6c757d]">{program.subtitle}</p>
-            <p className="mb-4 min-h-[100px] text-sm leading-relaxed text-[#4a5568]">{program.description}</p>
+            <p className="mb-4 min-h-25 text-sm leading-relaxed text-[#4a5568]">{program.description}</p>
             <Link
               href={program.href}
               className="inline-flex items-center text-sm font-semibold text-purple transition-transform hover:translate-x-1"
@@ -263,10 +263,10 @@ function OurProcess() {
   return (
     <div className="px-4 py-12 md:px-12">
       <h2 className="mb-8 text-center text-xl text-purple">Our Process</h2>
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-300 grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {steps.map((step) => (
           <div key={step.id} className="flex flex-col items-center rounded-2xl bg-[#F7F2F7] p-6 text-center">
-            <Image src={step.icon} alt={step.title} width={50} height={50} className="mb-3 h-[50px] w-auto" />
+            <Image src={step.icon} alt={step.title} width={50} height={50} className="mb-3 h-12.5 w-auto" />
             <h5 className="font-bold text-purple">{step.title}</h5>
             <p className="text-sm text-[#6c757d]">{step.description}</p>
           </div>
@@ -280,7 +280,7 @@ function OurSuccess() {
   return (
     <div className="bg-purple px-4 py-12 text-white md:px-12">
       <h2 className="mb-8 text-center text-xl">Our Success Stories</h2>
-      <div className="mx-auto flex max-w-[1200px] flex-col gap-10">
+      <div className="mx-auto flex max-w-300 flex-col gap-10">
         {successStories.map((story) => (
           <div key={story.id} className="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
             <div>

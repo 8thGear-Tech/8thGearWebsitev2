@@ -4,7 +4,7 @@ import { HomeBtn } from "@/components/Buttons/PillButtons";
 
 export default function NotFound() {
   return (
-    <div className="mx-auto flex max-w-[1400px] flex-col items-center gap-8 px-4 py-16 md:flex-row md:items-center">
+    <div className="mx-auto flex max-w-350 flex-col items-center gap-8 px-4 py-16 md:flex-row md:items-center">
       <div className="w-full md:w-1/2">
         <Image src={img404} alt="Page not found" className="w-full" />
       </div>

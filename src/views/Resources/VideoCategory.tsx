@@ -51,7 +51,7 @@ export default function VideoDetail() {
   return (
     <div className="bg-grey-bg pb-16">
       <VideoCategoryHero />
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <DetailsCard />
         <h2 className="pt-10 text-center font-heading text-purple">Videos In BMC</h2>
         <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

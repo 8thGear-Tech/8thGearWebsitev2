@@ -65,7 +65,7 @@ export function CoreValue() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <div className="mx-auto mt-5 max-w-[900px] px-4 pb-12">
+    <div className="mx-auto mt-5 max-w-225 px-4 pb-12">
       <h3 className="mb-2 text-center font-heading text-purple">WHO WE ARE</h3>
       <p className="mb-10 text-center text-sm text-secondary">
         8thGear® is a brand owned by 8thGear Partners Limited and operates as 8thGear Hub &amp; Venture Studio
@@ -107,7 +107,7 @@ export function CoreValue() {
                   key={item.title}
                   type="button"
                   onClick={() => setActiveIndex(active ? null : index)}
-                  className={`rounded-full border px-[18px] py-[7px] text-[13px] transition-all ${
+                  className={`rounded-full border px-4.5 py-1.75 text-[13px] transition-all ${
                     active ? "border-white bg-white font-semibold text-purple" : "border-white/35 bg-white/10 text-white"
                   }`}
                 >

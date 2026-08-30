@@ -57,7 +57,7 @@ const track = [...slidesData, ...slidesData];
 
 export function SliderComponent() {
   return (
-    <div className="mx-auto max-w-[1400px] px-4 py-3">
+    <div className="mx-auto max-w-350 px-4 py-3">
       <h3 className="mb-5 mt-5 text-center font-heading text-purple">BOARD OF DIRECTORS &amp; ADVISORS</h3>
       <div className="overflow-hidden whitespace-nowrap">
         <div className="inline-block [animation:marquee-scroll_40s_linear_infinite]">
@@ -67,10 +67,10 @@ export function SliderComponent() {
               href={slide.link}
               target={slide.link === "#" ? undefined : "_blank"}
               rel="noopener noreferrer"
-              className="mr-4 inline-block w-[267px] align-top"
+              className="mr-4 inline-block w-66.75 align-top"
             >
               <div className="overflow-hidden rounded-b-lg">
-                <div className="relative h-[255px] w-full">
+                <div className="relative h-63.75 w-full">
                   <Image src={slide.image} alt={slide.title} fill sizes="267px" className="object-cover" />
                 </div>
                 <div className="rounded-b-lg bg-[#152425] px-3 py-3 text-center text-white">

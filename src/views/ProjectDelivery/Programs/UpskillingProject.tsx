@@ -50,8 +50,8 @@ export function UpskillingProject() {
           </div>
 
           {/* Split CTA Cards */}
-          <div className="mx-auto mt-4 flex w-full max-w-[640px] flex-wrap gap-4">
-            <div className="flex min-w-[260px] flex-1 flex-col justify-between gap-3 rounded-2xl border border-[#e0cce0] bg-white p-5 text-left">
+          <div className="mx-auto mt-4 flex w-full max-w-160 flex-wrap gap-4">
+            <div className="flex min-w-65 flex-1 flex-col justify-between gap-3 rounded-2xl border border-[#e0cce0] bg-white p-5 text-left">
               <div>
                 <div className="mb-3 flex items-center gap-2">
                   <span className="text-lg">💼</span>
@@ -69,7 +69,7 @@ export function UpskillingProject() {
               </a>
             </div>
 
-            <div className="flex min-w-[260px] flex-1 flex-col justify-between gap-3 rounded-2xl border border-[#e0cce0] bg-white p-5 text-left">
+            <div className="flex min-w-65 flex-1 flex-col justify-between gap-3 rounded-2xl border border-[#e0cce0] bg-white p-5 text-left">
               <div>
                 <div className="mb-3 flex items-center gap-2">
                   <span className="text-lg">🎓</span>
@@ -92,7 +92,7 @@ export function UpskillingProject() {
 
       {/* Why Entrepreneurs Should Care */}
       <section className="bg-[#fafafa] py-12">
-        <div className="mx-auto max-w-[1200px] px-4">
+        <div className="mx-auto max-w-300 px-4">
           <h3 className="mb-3 flex items-center justify-center text-center text-[1.3rem] font-bold text-ink">
             Why This Programme Matters
           </h3>
@@ -133,7 +133,7 @@ export function UpskillingProject() {
 
       {/* CTA Banner */}
       <section className="bg-white py-12 text-center">
-        <div className="mx-auto max-w-[1200px] px-4">
+        <div className="mx-auto max-w-300 px-4">
           <p className="mb-3 text-base leading-relaxed text-[#555]">
             Looking to hire or collaborate with tech talent for your business? Tap into our pipeline of skilled
             professionals and let&apos;s help you find the right fit.
@@ -153,8 +153,8 @@ export function UpskillingProject() {
 
       {/* For Young People Section */}
       <section id="applicant-section" className="bg-[#fafafa] py-12 text-center">
-        <div className="mx-auto max-w-[1200px] px-4">
-          <div className="mx-auto max-w-[600px]">
+        <div className="mx-auto max-w-300 px-4">
+          <div className="mx-auto max-w-150">
             <h3 className="mb-3 flex items-center justify-center text-[1.3rem] font-bold">
               For Individuals: Start Your Tech Journey here
             </h3>
@@ -187,13 +187,13 @@ export function UpskillingProject() {
 
       {/* Footer */}
       <footer className="mt-auto bg-white pb-4 pt-12">
-        <div className="mx-auto max-w-[1200px] px-4 text-center">
+        <div className="mx-auto max-w-300 px-4 text-center">
           <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
             <div className="flex flex-col items-center gap-2 md:flex-row">
               <span className="text-sm text-secondary">Executed by:</span>
               <div className="flex items-center gap-2">
-                <Image src={eightgearlogo} alt="8thGear Hub" className="h-[70px] w-auto object-contain" />
-                <Image src={intellex} alt="Intellex" className="h-[70px] w-auto object-contain" />
+                <Image src={eightgearlogo} alt="8thGear Hub" className="h-17.5 w-auto object-contain" />
+                <Image src={intellex} alt="Intellex" className="h-17.5 w-auto object-contain" />
               </div>
             </div>
 
@@ -202,10 +202,10 @@ export function UpskillingProject() {
             <div className="flex flex-col items-center gap-2 md:flex-row">
               <span className="whitespace-nowrap text-sm text-secondary">Supported by:</span>
               <div className="flex flex-wrap items-center justify-center gap-4">
-                <Image src={germancooperation} alt="German Cooperation" className="h-[55px] w-auto object-contain" />
-                <Image src={giz} alt="GIZ" className="h-[55px] w-auto object-contain" />
-                <Image src={ngc} alt="NGC" className="h-[55px] w-auto object-contain" />
-                <Image src={mrc} alt="MRC" className="h-[55px] w-auto object-contain" />
+                <Image src={germancooperation} alt="German Cooperation" className="h-13.75 w-auto object-contain" />
+                <Image src={giz} alt="GIZ" className="h-13.75 w-auto object-contain" />
+                <Image src={ngc} alt="NGC" className="h-13.75 w-auto object-contain" />
+                <Image src={mrc} alt="MRC" className="h-13.75 w-auto object-contain" />
               </div>
             </div>
           </div>

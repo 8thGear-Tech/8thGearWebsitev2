@@ -27,9 +27,9 @@ export function AboutUs() {
 function JointheTeam() {
   return (
     <section className="relative overflow-hidden bg-[linear-gradient(135deg,#fdf4ff_0%,#f0fdfc_100%)] py-20">
-      <div className="pointer-events-none absolute -right-[100px] -top-[100px] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle,rgba(130,30,107,0.07)_0%,transparent_70%)]" />
+      <div className="pointer-events-none absolute -right-25 -top-25 h-125 w-125 rounded-full bg-[radial-gradient(circle,rgba(130,30,107,0.07)_0%,transparent_70%)]" />
 
-      <div className="relative mx-auto flex max-w-[1200px] flex-col gap-10 px-6 md:flex-row md:items-center md:px-8">
+      <div className="relative mx-auto flex max-w-300 flex-col gap-10 px-6 md:flex-row md:items-center md:px-8">
         {/* Left: text + button */}
         <div className="min-w-0 flex-1">
           <h2 className="mb-3 font-heading text-2xl font-semibold leading-tight tracking-[-0.02em] text-[#0f1f20]">

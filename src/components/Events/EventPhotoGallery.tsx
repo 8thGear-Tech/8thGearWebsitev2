@@ -19,7 +19,7 @@ export type GalleryImage = {
  */
 export function EventPhotoGallery({ images }: { images: GalleryImage[] }) {
   return (
-    <div className="mx-auto max-w-[1400px] px-4 pb-16 pt-12 sm:px-8">
+    <div className="mx-auto max-w-350 px-4 pb-16 pt-12 sm:px-8">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {images.map((item) => (
           <div key={item.id} className="relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-brand">

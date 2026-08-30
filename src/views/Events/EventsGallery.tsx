@@ -13,7 +13,7 @@ const videos = [
 
 export function EventsGalleryPage() {
   return (
-    <div className="mx-auto max-w-[1400px] px-4 py-12 lg:px-12">
+    <div className="mx-auto max-w-350 px-4 py-12 lg:px-12">
       <h3 className="pb-6 text-center font-heading text-purple">EVENTS GALLERY</h3>
       <GalleryVideoGrid videos={videos} />
     </div>

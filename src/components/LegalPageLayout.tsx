@@ -10,12 +10,12 @@ export function LegalPageLayout({ title, children }: { title: string; children: 
   return (
     <div>
       <div className="bg-[#f7f7f7] px-4 py-10 lg:px-12">
-        <div className="mx-auto max-w-[1400px]">
+        <div className="mx-auto max-w-350">
           <h3 className="text-center font-heading text-[rgba(0,0,0,0.9)] lg:text-left">{title}</h3>
         </div>
       </div>
       <div
-        className="mx-auto mt-10 max-w-[1400px] px-4 pb-16 text-justify text-[15px] leading-[30px] text-black
+        className="mx-auto mt-10 max-w-350 px-4 pb-16 text-justify text-[15px] leading-[30px] text-black
           max-[405px]:text-center
           [&_h3]:mt-10 [&_h3]:mb-3 [&_h3]:font-heading
           [&_h4]:mt-10 [&_h4]:mb-3 [&_h4]:font-heading

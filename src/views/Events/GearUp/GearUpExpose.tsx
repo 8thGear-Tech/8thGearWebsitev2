@@ -2,7 +2,7 @@ import { PillExternalLinkButton } from "@/components/Buttons/PillButtons";
 
 export function GearUpExpose() {
   return (
-    <div className="mx-auto max-w-[1400px] px-4 pb-16 pt-12 [&_a]:text-purple [&_a]:underline [&_li]:my-1 [&_p]:mb-4 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:pl-6">
+    <div className="mx-auto max-w-350 px-4 pb-16 pt-12 [&_a]:text-purple [&_a]:underline [&_li]:my-1 [&_p]:mb-4 [&_ul]:my-3 [&_ul]:list-disc [&_ul]:pl-6">
       <p>Greetings, Visionary Business Minds,</p>
       <p>
         <b>Join us for a remarkable opportunity - GearUp Expose!</b>

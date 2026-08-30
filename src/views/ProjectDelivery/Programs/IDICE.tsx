@@ -49,9 +49,9 @@ const APPLY_URL = "https://accelerator.vester.ai/apply/start?code=nDC1MhZl";
 
 // Scroll-reveal utility classes: elements start hidden/offset, then the observer
 // below swaps them for the "revealed" utility classes once they enter the viewport.
-const REVEAL_HIDDEN = "opacity-0 translate-y-[22px]";
+const REVEAL_HIDDEN = "opacity-0 translate-y-5.5";
 const REVEAL_SHOWN = "opacity-100 translate-y-0";
-const REVEAL_BASE = `${REVEAL_HIDDEN} transition-[opacity,transform] duration-[600ms] ease-in-out`;
+const REVEAL_BASE = `${REVEAL_HIDDEN} transition-[opacity,transform] duration-600 ease-in-out`;
 
 const REVEAL_DELAYS = [
   "[transition-delay:0.1s]",
@@ -63,7 +63,7 @@ const REVEAL_DELAYS = [
 const revealDelay = (i: number) => REVEAL_DELAYS[Math.min(i, 3)];
 
 const progCardBase =
-  "relative overflow-hidden rounded-xl border-[1.5px] border-grey-border bg-grey-bg p-7 transition-[border-color,box-shadow,transform] duration-[250ms] hover:-translate-y-[3px] hover:border-teal/28 hover:shadow-[0_8px_28px_rgba(0,0,0,0.11)] before:absolute before:inset-x-0 before:top-0 before:h-[2px] before:bg-gradient-to-r before:from-teal before:to-purple before:content-['']";
+  "relative overflow-hidden rounded-xl border-[1.5px] border-grey-border bg-grey-bg p-7 transition-[border-color,box-shadow,transform] duration-250 hover:-translate-y-0.75 hover:border-teal/28 hover:shadow-[0_8px_28px_rgba(0,0,0,0.11)] before:absolute before:inset-x-0 before:top-0 before:h-0.5 before:bg-gradient-to-r before:from-teal before:to-purple before:content-['']";
 
 function progCardClass(isLast: boolean) {
   const layout = isLast
@@ -125,11 +125,11 @@ export function IDICE() {
       {/* HERO */}
       <section className="relative bg-[linear-gradient(150deg,#0d1a19_0%,#0a1512_45%,#0f1a2e_100%)] pt-20 pb-12 sm:pt-22 sm:pb-14 lg:pt-28 lg:pb-20">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_65%_at_75%_40%,rgba(0,164,149,0.16)_0%,transparent_65%),radial-gradient(ellipse_40%_50%_at_15%_80%,rgba(130,30,107,0.12)_0%,transparent_60%)]" />
-        <div className="mx-auto w-full max-w-[1140px] px-5 sm:px-8">
+        <div className="mx-auto w-full max-w-285 px-5 sm:px-8">
           <div className="relative z-2 grid w-full grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-14">
             <div className="relative z-2">
-              <div className="mb-5 inline-flex items-center gap-[0.55rem] rounded-full border border-[rgba(0,164,149,0.32)] bg-[rgba(0,164,149,0.15)] px-4 py-[0.35rem] font-heading text-[0.72rem] font-medium tracking-[0.1em] text-[#4dd9cc] uppercase [animation:fade-down_0.6s_ease_both]">
-                <span className="h-[6px] w-[6px] shrink-0 rounded-full bg-teal [animation:pulse-dot_1.8s_ease_infinite]" />
+              <div className="mb-5 inline-flex items-center gap-[0.55rem] rounded-full border border-[rgba(0,164,149,0.32)] bg-[rgba(0,164,149,0.15)] px-4 py-[0.35rem] font-heading text-[0.72rem] font-medium tracking-widest text-[#4dd9cc] uppercase [animation:fade-down_0.6s_ease_both]">
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-teal [animation:pulse-dot_1.8s_ease_infinite]" />
                 Applications Ongoing · Closes July 26, 2026
               </div>
 
@@ -193,7 +193,7 @@ export function IDICE() {
 
       {/* ABOUT */}
       <section className="bg-grey-bg py-16 sm:py-22" id="idice-about">
-        <div className="mx-auto w-full max-w-[1140px] px-5 sm:px-8">
+        <div className="mx-auto w-full max-w-285 px-5 sm:px-8">
           <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-16">
             <div>
               <span data-reveal className={`mb-3 inline-block font-heading text-[0.7rem] font-bold tracking-[0.2em] text-teal uppercase ${REVEAL_BASE}`}>
@@ -207,7 +207,7 @@ export function IDICE() {
               </h2>
               <p
                 data-reveal
-                className={`mb-3 max-w-[620px] font-body text-[0.97rem] leading-[1.85] font-light text-secondary last-of-type:mb-0 ${REVEAL_BASE} ${revealDelay(1)}`}
+                className={`mb-3 max-w-155 font-body text-[0.97rem] leading-[1.85] font-light text-secondary last-of-type:mb-0 ${REVEAL_BASE} ${revealDelay(1)}`}
               >
                 Founders Lab is for early-stage innovators ready to turn ideas into real businesses. If you have an
                 idea, prototype, or early MVP, the programme gives you the guidance, structure, and practical tools
@@ -215,7 +215,7 @@ export function IDICE() {
               </p>
               <p
                 data-reveal
-                className={`mb-3 max-w-[620px] font-body text-[0.97rem] leading-[1.85] font-light text-secondary last-of-type:mb-0 ${REVEAL_BASE} ${revealDelay(2)}`}
+                className={`mb-3 max-w-155 font-body text-[0.97rem] leading-[1.85] font-light text-secondary last-of-type:mb-0 ${REVEAL_BASE} ${revealDelay(2)}`}
               >
                 Using a hands-on, build-as-you-learn approach, founders develop clearer products and stronger
                 business models. Milestone-based funding is also provided to help transform progress into growth.
@@ -226,7 +226,7 @@ export function IDICE() {
               data-reveal
               className={`relative overflow-hidden rounded-xl border-[1.5px] border-grey-border bg-white p-8 shadow-[0_2px_12px_rgba(0,0,0,0.07),0_1px_3px_rgba(0,0,0,0.05)] ${REVEAL_BASE} ${revealDelay(1)}`}
             >
-              <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-teal to-purple" />
+              <div className="absolute inset-x-0 top-0 h-0.75 bg-gradient-to-r from-teal to-purple" />
               <p className="mb-3 font-heading text-[0.7rem] font-bold tracking-[0.14em] text-teal uppercase">
                 Programme Snapshot
               </p>
@@ -260,7 +260,7 @@ export function IDICE() {
 
       {/* PROGRAMME STRUCTURE */}
       <section className="bg-white py-16 sm:py-22" id="idice-programme">
-        <div className="mx-auto w-full max-w-[1140px] px-5 sm:px-8">
+        <div className="mx-auto w-full max-w-285 px-5 sm:px-8">
           <span data-reveal className={`mb-3 inline-block font-heading text-[0.7rem] font-bold tracking-[0.2em] text-teal uppercase ${REVEAL_BASE}`}>
             Programme Structure
           </span>
@@ -272,7 +272,7 @@ export function IDICE() {
           </h2>
           <p
             data-reveal
-            className={`mb-3 max-w-[620px] font-body text-[0.97rem] leading-[1.85] font-light text-secondary last-of-type:mb-0 ${REVEAL_BASE} ${revealDelay(1)}`}
+            className={`mb-3 max-w-155 font-body text-[0.97rem] leading-[1.85] font-light text-secondary last-of-type:mb-0 ${REVEAL_BASE} ${revealDelay(1)}`}
           >
             From idea through market validation to Demo Day — with expert support at every step.
           </p>
@@ -303,7 +303,7 @@ export function IDICE() {
 
       {/* ELIGIBILITY */}
       <section className="bg-grey-bg py-16 sm:py-22" id="idice-eligibility">
-        <div className="mx-auto w-full max-w-[1140px] px-5 sm:px-8">
+        <div className="mx-auto w-full max-w-285 px-5 sm:px-8">
           <span data-reveal className={`mb-3 inline-block font-heading text-[0.7rem] font-bold tracking-[0.2em] text-teal uppercase ${REVEAL_BASE}`}>
             Who Should Apply
           </span>
@@ -315,7 +315,7 @@ export function IDICE() {
           </h2>
           <p
             data-reveal
-            className={`mb-3 max-w-[620px] font-body text-[0.97rem] leading-[1.85] font-light text-secondary last-of-type:mb-0 ${REVEAL_BASE} ${revealDelay(1)}`}
+            className={`mb-3 max-w-155 font-body text-[0.97rem] leading-[1.85] font-light text-secondary last-of-type:mb-0 ${REVEAL_BASE} ${revealDelay(1)}`}
           >
             Founders Lab is built for early-stage innovators across Nigeria who are ready to commit to structured
             learning and take decisive steps on their idea.
@@ -330,7 +330,7 @@ export function IDICE() {
                 key={item}
                 className="flex items-start gap-[0.85rem] rounded-[10px] border-[1.5px] border-grey-border bg-white px-5 py-[1.1rem] transition-[border-color,box-shadow] duration-200 hover:border-teal/28 hover:shadow-[0_0_0_3px_rgba(0,164,149,0.06)]"
               >
-                <span className="mt-px flex h-[22px] w-[22px] min-w-[22px] shrink-0 items-center justify-center rounded-full bg-teal text-[0.68rem] font-bold text-white">
+                <span className="mt-px flex h-5.5 w-5.5 min-w-5.5 shrink-0 items-center justify-center rounded-full bg-teal text-[0.68rem] font-bold text-white">
                   ✓
                 </span>
                 <p className="font-body text-[0.9rem] leading-[1.6] font-normal text-secondary">{item}</p>
@@ -342,8 +342,8 @@ export function IDICE() {
 
       {/* CTA */}
       <section className="relative overflow-hidden bg-gradient-to-br from-teal to-teal-dark py-16 sm:py-22 before:pointer-events-none before:absolute before:inset-0 before:bg-[radial-gradient(ellipse_50%_70%_at_85%_50%,rgba(255,255,255,0.07)_0%,transparent_55%),radial-gradient(ellipse_40%_60%_at_10%_60%,rgba(130,30,107,0.14)_0%,transparent_55%)] before:content-['']">
-        <div className="mx-auto w-full max-w-[1140px] px-5 sm:px-8">
-          <div className="relative z-1 mx-auto max-w-[720px] text-center">
+        <div className="mx-auto w-full max-w-285 px-5 sm:px-8">
+          <div className="relative z-1 mx-auto max-w-180 text-center">
             <span
               data-reveal
               className={`mb-3 inline-block font-heading text-[0.7rem] font-bold tracking-[0.2em] text-[rgba(255,255,255,0.65)] uppercase ${REVEAL_BASE}`}

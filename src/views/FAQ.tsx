@@ -277,7 +277,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="mx-auto max-w-[1400px] px-4 py-12 text-center">
+    <div className="mx-auto max-w-350 px-4 py-12 text-center">
       <h2 className="font-heading text-xl font-medium text-purple">Frequently Asked Questions (FAQs)</h2>
 
       <div className="mt-6 flex flex-wrap justify-center gap-3">
@@ -286,7 +286,7 @@ export default function FAQ() {
             key={category}
             type="button"
             onClick={() => handleCategoryChange(category)}
-            className={`inline-flex h-11 items-center justify-center rounded-full border-[3px] border-purple px-5 font-heading text-sm font-bold transition-colors sm:text-base ${
+            className={`inline-flex h-11 items-center justify-center rounded-full border-3 border-purple px-5 font-heading text-sm font-bold transition-colors sm:text-base ${
               activeCategory === category ? "bg-purple text-white" : "bg-white text-purple hover:bg-purple hover:text-white"
             }`}
           >

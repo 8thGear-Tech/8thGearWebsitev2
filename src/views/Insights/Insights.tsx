@@ -26,7 +26,7 @@ export const Insights = () => {
 function Hero() {
   return (
     <section className="bg-[#920F84] py-8">
-      <div className="mx-auto max-w-[1400px] rounded-2xl bg-white px-4 py-10 shadow-brand-md sm:px-8 lg:px-12">
+      <div className="mx-auto max-w-350 rounded-2xl bg-white px-4 py-10 shadow-brand-md sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
           <div className="text-center lg:text-left">
             <h2 className="mb-3 font-heading text-2xl font-bold">Insights and News</h2>
@@ -40,7 +40,7 @@ function Hero() {
               </div>
             </div>
           </div>
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+          <div className="relative aspect-4/3 w-full overflow-hidden rounded-xl">
             <Image src={insightsheroimg} alt="Buildings" fill className="object-cover" />
           </div>
         </div>
@@ -76,8 +76,8 @@ function Blog() {
   const toggleCategories = () => setIsCategoriesVisible((prev) => !prev);
 
   return (
-    <div className="mx-auto max-w-[1400px] px-4 pt-10">
-      <div className="mb-4 max-w-[500px]">
+    <div className="mx-auto max-w-350 px-4 pt-10">
+      <div className="mb-4 max-w-125">
         <div className="flex w-full">
           <input
             type="text"
@@ -96,26 +96,26 @@ function Blog() {
 
       <div className="grid grid-cols-1 gap-0 lg:grid-cols-12">
         {/* Blogs hero card */}
-        <div className="relative h-[400px] lg:col-span-8">
+        <div className="relative h-100 lg:col-span-8">
           <Image src={blog} alt="Building at night" fill className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-purple/80 via-purple/60 to-purple/0" />
+          <div className="absolute inset-0 bg-linear-to-t from-purple/80 via-purple/60 to-purple/0" />
 
           <button
             type="button"
             onClick={toggleCategories}
-            className="absolute right-3 top-3 z-[3] border-0 bg-transparent lg:hidden"
+            className="absolute right-3 top-3 z-3 border-0 bg-transparent lg:hidden"
           >
-            <Image src={dropdownicon} alt="Menu" width={30} height={30} className="h-[30px] w-[30px]" />
+            <Image src={dropdownicon} alt="Menu" width={30} height={30} className="h-7.5 w-7.5" />
           </button>
 
-          <div className="absolute bottom-[3%] left-[5%] z-[2] text-white">
+          <div className="absolute bottom-[3%] left-[5%] z-2 text-white">
             <h2 className="font-heading">Blogs</h2>
             <p>Here you can browse recent blog releases.</p>
           </div>
         </div>
 
         {/* Categories card for large screens */}
-        <div className="hidden h-[400px] border-l border-grey-border bg-grey-bg p-5 lg:col-span-4 lg:block">
+        <div className="hidden h-100 border-l border-grey-border bg-grey-bg p-5 lg:col-span-4 lg:block">
           <h3 className="mb-5 font-heading">Categories</h3>
           <CategoriesList />
         </div>
@@ -128,7 +128,7 @@ function Blog() {
           >
             <div
               onClick={(event) => event.stopPropagation()}
-              className="relative w-[90%] max-w-[300px] rounded-lg bg-white p-5 shadow-brand-lg"
+              className="relative w-[90%] max-w-75rounded-lg bg-white p-5 shadow-brand-lg"
             >
               <button
                 type="button"
@@ -190,11 +190,11 @@ function BlogSection() {
   const filteredBlogPosts = selectedFilter ? blogPosts.filter((post) => post.category === selectedFilter) : blogPosts;
 
   return (
-    <div className="mx-auto max-w-[1400px] px-4 py-10">
+    <div className="mx-auto max-w-350 px-4 py-10">
       <select
         value={selectedFilter}
         onChange={(event) => setSelectedFilter(event.target.value)}
-        className="w-[180px] rounded-md border-0 bg-[#920F84] px-3 py-2 text-sm font-bold text-white"
+        className="w-45 rounded-md border-0 bg-[#920F84] px-3 py-2 text-sm font-bold text-white"
       >
         <option value="">Filter Blog Posts</option>
         <option value="Startup">Startup</option>
@@ -205,7 +205,7 @@ function BlogSection() {
       <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
         {filteredBlogPosts.map((post) => (
           <div key={post.id} className="overflow-hidden rounded-md shadow-brand">
-            <div className="relative h-[250px] w-full">
+            <div className="relative h-62.5 w-full">
               <Image src={post.image} alt={post.title} fill className="object-cover" />
             </div>
             <div className="bg-grey-bg p-3">

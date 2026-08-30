@@ -49,7 +49,7 @@ export function GearUp() {
 function HeroSection() {
   return (
     <div className="bg-[#6E006A] py-16 text-white">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="flex flex-wrap items-center gap-8">
           <div className="w-full lg:w-1/2">
             <h3>
@@ -83,14 +83,14 @@ function AboutTheProgram() {
   return (
     <div>
       <div className="bg-[#F7E1F7] px-4 py-8 text-center">
-        <p className="mx-auto max-w-[700px] px-3 py-3 text-center">
+        <p className="mx-auto max-w-175 px-3 py-3 text-center">
           Whether you are an ambitious founder ready to take your business idea to the next level or a seasoned
           professional passionate about mentoring the next generation of entrepreneurs, this is where your journey
           begins.
         </p>
       </div>
 
-      <div className="mx-auto max-w-[1400px] px-4 py-12">
+      <div className="mx-auto max-w-350 px-4 py-12">
         <div className="flex flex-wrap items-center gap-8">
           <div className="w-full md:w-1/2">
             <h4 className="mb-3 font-bold uppercase">What is GearUp Incubation Program?</h4>
@@ -172,7 +172,7 @@ function CardCarousel() {
         <button
           onClick={() => scrollCarousel("left")}
           aria-label="Scroll left"
-          className="absolute left-5 top-1/2 z-[1] hidden h-[30px] w-[30px] -translate-y-1/2 items-center justify-center rounded-full border border-[#ccc] bg-white text-[#444] shadow-sm md:flex"
+          className="absolute left-5 top-1/2 z-[1] hidden h-7.5 w-7.5 -translate-y-1/2 items-center justify-center rounded-full border border-[#ccc] bg-white text-[#444] shadow-sm md:flex"
         >
           <BsArrowLeft size={16} />
         </button>
@@ -184,7 +184,7 @@ function CardCarousel() {
             <div
               key={item.title}
               data-carousel-card
-              className="mx-4 min-w-[250px] shrink-0 snap-center rounded-[10px] border border-[#D3D3D3] bg-white p-8 text-center"
+              className="mx-4 min-w-62.5 shrink-0 snap-center rounded-[10px] border border-[#D3D3D3] bg-white p-8 text-center"
             >
               <h4 className="mb-2 font-bold">{item.title}</h4>
               <p className="text-secondary">{item.description}</p>
@@ -194,7 +194,7 @@ function CardCarousel() {
         <button
           onClick={() => scrollCarousel("right")}
           aria-label="Scroll right"
-          className="absolute right-5 top-1/2 z-[1] hidden h-[30px] w-[30px] -translate-y-1/2 items-center justify-center rounded-full border border-[#ccc] bg-white text-[#444] shadow-sm md:flex"
+          className="absolute right-5 top-1/2 z-[1] hidden h-7.5 w-7.5 -translate-y-1/2 items-center justify-center rounded-full border border-[#ccc] bg-white text-[#444] shadow-sm md:flex"
         >
           <BsArrowRight size={16} />
         </button>
@@ -204,7 +204,7 @@ function CardCarousel() {
         {carouselItems.map((item, index) => (
           <div
             key={item.title}
-            className={`mx-[5px] h-[10px] w-[10px] rounded-full bg-[#6E006A] transition-opacity duration-300 ${
+            className={`mx-1.25 h-2.5 w-2.5 rounded-full bg-[#6E006A] transition-opacity duration-300 ${
               index === activeIndex ? "opacity-100" : "opacity-50"
             }`}
           />
@@ -239,7 +239,7 @@ function WhoCanApply() {
   return (
     <div className="bg-white py-12">
       <h4 className="mb-12 text-center font-bold uppercase">WHO CAN APPLY</h4>
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-2">
           <div className="flex h-full flex-col rounded-[10px] bg-[#F7E1F7] p-4">
             <h4 className="mb-4 text-center text-ink">Entrepreneurs</h4>
@@ -306,7 +306,7 @@ function WhyJoinGearUp() {
   return (
     <div className="bg-[#F7E1F7] py-12">
       <h4 className="mb-12 text-center font-bold uppercase">WHY JOIN GEARUP?</h4>
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mb-8 flex flex-wrap items-center overflow-hidden rounded-[10px] bg-[#F5F0F5]">
           <div className="w-full md:w-1/2">
             <div className="p-8">
@@ -398,16 +398,16 @@ const modules = [
 
 function ModulesGrid() {
   return (
-    <div className="mx-auto max-w-[1400px] px-4 py-12">
+    <div className="mx-auto max-w-350 px-4 py-12">
       <h4 className="text-center font-bold uppercase">YOUR 8-MODULE JOURNEY</h4>
-      <p className="mx-auto max-w-[700px] px-3 py-4 text-center">
+      <p className="mx-auto max-w-175 px-3 py-4 text-center">
         The Online Incubation Tools That Power Your Startup Success
       </p>
 
       <div className="mx-auto grid max-w-5xl grid-cols-1 justify-center gap-4 md:grid-cols-2">
         {modules.map((module) => (
           <div key={module.title} className="flex h-full flex-col items-start rounded-brand bg-white p-6 shadow-brand">
-            <Image src={module.icon} alt={module.title} width={32} height={32} className="mb-2 h-[32px] w-[32px]" />
+            <Image src={module.icon} alt={module.title} width={32} height={32} className="mb-2 h-8 w-8" />
             <h5 className="mt-2 font-bold">{module.title}</h5>
             <p className="mt-2 text-secondary">{module.description}</p>
           </div>
@@ -421,7 +421,7 @@ function ReadyToLaunch() {
   return (
     <div className="bg-[#F1F8ED] px-4 py-12 text-center">
       <h4 className="mb-2 text-center font-bold uppercase">READY TO LAUNCH YOUR FUTURE?</h4>
-      <p className="mx-auto max-w-[700px] px-3 py-3 text-center">
+      <p className="mx-auto max-w-175 px-3 py-3 text-center">
         As an entrepreneur, by the end of the GearUp Incubation Program, you will have a refined business plan, a
         solid investor pitch, and the tools to grow your business beyond borders. As a mentor, beyond advising, you
         will be a thought partner; guiding entrepreneurs toward smarter decisions and real growth.
@@ -433,13 +433,13 @@ function ReadyToLaunch() {
 function ApplyNowSection() {
   return (
     <div className="bg-white py-8">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <h4 className="mb-4 text-center font-bold uppercase">APPLY NOW</h4>
-        <div className="mx-auto max-w-[600px] rounded-[10px] bg-[#F7E1F7] p-8 shadow-brand">
+        <div className="mx-auto max-w-150 rounded-[10px] bg-[#F7E1F7] p-8 shadow-brand">
           <div className="mb-4 flex items-center text-center">
             <div className="w-full">
               <p className="mb-0 text-[0.9rem] text-[#555555]">
-                <Image src={applyNowTimer} alt="Hourglass Icon" width={40} height={40} className="inline-block h-[40px] w-[40px] object-contain" />
+                <Image src={applyNowTimer} alt="Hourglass Icon" width={40} height={40} className="inline-block h-10 w-10 object-contain" />
                 Spots are limited! Don&apos;t miss your chance to launch, grow, and connect through this
                 continent-wide movement.
               </p>

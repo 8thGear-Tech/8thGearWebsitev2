@@ -100,7 +100,7 @@ export function TalentPlacement() {
 function TalentHero() {
   return (
     <section className="relative overflow-hidden bg-[linear-gradient(135deg,#681955_0%,#821e6b_100%)] px-4 py-16 text-white md:py-20">
-      <div className="mx-auto max-w-[1400px]">
+      <div className="mx-auto max-w-350">
         <div className="max-w-3xl">
           <h1 className="font-heading text-4xl md:text-5xl">Hire Vetted Tech Talents</h1>
           <p className="mt-4 text-lg text-white/90">
@@ -152,7 +152,7 @@ function TalentHero() {
 
 function Services() {
   return (
-    <div className="mx-auto max-w-[1400px] px-4 py-12">
+    <div className="mx-auto max-w-350 px-4 py-12">
       <h4 className="mb-8 text-center">Our Services</h4>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {services.map((service) => (
@@ -170,7 +170,7 @@ function Services() {
           href={TALENT_REQUEST_FORM_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex h-10 items-center justify-center rounded-full border-[3px] border-purple px-6 font-heading font-medium text-purple transition-colors hover:bg-purple hover:text-white"
+          className="inline-flex h-10 items-center justify-center rounded-full border-3 border-purple px-6 font-heading font-medium text-purple transition-colors hover:bg-purple hover:text-white"
         >
           Request Talent
         </a>
@@ -199,7 +199,7 @@ function OurHiringProcess() {
 
 function WhyRecruitFromUs() {
   return (
-    <div className="mx-auto max-w-[1400px] px-4 py-12">
+    <div className="mx-auto max-w-350 px-4 py-12">
       <h4 className="mb-6 text-center">Why Recruit From Us</h4>
       <div className="mx-auto max-w-4xl">
         <Image src={whyrecruitfromus} alt="talentplacement" className="w-full" />
@@ -214,7 +214,7 @@ function MigrantAdvisoryDesk() {
       id="migrant-advisory-desk"
       className="bg-[linear-gradient(135deg,rgba(130,30,107,0.05)_0%,rgba(130,30,107,0.15)_100%)] px-4 py-12 md:py-16"
     >
-      <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-10 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-350 grid-cols-1 items-center gap-10 lg:grid-cols-2">
         <div>
           <h4>Migrant Advisory Desk</h4>
           <h5 className="mb-4">Verified Guidance for Safe, Successful Migration</h5>
@@ -237,7 +237,7 @@ function MigrantAdvisoryDesk() {
             href="https://chat.whatsapp.com/IntMLN10e5mIkzxW9BqRq2"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-10 items-center justify-center rounded-full border-[3px] border-purple px-6 font-heading font-medium text-purple transition-all hover:-translate-y-0.5 hover:bg-purple hover:text-white"
+            className="inline-flex h-10 items-center justify-center rounded-full border-3 border-purple px-6 font-heading font-medium text-purple transition-all hover:-translate-y-0.5 hover:bg-purple hover:text-white"
           >
             Learn More &rarr;
           </a>
@@ -247,7 +247,7 @@ function MigrantAdvisoryDesk() {
           <div className="rounded-xl bg-white p-4 shadow-[0_10px_40px_rgba(130,30,107,0.15)]">
             <Image src={migrationadvisorydesk} alt="Migrant Advisory Desk" className="w-full rounded-lg" />
           </div>
-          <div className="absolute -right-5 -top-5 -z-10 h-[100px] w-[100px] rounded-full bg-purple/10" />
+          <div className="absolute -right-5 -top-5 -z-10 h-25 w-25 rounded-full bg-purple/10" />
         </div>
       </div>
     </div>
@@ -258,7 +258,7 @@ function Tractions() {
   return (
     <div className="bg-[linear-gradient(135deg,#681955_0%,#821e6b_100%)] px-4 py-12">
       <h3 className="mb-2 text-center text-white">Tractions</h3>
-      <div className="mx-auto flex max-w-[1400px] flex-wrap justify-center gap-16">
+      <div className="mx-auto flex max-w-350 flex-wrap justify-center gap-16">
         <div className="mt-5 text-center text-white">
           <h2>500+</h2>
           <p>Tech Talents</p>
@@ -276,10 +276,10 @@ function OurAvailableTalents() {
   return (
     <div className="bg-[#681955] px-4 pb-8 pt-12">
       <h4 className="mb-8 text-center text-white">Our Available Talents</h4>
-      <div className="mx-auto grid max-w-[1400px] grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8">
+      <div className="mx-auto grid max-w-350 grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8">
         {talents.map((talent) => (
           <div key={talent.label} className="text-center">
-            <Image src={talent.image} alt="talentplacement" width={100} height={100} className="mx-auto h-[100px] w-[100px]" />
+            <Image src={talent.image} alt="talentplacement" width={100} height={100} className="mx-auto h-25 w-25" />
             <p className="mt-2 text-sm text-white">{talent.label}</p>
           </div>
         ))}

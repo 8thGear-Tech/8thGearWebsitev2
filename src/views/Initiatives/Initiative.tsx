@@ -379,10 +379,10 @@ const TESTIMONIALS = [
 /* ── Shared style fragments ─────────────────────── */
 
 const EYEBROW_BASE =
-  "inline-flex items-center justify-center rounded-full border border-teal/25 bg-teal/7 py-[5px] px-[14px] text-[11px] font-bold uppercase tracking-[0.1em]";
-const SECTION_TITLE = "mb-[10px] text-2xl font-bold tracking-[-0.02em] text-ink";
-const SECTION_DIVIDER = "mt-[10px] mb-[18px] h-[3px] w-11 rounded-full bg-teal";
-const SECTION_COPY = "text-[0.9rem] font-light leading-[1.75rem] text-secondary";
+  "inline-flex items-center justify-center rounded-full border border-teal/25 bg-teal/7 py-1.25 px-3.5 text-[11px] font-bold uppercase tracking-widest";
+const SECTION_TITLE = "mb-2.5 text-2xl font-bold tracking-[-0.02em] text-ink";
+const SECTION_DIVIDER = "mt-2.5 mb-4.5 h-0.75 w-11 rounded-full bg-teal";
+const SECTION_COPY = "text-[0.9rem] font-light leading-7 text-secondary";
 const BTN_BASE =
   "inline-flex items-center gap-2 rounded-xl border-none py-3 px-7 text-sm font-semibold no-underline transition-[transform,background-color,color,border-color] duration-200 ease-[ease] hover:-translate-y-px focus-visible:-translate-y-px";
 
@@ -400,7 +400,7 @@ function ProgrammeCard({ data }: { data: Programme }) {
   const prevSlide = () => setCur((prev) => (prev - 1 + data.images.length) % data.images.length);
 
   const reportClass = [
-    "inline-flex shrink-0 items-center gap-[5px] rounded-full px-2 py-1 text-[10px] font-bold uppercase tracking-[0.08em] no-underline cursor-pointer transition-all duration-200 ease-[ease]",
+    "inline-flex shrink-0 items-center gap-1.25 rounded-full px-2 py-1 text-[10px] font-bold uppercase tracking-[0.08em] no-underline cursor-pointer transition-all duration-200 ease-[ease]",
     hasPdf
       ? isPurple
         ? "bg-purple/7 border border-purple/20 text-purple hover:bg-purple focus-visible:bg-purple hover:text-white focus-visible:text-white"
@@ -410,27 +410,27 @@ function ProgrammeCard({ data }: { data: Programme }) {
 
   return (
     <div
-      className={`group relative flex h-auto min-h-0 flex-col overflow-hidden rounded-xl border border-grey-border bg-white shadow-brand transition-[transform,box-shadow,border-color] duration-[260ms] ease-[ease] hover:shadow-brand-lg hover:-translate-y-1 lg:h-[670px] ${
+      className={`group relative flex h-auto min-h-0 flex-col overflow-hidden rounded-xl border border-grey-border bg-white shadow-brand transition-[transform,box-shadow,border-color] duration-260 ease-[ease] hover:shadow-brand-lg hover:-translate-y-1 lg:h-167.5 ${
         isPurple ? "hover:border-purple" : "hover:border-teal"
       }`}
     >
       <div
-        className={`h-[3px] shrink-0 ${
+        className={`h-0.75 shrink-0 ${
           isPurple
             ? "bg-[linear-gradient(90deg,var(--color-purple),rgba(130,30,107,0.55))]"
             : "bg-[linear-gradient(90deg,var(--color-teal),rgba(0,164,149,0.55))]"
         }`}
       />
 
-      <div className="p-[14px] pb-0">
+      <div className="p-3.5 pb-0">
         <div className="relative overflow-hidden rounded-lg bg-grey-bg">
           <Image
             src={data.images[cur]}
             alt={`${data.title} slide ${cur + 1}`}
-            className="block h-[250px] w-full object-cover"
+            className="block h-62.5 w-full object-cover"
           />
           <span
-            className={`absolute left-[10px] top-[10px] z-[1] rounded-full px-[10px] py-1 text-[10px] font-bold uppercase tracking-[0.08em] text-white shadow-[0_2px_8px_rgba(0,0,0,0.2)] ${
+            className={`absolute left-2.5 top-2.5 z-[1] rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.08em] text-white shadow-[0_2px_8px_rgba(0,0,0,0.2)] ${
               isPurple ? "bg-purple" : "bg-teal"
             }`}
           >
@@ -442,14 +442,14 @@ function ProgrammeCard({ data }: { data: Programme }) {
               <button
                 onClick={prevSlide}
                 aria-label={`Previous image for ${data.title}`}
-                className="absolute top-1/2 left-[10px] z-[1] flex h-9 w-9 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-[rgba(15,23,42,0.2)] p-0 text-white backdrop-blur-[2px]"
+                className="absolute top-1/2 left-2.5 z-[1] flex h-9 w-9 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-[rgba(15,23,42,0.2)] p-0 text-white backdrop-blur-[2px]"
               >
                 <ArrowL sz={12} />
               </button>
               <button
                 onClick={nextSlide}
                 aria-label={`Next image for ${data.title}`}
-                className="absolute top-1/2 right-[10px] z-[1] flex h-9 w-9 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-[rgba(15,23,42,0.2)] p-0 text-white backdrop-blur-[2px]"
+                className="absolute top-1/2 right-2.5 z-[1] flex h-9 w-9 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full border border-white/10 bg-[rgba(15,23,42,0.2)] p-0 text-white backdrop-blur-[2px]"
               >
                 <ArrowR sz={12} />
               </button>
@@ -458,8 +458,8 @@ function ProgrammeCard({ data }: { data: Programme }) {
         </div>
       </div>
 
-      <div className="flex grow flex-col pt-4 px-[18px] pb-[18px]">
-        <div className="mb-[10px] flex items-start justify-between gap-3">
+      <div className="flex grow flex-col pt-4 px-4.5 pb-4.5">
+        <div className="mb-2.5 flex items-start justify-between gap-3">
           <h3 className="m-0 font-heading text-base font-bold leading-[1.35] text-ink">{data.title}</h3>
           <a
             href={hasPdf ? data.report.pdf : undefined}
@@ -474,14 +474,14 @@ function ProgrammeCard({ data }: { data: Programme }) {
           </a>
         </div>
 
-        <p className="mb-[10px] line-clamp-3 text-[0.82rem] font-light leading-[1.55rem] text-secondary">{data.body}</p>
+        <p className="mb-2.5 line-clamp-3 text-[0.82rem] font-light leading-6.2 text-secondary">{data.body}</p>
 
         {data.metrics && (
           <div className="grid grid-cols-3 gap-2">
             {data.metrics.map((m) => (
               <div
                 key={m.key}
-                className={`rounded-[10px] border py-[10px] px-2 text-center ${
+                className={`rounded-[10px] border py-2.5 px-2 text-center ${
                   isPurple ? "bg-purple/7 border-purple/20" : "bg-teal/7 border-teal/25"
                 }`}
               >
@@ -492,10 +492,10 @@ function ProgrammeCard({ data }: { data: Programme }) {
           </div>
         )}
 
-        <div className="mt-[19px] flex flex-col gap-[10px]">
+        <div className="mt-4.75 flex flex-col gap-2.5">
           <div>
-            <h4 className="mb-[6px] font-heading text-[0.88rem] font-bold text-ink">Impact Highlights</h4>
-            <ul className="m-0 pl-[18px] text-[0.82rem] leading-6 text-secondary [&>li+li]:mt-1">
+            <h4 className="mb-1.5 font-heading text-[0.88rem] font-bold text-ink">Impact Highlights</h4>
+            <ul className="m-0 pl-4.5 text-[0.82rem] leading-6 text-secondary [&>li+li]:mt-1">
               {visibleHighlights.map((h) => (
                 <li key={h}>{h}</li>
               ))}
@@ -503,11 +503,11 @@ function ProgrammeCard({ data }: { data: Programme }) {
           </div>
 
           <div>
-            <div className="flex flex-wrap gap-[6px]">
+            <div className="flex flex-wrap gap-1.5">
               {visiblePills.map((p) => (
                 <span
                   key={p}
-                  className="inline-flex items-center rounded-full border border-grey-border bg-grey-bg py-[3px] px-[9px] text-[10px] font-semibold text-secondary"
+                  className="inline-flex items-center rounded-full border border-grey-border bg-grey-bg py-0.75 px-2.25 text-[10px] font-semibold text-secondary"
                 >
                   {p}
                 </span>
@@ -522,25 +522,25 @@ function ProgrammeCard({ data }: { data: Programme }) {
 
 function CompetencyCard({ item }: { item: (typeof COMPETENCIES)[number] }) {
   return (
-    <div className="group relative flex h-full min-h-[250px] flex-col overflow-hidden rounded-xl border border-grey-border bg-white shadow-brand transition-[transform,box-shadow,background-color,border-color] duration-[260ms] ease-[ease] hover:-translate-y-1 hover:border-teal/20 hover:bg-[linear-gradient(145deg,rgba(0,164,149,0.07),#fff)] hover:shadow-brand-lg">
-      <div className="absolute left-0 top-0 bottom-0 w-0 rounded-[0_2px_2px_0] bg-[linear-gradient(to_bottom,var(--color-teal),var(--color-teal-dark))] transition-[width] duration-[280ms] ease-[ease] group-hover:w-1" />
+    <div className="group relative flex h-full min-h-62.5 flex-col overflow-hidden rounded-xl border border-grey-border bg-white shadow-brand transition-[transform,box-shadow,background-color,border-color] duration-260 ease-[ease] hover:-translate-y-1 hover:border-teal/20 hover:bg-[linear-gradient(145deg,rgba(0,164,149,0.07),#fff)] hover:shadow-brand-lg">
+      <div className="absolute left-0 top-0 bottom-0 w-0 rounded-[0_2px_2px_0] bg-[linear-gradient(to_bottom,var(--color-teal),var(--color-teal-dark))] transition-[width] duration-280 ease-[ease] group-hover:w-1" />
 
-      <div className="flex grow flex-col pt-6 px-6 pb-5 transition-[padding-left] duration-[280ms] ease-[ease] group-hover:pl-7">
+      <div className="flex grow flex-col pt-6 px-6 pb-5 transition-[padding-left] duration-280 ease-[ease] group-hover:pl-7">
         <div className="mb-4">
-          <div className="flex h-[50px] w-[50px] shrink-0 items-center justify-center rounded-xl border-[1.5px] border-grey-border bg-grey-bg text-muted transition-all duration-[260ms] ease-[ease] group-hover:border-teal group-hover:bg-teal group-hover:text-white">
+          <div className="flex h-12.5 w-12.5 shrink-0 items-center justify-center rounded-xl border-[1.5px] border-grey-border bg-grey-bg text-muted transition-all duration-260 ease-[ease] group-hover:border-teal group-hover:bg-teal group-hover:text-white">
             {item.icon}
           </div>
         </div>
 
         <h3 className="mb-2 font-heading text-base font-bold leading-[1.3] text-primary group-hover:text-ink">{item.title}</h3>
 
-        <p className="mb-4 grow text-[0.84rem] font-light leading-[1.65rem] text-secondary">{item.desc}</p>
+        <p className="mb-4 grow text-[0.84rem] font-light leading-6.6 text-secondary">{item.desc}</p>
 
-        <div className="mt-auto flex flex-wrap gap-[5px]">
+        <div className="mt-auto flex flex-wrap gap-1.25">
           {item.tags.map((t) => (
             <span
               key={t}
-              className="rounded-full border border-grey-border bg-grey-bg px-[9px] py-[3px] text-[10px] font-semibold text-secondary transition-all duration-[220ms] ease-[ease] group-hover:border-teal/20 group-hover:bg-teal/7 group-hover:text-teal"
+              className="rounded-full border border-grey-border bg-grey-bg px-2.25 py-0.75 text-[10px] font-semibold text-secondary transition-all duration-220 ease-[ease] group-hover:border-teal/20 group-hover:bg-teal/7 group-hover:text-teal"
             >
               {t}
             </span>
@@ -565,12 +565,12 @@ function TestiCard({ data }: { data: (typeof TESTIMONIALS)[number] }) {
   const hasArrowIcon = data.id === 3 || data.id === 4;
 
   return (
-    <div className="flex h-[270px] flex-col rounded-xl border border-grey-border bg-white p-[22px] shadow-brand">
-      <div className="mb-[10px] flex items-center gap-2">
+    <div className="flex h-67.5 flex-col rounded-xl border border-grey-border bg-white p-5.5 shadow-brand">
+      <div className="mb-2.5 flex items-center gap-2">
         <QuoteIcon />
         {hasArrowIcon && <ArrowR sz={12} />}
       </div>
-      <p className="mb-4 mt-0 grow text-[0.85rem] font-light italic leading-[1.75rem] text-secondary">&quot;{data.text}&quot;</p>
+      <p className="mb-4 mt-0 grow text-[0.85rem] font-light italic leading-7 text-secondary">&quot;{data.text}&quot;</p>
       <div className="flex flex-wrap items-center justify-between gap-2 border-t border-grey-border pt-3">
         <div>
           <div className="text-[11px] font-light text-secondary">{data.role}</div>
@@ -587,7 +587,7 @@ function TestimonialLink({ lnk }: { lnk: { label: string; href: string } }) {
       href={lnk.href}
       target={lnk.href.startsWith("http") ? "_blank" : "_self"}
       rel="noopener noreferrer"
-      className="inline-flex cursor-pointer items-center gap-2 rounded-xl border-[1.5px] border-teal/25 bg-transparent py-[9px] px-5 text-[13px] font-semibold text-teal no-underline transition-colors duration-200 ease-[ease] hover:border-teal hover:bg-teal hover:text-white focus-visible:border-teal focus-visible:bg-teal focus-visible:text-white"
+      className="inline-flex cursor-pointer items-center gap-2 rounded-xl border-[1.5px] border-teal/25 bg-transparent py-2.25 px-5 text-[13px] font-semibold text-teal no-underline transition-colors duration-200 ease-[ease] hover:border-teal hover:bg-teal hover:text-white focus-visible:border-teal focus-visible:bg-teal focus-visible:text-white"
     >
       {lnk.label} <ArrowR />
     </a>
@@ -604,13 +604,13 @@ export function InitiativesSection() {
   return (
     <div className="bg-white">
       <section className="relative overflow-hidden bg-[linear-gradient(140deg,var(--color-teal-dark)_0%,var(--color-teal)_55%,var(--color-teal-dark)_100%)] pt-20 pb-15">
-        <div className="absolute -top-20 -right-25 h-105 w-105 rounded-full border-[60px] border-white/7 pointer-events-none" />
-        <div className="absolute -bottom-[110px] -left-[90px] h-90 w-90 rounded-full border-[50px] border-white/5 pointer-events-none" />
+        <div className="absolute -top-20 -right-25 h-105 w-105 rounded-full border-60 border-white/7 pointer-events-none" />
+        <div className="absolute -bottom-27.5 -left-22.5 h-90 w-90 rounded-full border-50 border-white/5 pointer-events-none" />
 
-        <div className="relative z-[1] mx-auto max-w-[1400px] px-4">
+        <div className="relative z-[1] mx-auto max-w-350 px-4">
           <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
             <div>
-              <h1 className="mb-[18px] text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.1] tracking-[-0.02em] text-white">
+              <h1 className="mb-4.5 text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.1] tracking-[-0.02em] text-white">
                 Building Resilient
                 <br />
                 <span className="text-mint">MSMEs &amp; Entrepreneurs</span>
@@ -618,7 +618,7 @@ export function InitiativesSection() {
                 Across Nigeria
               </h1>
 
-              <p className="mb-9 max-w-[520px] font-light text-white/78">
+              <p className="mb-9 max-w-130 font-light text-white/78">
                 From enterprise support to talent development initiatives, 8thGear Hub is driving measurable impact
                 across Southwest Nigeria and beyond
               </p>
@@ -642,8 +642,8 @@ export function InitiativesSection() {
             </div>
 
             <div>
-              <div className="rounded-xl border border-white/22 bg-white/12 py-[30px] px-[26px]">
-                <p className={`${EYEBROW_BASE} mb-[22px] text-white/72`}>Impact at a Glance</p>
+              <div className="rounded-xl border border-white/22 bg-white/12 py-7.5 px-6.5">
+                <p className={`${EYEBROW_BASE} mb-5.5 text-white/72`}>Impact at a Glance</p>
 
                 {[
                   { label: "StartUps Supported", val: "2000+" },
@@ -661,7 +661,7 @@ export function InitiativesSection() {
                     <span className="text-xs font-light text-white/60">Satisfaction Rate</span>
                     <span className="font-heading text-[13px] font-bold text-white">95%</span>
                   </div>
-                  <div className="h-[6px] overflow-hidden rounded-full bg-white/20">
+                  <div className="h-1.5 overflow-hidden rounded-full bg-white/20">
                     <div className="h-full w-[95%] rounded-full bg-mint" />
                   </div>
                 </div>
@@ -672,14 +672,14 @@ export function InitiativesSection() {
       </section>
 
       <section className="bg-white pt-22 pb-4">
-        <div className="mx-auto mb-4 max-w-[1400px] px-4">
+        <div className="mx-auto mb-4 max-w-350 px-4">
           <div className="text-center">
             <div className={`${EYEBROW_BASE} text-teal`}>Our Partners</div>
             <div className={`${SECTION_DIVIDER} mx-auto`} />
             <h2 className={SECTION_TITLE}>
               Trusted by Leading <span className="text-teal">Institutions</span>
             </h2>
-            <p className={`${SECTION_COPY} mx-auto max-w-[460px]`}>
+            <p className={`${SECTION_COPY} mx-auto max-w-115`}>
               We collaborate with development agencies, Corporate CSR units and Philanthropies to design and deliver
               on Social Impact driven initiatves.
             </p>
@@ -689,14 +689,14 @@ export function InitiativesSection() {
       </section>
 
       <section className="bg-grey-bg py-22">
-        <div className="mx-auto max-w-[1400px] px-4">
+        <div className="mx-auto max-w-350 px-4">
           <div className="mb-5 text-center">
             <div className={`${EYEBROW_BASE} text-teal`}>Our Competencies</div>
             <div className={`${SECTION_DIVIDER} mx-auto`} />
             <h2 className={SECTION_TITLE}>
               Our Core <span className="text-teal">Competencies</span>
             </h2>
-            <p className={`${SECTION_COPY} mx-auto max-w-[620px]`}>
+            <p className={`${SECTION_COPY} mx-auto max-w-155`}>
               We are keeping this section focused on two core areas where 8thGear delivers the strongest value.
             </p>
           </div>
@@ -712,7 +712,7 @@ export function InitiativesSection() {
       </section>
 
       <section className="bg-white py-22" id="programmes">
-        <div className="mx-auto max-w-[1400px] px-4">
+        <div className="mx-auto max-w-350 px-4">
           <div className="mb-4 flex flex-wrap items-end gap-3">
             <div className="lg:w-2/3">
               <div className={`${EYEBROW_BASE} text-teal`}>Impact Reports</div>
@@ -720,7 +720,7 @@ export function InitiativesSection() {
               <h2 className={SECTION_TITLE}>
                 Initiatives &amp; <span className="text-teal">Impact Evidence</span>
               </h2>
-              <p className={`${SECTION_COPY} max-w-[500px]`}>Fueling Innovation, Empowering Entrepreneurs and Transforming Communities.</p>
+              <p className={`${SECTION_COPY} max-w-125`}>Fueling Innovation, Empowering Entrepreneurs and Transforming Communities.</p>
             </div>
 
             <div className="flex justify-end lg:ml-auto">
@@ -728,7 +728,7 @@ export function InitiativesSection() {
                 {FILTER_TABS.map((t) => (
                   <button
                     key={t.key}
-                    className={`inline-flex w-full items-center justify-center rounded-[7px] border-none bg-transparent py-[7px] px-4 text-center text-[13px] font-semibold text-secondary transition-colors duration-200 ease-[ease] hover:bg-white hover:text-teal focus-visible:bg-white focus-visible:text-teal md:w-auto ${
+                    className={`inline-flex w-full items-center justify-center rounded-[7px] border-none bg-transparent py-1.75 px-4 text-center text-[13px] font-semibold text-secondary transition-colors duration-200 ease-[ease] hover:bg-white hover:text-teal focus-visible:bg-white focus-visible:text-teal md:w-auto ${
                       filter === t.key ? "bg-teal text-white" : ""
                     }`}
                     onClick={() => setFilter(t.key)}
@@ -750,26 +750,26 @@ export function InitiativesSection() {
 
           {filtered.length === 0 && (
             <div className="mt-4 text-center">
-              <p className={`${SECTION_COPY} mx-auto max-w-[620px]`}>No programmes found for this category.</p>
+              <p className={`${SECTION_COPY} mx-auto max-w-155`}>No programmes found for this category.</p>
             </div>
           )}
         </div>
       </section>
 
       <section className="bg-grey-bg py-22" id="testimonials">
-        <div className="mx-auto max-w-[1400px] px-4">
+        <div className="mx-auto max-w-350 px-4">
           <div className="mb-5 text-center">
             <div className={`${EYEBROW_BASE} text-teal`}>Testimonials &amp; Reviews</div>
             <div className={`${SECTION_DIVIDER} mx-auto`} />
             <h2 className={SECTION_TITLE}>
               What Participants <span className="text-teal">Are Saying</span>
             </h2>
-            <p className={`${SECTION_COPY} mx-auto max-w-[620px]`}>Our programmes earn consistently high ratings across delivery sites.</p>
+            <p className={`${SECTION_COPY} mx-auto max-w-155`}>Our programmes earn consistently high ratings across delivery sites.</p>
           </div>
 
           <div className="flex justify-center">
             <div className="w-full lg:w-2/3 xl:w-2/3">
-              <div className="rounded-xl bg-teal py-[26px] px-7">
+              <div className="rounded-xl bg-teal py-6.5 px-7">
                 <p className="text-xs font-light text-white/60">Review Snapshot</p>
 
                 {[
@@ -810,14 +810,14 @@ export function InitiativesSection() {
       </section>
 
       <section className="bg-[linear-gradient(140deg,var(--color-ink)_0%,var(--color-slate)_100%)] py-22">
-        <div className="mx-auto max-w-[1400px] px-4">
+        <div className="mx-auto max-w-350 px-4">
           <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-12">
             <div className="lg:col-span-6">
-              <div className={`${EYEBROW_BASE} mb-[22px] text-teal`}>Get Involved</div>
-              <h2 className="mb-[14px] text-2xl font-bold tracking-[-0.02em] text-white">
+              <div className={`${EYEBROW_BASE} mb-5.5 text-teal`}>Get Involved</div>
+              <h2 className="mb-3.5 text-2xl font-bold tracking-[-0.02em] text-white">
                 Ready to Partner with <span className="text-mint">8thGear Hub?</span>
               </h2>
-              <p className="max-w-[480px] text-[0.9rem] font-light leading-[1.75rem] text-white/78">
+              <p className="max-w-120 text-[0.9rem] font-light leading-7 text-white/78">
                 We collaborate with development agencies, Corporate CSR units and Philanthropies to design and
                 deliver on Social Impact driven initiatves.
               </p>
@@ -828,7 +828,7 @@ export function InitiativesSection() {
                   "Expert-led programme design and delivery",
                   "Measurable impact reporting",
                 ].map((item) => (
-                  <li key={item} className="mb-1 flex items-center gap-[10px] text-[0.9rem] font-light text-white/75">
+                  <li key={item} className="mb-1 flex items-center gap-2.5 text-[0.9rem] font-light text-white/75">
                     <span className="flex-none text-mint">
                       <CheckIcon />
                     </span>
@@ -839,9 +839,9 @@ export function InitiativesSection() {
             </div>
 
             <div className="lg:col-span-5 lg:col-start-8">
-              <div className="rounded-xl border border-white/13 bg-white/6 p-[34px]">
-                <p className="mb-[6px] font-heading text-[1.05rem] font-bold text-white">What We Deliver</p>
-                <p className="text-[0.88rem] font-light leading-[1.75rem] text-white/72">
+              <div className="rounded-xl border border-white/13 bg-white/6 p-8.5">
+                <p className="mb-1.5 font-heading text-[1.05rem] font-bold text-white">What We Deliver</p>
+                <p className="text-[0.88rem] font-light leading-7 text-white/72">
                   Structured support for innovation, enterprise development, community activation and measurable
                   programme delivery.
                 </p>

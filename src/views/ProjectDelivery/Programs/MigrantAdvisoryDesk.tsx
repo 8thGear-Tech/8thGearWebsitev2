@@ -32,7 +32,7 @@ function MADHero() {
       id="migrant-advisory-desk"
       className="bg-[linear-gradient(135deg,rgba(130,30,107,0.05)_0%,rgba(130,30,107,0.15)_100%)] py-12"
     >
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
           <div>
             <h2 className="mb-3 font-bold">Migrant Advisory Desk</h2>
@@ -74,7 +74,7 @@ function MADHero() {
             <div className="relative rounded-xl bg-white p-4 shadow-[0_10px_40px_rgba(130,30,107,0.15)]">
               <Image src={migrationadvisorydesk} alt="Migrant Advisory Desk" className="w-full rounded-lg" />
             </div>
-            <div className="absolute -right-5 -top-5 -z-10 h-[100px] w-[100px] rounded-full bg-[rgba(130,30,107,0.1)]" />
+            <div className="absolute -right-5 -top-5 -z-10 h-25 w-25 rounded-full bg-[rgba(130,30,107,0.1)]" />
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@ function MADAbout() {
 
   return (
     <section className="bg-white py-20">
-      <div className="mx-auto max-w-[900px] px-4">
+      <div className="mx-auto max-w-225 px-4">
         <div className="mb-4 text-center">
           <h3 className="font-bold">What is the Migrant Advisory Desk?</h3>
           <p className="text-secondary">Making informed decisions about skills, livelihoods, and migration</p>
@@ -202,7 +202,7 @@ const services = [
 function MADServices() {
   return (
     <section className="bg-[linear-gradient(135deg,#f5f0f5_0%,#ffffff_100%)] py-20">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mb-12 text-center">
           <h3 className="mb-2 font-bold">Our Services</h3>
           <p className="text-secondary">Comprehensive support for your journey</p>
@@ -212,9 +212,9 @@ function MADServices() {
           {services.map((service) => (
             <div
               key={service.title}
-              className={`rounded-xl border-l-[5px] bg-white p-4 shadow-brand ${service.borderLeftClass}`}
+              className={`rounded-xl border-l-5 bg-white p-4 shadow-brand ${service.borderLeftClass}`}
             >
-              <div className={`mb-3 flex h-[60px] w-[60px] items-center justify-center rounded-xl text-[1.8rem] ${service.bgClass}`}>
+              <div className={`mb-3 flex h-15 w-15 items-center justify-center rounded-xl text-[1.8rem] ${service.bgClass}`}>
                 {service.icon}
               </div>
               <h5 className="mb-2 font-bold">{service.title}</h5>
@@ -259,7 +259,7 @@ const targetGroups = [
 function MADWhoWeServe() {
   return (
     <section className="bg-white py-20">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mb-12 text-center">
           <h3 className="mb-3 font-bold">Who We Serve</h3>
           <p className="text-secondary">Supporting diverse groups on their journey to success</p>
@@ -269,7 +269,7 @@ function MADWhoWeServe() {
           {targetGroups.map((group) => (
             <div key={group.title} className="h-full rounded-xl bg-white p-4 shadow-brand">
               <div className="flex flex-col items-center text-center">
-                <div className="mb-3 flex h-[70px] w-[70px] shrink-0 items-center justify-center rounded-xl bg-[linear-gradient(135deg,#6E006A,#9B1B96)] text-3xl">
+                <div className="mb-3 flex h-17.5 w-17.5 shrink-0 items-center justify-center rounded-xl bg-[linear-gradient(135deg,#6E006A,#9B1B96)] text-3xl">
                   {group.icon}
                 </div>
                 <div>
@@ -295,15 +295,15 @@ const partnerLogos = [
 function MADPartners() {
   return (
     <section className="bg-[linear-gradient(135deg,#f5f0f5_0%,#e8d4e8_100%)] py-20">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mb-12 text-center">
           <h3 className="mb-4 font-bold">Our Partners</h3>
         </div>
 
-        <div className="mx-auto max-w-[850px] rounded-xl bg-white p-4 shadow-brand">
+        <div className="mx-auto max-w-212.5 rounded-xl bg-white p-4 shadow-brand">
           <div className="flex flex-wrap items-center justify-center gap-1">
             {partnerLogos.map((logo) => (
-              <div key={logo.alt} className="relative h-[110px] w-[160px] p-1">
+              <div key={logo.alt} className="relative h-27.5 w-40 p-1">
                 <Image src={logo.src} alt={logo.alt} fill sizes="160px" className="object-contain" />
               </div>
             ))}
@@ -344,7 +344,7 @@ const steps = [
 function MADHowItWorks() {
   return (
     <section className="bg-white py-20">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mb-12 text-center">
           <h3 className="mb-3 font-bold">How It Works</h3>
           <p className="text-secondary">Our comprehensive approach to migration advisory and talent development</p>
@@ -361,7 +361,7 @@ function MADHowItWorks() {
                 }`}
               >
                 <div
-                  className={`absolute -top-[15px] left-5 flex h-[50px] w-[50px] items-center justify-center rounded-full text-2xl font-bold shadow-[0_4px_12px_rgba(0,0,0,0.15)] ${
+                  className={`absolute -top-3.75 left-5 flex h-12.5 w-12.5 items-center justify-center rounded-full text-2xl font-bold shadow-[0_4px_12px_rgba(0,0,0,0.15)] ${
                     isLast ? "bg-white text-[#6E006A]" : "bg-[#6E006A] text-white"
                   }`}
                 >
@@ -383,7 +383,7 @@ function MADHowItWorks() {
 function MADCTA() {
   return (
     <section id="contact" className="bg-[linear-gradient(135deg,#6E006A_0%,#9B1B96_100%)] py-10 text-white">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mx-auto max-w-2xl text-center">
           <h3 className="mb-4 font-bold">Ready to Start Your Journey?</h3>
           <p className="mb-4 leading-[1.8]">

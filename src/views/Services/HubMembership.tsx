@@ -73,7 +73,7 @@ function HeroSection() {
 
 function SectionOne() {
   return (
-    <div className="mx-auto max-w-[1200px] px-4 py-12">
+    <div className="mx-auto max-w-300 px-4 py-12">
       <div className="flex flex-col gap-6 lg:flex-row">
         <div className="flex-1">
           <h3 className="text-purple">Why Join the 8thGear Hub Membership?</h3>
@@ -106,7 +106,7 @@ function Banner() {
         href="https://chat.whatsapp.com/JAKxj7Jv07W5r6Q0JQSbXK"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-4 inline-block w-[150px] rounded-full border border-purple bg-white px-4 py-2 text-purple"
+        className="mt-4 inline-block w-37.5 rounded-full border border-purple bg-white px-4 py-2 text-purple"
       >
         Join Us Now!
       </a>
@@ -116,7 +116,7 @@ function Banner() {
 
 function MembershipSection() {
   return (
-    <div className="mx-auto max-w-[1200px] px-4 py-12">
+    <div className="mx-auto max-w-300 px-4 py-12">
       <div className="flex flex-col-reverse items-center justify-center gap-8 lg:flex-row">
         <div className="lg:w-7/12">
           <h4 className="hidden text-center text-purple lg:block">Hub Membership</h4>
@@ -159,7 +159,7 @@ function BecomeAPortCo() {
   return (
     <div className="bg-[#f9fff5] px-4 py-12">
       <h3 className="mb-6 text-center text-purple">Become a Portfolio Company</h3>
-      <div className="mx-auto flex max-w-[1200px] flex-col gap-6 lg:flex-row">
+      <div className="mx-auto flex max-w-300 flex-col gap-6 lg:flex-row">
         <div className="lg:w-1/2">
           <p>
             For those with high-potential business ideas, 8thGear offers the opportunity to become a Portfolio

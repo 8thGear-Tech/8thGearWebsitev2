@@ -78,7 +78,7 @@ export function EventsCalendar() {
             {upcomingEvents.map((event) => (
               <div
                 key={event.id}
-                className="flex min-w-[600px] flex-row items-center justify-between bg-[#edccec] px-3 py-3"
+                className="flex min-w-150 flex-row items-center justify-between bg-[#edccec] px-3 py-3"
               >
                 <h3 className="text-lg font-medium text-[#1c1c1c]">{event.date}</h3>
                 <h3 className="text-lg font-medium text-[#1c1c1c]">{event.event}</h3>
@@ -93,14 +93,14 @@ export function EventsCalendar() {
           <div className="overflow-x-auto">
             {pastEvents.map((event) => (
               <div key={event.id}>
-                <div className="flex min-w-[600px] flex-row items-center justify-between bg-[#edccec] px-3 py-3">
+                <div className="flex min-w-150 flex-row items-center justify-between bg-[#edccec] px-3 py-3">
                   <h3 className="text-lg font-medium text-[#1c1c1c]">{event.date}</h3>
                   <h3 className="text-lg font-medium text-[#1c1c1c]">{event.event}</h3>
                   <Link href={event.link} className="text-base font-medium text-purple-hover">
                     Gallery
                   </Link>
                 </div>
-                <div className="flex min-w-[600px] flex-row items-center justify-between px-3 py-3">
+                <div className="flex min-w-150 flex-row items-center justify-between px-3 py-3">
                   <h3 className="text-base font-medium text-[#535353]">{event.time}</h3>
                   <h3 className="text-base font-medium text-[#535353]">...</h3>
                   <h3 className="text-base font-medium text-[#535353]">{event.format}</h3>

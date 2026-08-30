@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 const pillClasses =
-  "inline-flex h-10 items-center justify-center rounded-full border-[3px] border-purple px-6 font-heading text-base font-medium text-black transition-colors hover:bg-purple hover:text-white focus:bg-purple focus:text-white";
+  "inline-flex h-10 items-center justify-center rounded-full border-3 border-purple px-6 font-heading text-base font-medium text-black transition-colors hover:bg-purple hover:text-white focus:bg-purple focus:text-white";
 
 export function JointheStudioBtn() {
   return (

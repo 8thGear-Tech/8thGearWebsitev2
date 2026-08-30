@@ -17,7 +17,7 @@ export function FounderMeetupPage() {
 function FounderMeetupHero() {
   return (
     <div className="bg-[#f6f6f6] px-4 py-8 md:px-8 lg:px-12 lg:py-12">
-      <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-8 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-350 grid-cols-1 items-center gap-8 lg:grid-cols-2">
         <div>
           <p className="inline-block rounded-full bg-[#d6eed7] px-4 py-2 text-center text-sm font-bold text-[#5e8d70]">
             IN-PERSON EVENT

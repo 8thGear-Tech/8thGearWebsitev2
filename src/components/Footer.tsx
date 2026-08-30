@@ -53,7 +53,7 @@ function SocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={label}
-          className="flex h-[30px] w-[30px] items-center justify-center rounded-full border border-teal/30 text-sm text-teal-dark transition-colors hover:bg-teal-dark hover:text-white"
+          className="flex h-7.5 w-7.5 items-center justify-center rounded-full border border-teal/30 text-sm text-teal-dark transition-colors hover:bg-teal-dark hover:text-white"
         >
           <Icon />
         </a>
@@ -82,7 +82,7 @@ function AddressCard({ name, text }: { name: string; text: string }) {
   return (
     <div className="mb-[0.4rem] rounded-[7px] border border-teal-dark/15 bg-teal-dark/5 px-[0.7rem] py-[0.45rem]">
       <div className="flex items-start gap-2">
-        <FiMapPin size={11} className="mt-[2px] shrink-0 text-teal-dark" />
+        <FiMapPin size={11} className="mt-0.5 shrink-0 text-teal-dark" />
         <div>
           <p className="mb-[0.1rem] text-[0.71rem] font-bold leading-[1.4] text-teal-dark">{name}</p>
           <p className="m-0 text-[0.77rem] leading-[1.45] text-[#555]">{text}</p>
@@ -95,11 +95,11 @@ function AddressCard({ name, text }: { name: string; text: string }) {
 export function Footer() {
   return (
     <footer className="border-t-2 border-teal-dark/20 bg-[#F2E9EE] font-sans text-[#333]">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         {/* Desktop */}
         <div className="hidden grid-cols-[1.2fr_1.2fr_1fr_1fr] items-start gap-0 border-b border-teal-dark/15 py-10 pb-8 lg:grid">
           <div className="pr-8">
-            <Image src={logo} alt="8thGear" className="h-auto w-[125px]" />
+            <Image src={logo} alt="8thGear" className="h-auto w-31.25" />
             <p className="my-[0.5rem] mb-[0.9rem] text-[0.82rem] leading-[1.65] text-[#666]">
               Your trusted partner in venture building, guiding startups and businesses towards sustainable growth
               and success, developing a thriving ecosystem for enterpreneurs

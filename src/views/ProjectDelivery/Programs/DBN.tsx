@@ -18,7 +18,7 @@ export function DBN() {
 function DBNHero() {
   return (
     <section className="flex min-h-[75vh] items-center bg-[linear-gradient(135deg,rgba(0,164,149,0.9)_0%,rgba(130,30,107,0.95)_100%)] py-10 text-white">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mx-auto max-w-3xl text-center">
           <div className="mb-4 flex flex-wrap justify-center gap-2">
             <span className="rounded-full bg-white px-3 py-2 text-sm text-ink">
@@ -72,7 +72,7 @@ function DBNHero() {
 function DBNAbout() {
   return (
     <section className="bg-white py-20">
-      <div className="mx-auto max-w-[1000px] px-4">
+      <div className="mx-auto max-w-250 px-4">
         <div className="mb-12 text-center">
           <h3 className="mb-3 font-bold text-purple">About the Programme</h3>
           <p className="text-secondary">Strengthening MSMEs for sustainable growth and financial readiness</p>
@@ -131,7 +131,7 @@ const highlights = [
 function DBNProgramHighlights() {
   return (
     <section className="bg-[linear-gradient(135deg,#f5f7fa_0%,#c3cfe2_100%)] py-10">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <div className="mb-12 text-center">
           <h3 className="mb-3 font-bold text-purple">Programme Highlights</h3>
           <p className="text-secondary">What makes this programme unique</p>
@@ -141,10 +141,10 @@ function DBNProgramHighlights() {
           {highlights.map((item) => (
             <div
               key={item.title}
-              className={`flex h-full items-start gap-3 rounded-brand border-l-[5px] bg-white p-6 shadow-brand ${item.border}`}
+              className={`flex h-full items-start gap-3 rounded-brand border-l-5 bg-white p-6 shadow-brand ${item.border}`}
             >
               <div
-                className={`flex h-[60px] w-[60px] shrink-0 items-center justify-center rounded-xl text-[1.8rem] ${item.bg}`}
+                className={`flex h-15 w-15 shrink-0 items-center justify-center rounded-xl text-[1.8rem] ${item.bg}`}
               >
                 {item.icon}
               </div>
@@ -227,7 +227,7 @@ const benefits = [
 function DBNWhatYouGain() {
   return (
     <section className="bg-white py-10">
-      <div className="mx-auto max-w-[1000px] px-4">
+      <div className="mx-auto max-w-250 px-4">
         <div className="mb-12 text-center">
           <h3 className="mb-3 font-bold text-purple">What You&apos;ll Gain</h3>
           <p className="text-secondary">Transform your business with comprehensive support</p>
@@ -250,7 +250,7 @@ function DBNWhatYouGain() {
 function DBNPitchCompetition() {
   return (
     <section className="bg-[linear-gradient(135deg,rgba(0,164,149,0.05)_0%,rgba(130,30,107,0.05)_100%)] py-20">
-      <div className="mx-auto max-w-[1000px] px-4">
+      <div className="mx-auto max-w-250 px-4">
         <div className="overflow-hidden rounded-2xl shadow-brand-lg">
           <div className="h-2 bg-[linear-gradient(90deg,var(--color-teal),var(--color-purple))]" />
           <div className="bg-white p-6 sm:p-12">
@@ -271,7 +271,7 @@ function DBNPitchCompetition() {
                 </p>
               </div>
               <div className="hidden text-center md:block md:w-1/3">
-                <div className="mx-auto flex h-[150px] w-[150px] items-center justify-center rounded-full bg-[linear-gradient(135deg,var(--color-teal),var(--color-purple))] text-[4rem]">
+                <div className="mx-auto flex h-37.5 w-37.5 items-center justify-center rounded-full bg-[linear-gradient(135deg,var(--color-teal),var(--color-purple))] text-[4rem]">
                   🏆
                 </div>
               </div>
@@ -299,7 +299,7 @@ function DBNCTA() {
         </div>
 
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-stretch">
-          <div className="w-full max-w-[320px] rounded-xl border border-white/25 bg-white/10 p-4 text-left backdrop-blur-sm">
+          <div className="w-full max-w-80 rounded-xl border border-white/25 bg-white/10 p-4 text-left backdrop-blur-sm">
             <p className="mb-1 text-[0.72rem] font-semibold uppercase tracking-wider text-white/80">
               Entrepreneurs &amp; MSMEs
             </p>
@@ -314,7 +314,7 @@ function DBNCTA() {
             </a>
           </div>
 
-          <div className="w-full max-w-[320px] rounded-xl border border-white/25 bg-white/10 p-4 text-left backdrop-blur-sm">
+          <div className="w-full max-w-80 rounded-xl border border-white/25 bg-white/10 p-4 text-left backdrop-blur-sm">
             <p className="mb-1 text-[0.72rem] font-semibold uppercase tracking-wider text-white/80">
               Students &amp; Corp Members
             </p>

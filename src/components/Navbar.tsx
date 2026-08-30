@@ -47,9 +47,9 @@ export function Navbar() {
 
   return (
     <div className="sticky top-[var(--banner-height,0px)] z-[999] w-full bg-white shadow-[0_1px_3px_rgba(0,0,0,0.1)]">
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-4 py-2">
+      <div className="mx-auto flex max-w-350 items-center justify-between px-4 py-2">
         <Link href="/" className="flex items-center gap-3">
-          <Image src={logo} alt="" width={60} height={70} className="inline-block h-[70px] w-[60px]" />
+          <Image src={logo} alt="" width={60} height={70} className="inline-block h-17.5 w-15" />
           <span className="font-heading text-base ">8thGear Hub</span>
         </Link>
 
@@ -147,7 +147,7 @@ function NavDropdown({ label, links }: { label: string; links: { href: string; l
         <HiChevronDown className="h-3.5 w-3.5" />
       </PopoverButton>
       <PopoverPanel
-        className="absolute left-0 top-full z-[1000] mt-2 min-w-[260px] rounded-lg border border-grey-border bg-white py-2 shadow-brand-md"
+        className="absolute left-0 top-full z-[1000] mt-2 min-w-65 rounded-lg border border-grey-border bg-white py-2 shadow-brand-md"
       >
         {({ close }) => (
           <>

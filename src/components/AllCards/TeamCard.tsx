@@ -33,9 +33,9 @@ function advisoryImageSrc(path: string) {
 function TeamCard({ image1, name1, title1, link, chatLink, cardClassName = "" }: TeamMember & { cardClassName?: string }) {
   return (
     <div
-      className={`flex w-full flex-col overflow-hidden rounded-brand border-x-[5px] border-b-[5px] border-teal-dark bg-white shadow-brand ${cardClassName}`}
+      className={`flex w-full flex-col overflow-hidden rounded-brand border-x-5 border-b-5 border-teal-dark bg-white shadow-brand ${cardClassName}`}
     >
-      <div className="relative h-[400px] w-full">
+      <div className="relative h-100 w-full">
         <Image src={teamImageSrc(image1)} alt={name1} fill sizes="(min-width: 1024px) 33vw, 100vw" className="object-cover" />
       </div>
       <div className="flex flex-1 flex-col items-center gap-1 px-4 py-5 text-center">
@@ -72,7 +72,7 @@ function TeamCard({ image1, name1, title1, link, chatLink, cardClassName = "" }:
 
 export function Gerians() {
   return (
-    <div className="mx-auto max-w-[1400px] px-4">
+    <div className="mx-auto max-w-350 px-4">
       <h3 className="mb-5 mt-5 text-center font-heading text-purple">OUR CORE TEAM</h3>
       <div className="flex flex-wrap justify-center gap-6 pb-5">
         {(teamData.team as TeamMember[]).map((card) => (
@@ -87,7 +87,7 @@ export function Gerians() {
 
 export function EIR() {
   return (
-    <div className="mx-auto max-w-[1400px] px-4">
+    <div className="mx-auto max-w-350 px-4">
       <h3 className="mb-5 mt-5 text-center font-heading text-purple">ENTREPRENEURS IN RESIDENCE</h3>
       <div className="flex flex-wrap justify-center gap-6 pb-5">
         {(teamData.EIRcard as TeamMember[]).map((card) => (
@@ -102,7 +102,7 @@ export function EIR() {
 
 function AdvisoryCard({ image, name, position, link }: AdvisoryMember) {
   return (
-    <div className="group relative mx-auto h-[300px] w-[300px] overflow-hidden rounded-brand bg-slate shadow-brand-lg">
+    <div className="group relative mx-auto h-75 w-75 overflow-hidden rounded-brand bg-slate shadow-brand-lg">
       <Image
         src={advisoryImageSrc(image)}
         alt={name}
@@ -124,7 +124,7 @@ function AdvisoryCard({ image, name, position, link }: AdvisoryMember) {
 export function AdvisoryTeamPic() {
   return (
     <div className="bg-teal/5 py-5">
-      <div className="mx-auto max-w-[1400px] px-4">
+      <div className="mx-auto max-w-350 px-4">
         <h3 className="pb-3 pt-5 text-center font-heading text-purple">Advisory Board</h3>
         <div className="flex flex-wrap justify-center gap-8 pb-5">
           {(advisoryData.FirstHoverCard as AdvisoryMember[]).map((card) => (

@@ -87,7 +87,7 @@ function Service() {
   return (
     <div className="bg-[#f1f8ed] pb-12">
       <h3 className="pt-12 text-center font-heading text-purple">OFFERINGS</h3>
-      <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-6 px-4 pt-6 md:grid-cols-2 lg:grid-cols-3 lg:px-12">
+      <div className="mx-auto grid max-w-350 grid-cols-1 gap-6 px-4 pt-6 md:grid-cols-2 lg:grid-cols-3 lg:px-12">
         {offerings.map((offer, i) => (
           <div key={i} className="flex flex-col overflow-hidden rounded-[20px] bg-white text-center shadow-[4px_4px_4px_rgba(0,0,0,0.25)]">
             <Image src={offer.image} alt="" className="w-full rounded-t-[20px]" />
@@ -105,7 +105,7 @@ function Service() {
 function AboutSection() {
   return (
     <div className="bg-[#f1f8ed] py-12">
-      <div className="mx-auto flex max-w-[1400px] flex-col items-center gap-10 px-4 lg:flex-row lg:justify-center">
+      <div className="mx-auto flex max-w-350 flex-col items-center gap-10 px-4 lg:flex-row lg:justify-center">
         <div className="w-full lg:w-5/12">
           <h3 className="font-heading text-purple">ABOUT US</h3>
           <p>

@@ -21,8 +21,8 @@ const repeatedParagraph =
 
 function Video() {
   return (
-    <div className="mx-auto max-w-[1400px] px-4 py-12">
-      <div className="mx-auto aspect-[3/2] w-full max-w-[600px] overflow-hidden rounded-xl shadow-brand">
+    <div className="mx-auto max-w-350 px-4 py-12">
+      <div className="mx-auto aspect-[3/2] w-full max-w-150 overflow-hidden rounded-xl shadow-brand">
         <iframe
           src="https://www.youtube.com/embed/RH-Sv2J1PCU"
           title="managed-services"

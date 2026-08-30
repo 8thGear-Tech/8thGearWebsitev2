@@ -16,10 +16,10 @@ const APPLY_FORM_URL = "https://forms.gle/WJEYcDTdFkgZ6rwUA";
 
 export function VentureStudio() {
   return (
-    <div className="mx-auto max-w-[1440px]">
+    <div className="mx-auto max-w-360">
       <Hero />
 
-      <div className="mx-auto flex max-w-[1000px] flex-col items-center px-4 py-12 text-center">
+      <div className="mx-auto flex max-w-250 flex-col items-center px-4 py-12 text-center">
         <h3 className="font-heading text-purple">WHAT WE DO</h3>
         <p>
           At our venture studio, we create enterprises with sustainable business strategies. We prioritize engaging
@@ -41,7 +41,7 @@ function Hero() {
   return (
     <div className="flex h-[16.5rem] w-full items-center bg-[url('/images/ventureStudio/mobileHero.png')] bg-cover bg-center bg-no-repeat px-6 md:h-[20rem] md:px-10 md:bg-[url('/images/ventureStudio/tabHero.png')] xl:h-[34rem] xl:px-16 xl:bg-[url('/images/ventureStudio/heroImage1.png')]">
       <div className="max-w-[20rem] md:max-w-[34rem] xl:max-w-[50rem]">
-        <h1 className="text-xl font-bold leading-[1.8rem] text-white md:text-3xl md:leading-[2.4rem] xl:text-5xl xl:leading-[3.5rem]">
+        <h1 className="text-xl font-bold leading-7.2 text-white md:text-3xl md:leading-9.6 xl:text-5xl xl:leading-14">
           Transforming visionary ideas into thriving sustainable ventures with precision and passion
         </h1>
         <div className="mt-6">
@@ -148,7 +148,7 @@ function HowWeDoIt() {
   return (
     <div className="bg-[#f9fff5] px-4 py-12">
       <h3 className="pb-8 text-center font-heading text-purple">HOW WE DO IT</h3>
-      <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="mx-auto grid max-w-300 grid-cols-1 gap-8 md:grid-cols-2">
         {howWeDoItStages.map((stage) => (
           <div key={stage.title} className="flex gap-4">
             <Image src={stage.imgLink} alt="" width={80} height={80} className="h-20 w-20 shrink-0" />
@@ -172,7 +172,7 @@ const impactMetrics = [
 
 function ImpactMetrics() {
   return (
-    <div className="mx-auto max-w-[900px] px-4 py-12 text-center">
+    <div className="mx-auto max-w-225 px-4 py-12 text-center">
       <h3 className="py-3 font-heading text-purple">IMPACT METRICS</h3>
       <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
         {impactMetrics.map((m) => (
@@ -263,14 +263,14 @@ function PortfolioCompanies() {
         <p>A platform for collaboration and growth</p>
       </div>
 
-      <div className="mx-auto grid max-w-[1300px] grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-325 grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {portfolioCompanies.map((c) => (
           <div
             key={c.headText}
             className="flex flex-col overflow-hidden rounded-2xl border border-black/[0.06] bg-white text-left shadow-[0_4px_20px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-2 hover:shadow-[0_12px_32px_rgba(110,0,106,0.15)]"
           >
-            <div className="flex min-h-[180px] items-center justify-center bg-[linear-gradient(180deg,#f9f9f9_0%,#ffffff_100%)] px-5 pb-5 pt-10">
-              <div className="relative h-[120px] w-[140px]">
+            <div className="flex min-h-45 items-center justify-center bg-[linear-gradient(180deg,#f9f9f9_0%,#ffffff_100%)] px-5 pb-5 pt-10">
+              <div className="relative h-30 w-35">
                 <Image src={c.imgLink} alt={c.headText} fill sizes="140px" className="object-contain" />
               </div>
             </div>

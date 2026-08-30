@@ -3,10 +3,10 @@ import { BsArrowUpRight } from "react-icons/bs";
 export function EIRApplySection() {
   return (
     <section id="eir-apply" className="relative overflow-hidden bg-[linear-gradient(150deg,#fdf4ff_0%,#f0fdfc_60%,#fff8f5_100%)] py-20">
-      <div className="pointer-events-none absolute -left-[100px] -top-[120px] h-[440px] w-[440px] rounded-full bg-[radial-gradient(circle,rgba(130,30,107,0.09)_0%,transparent_70%)]" />
-      <div className="pointer-events-none absolute -bottom-20 -right-20 h-[360px] w-[360px] rounded-full bg-[radial-gradient(circle,rgba(26,152,143,0.08)_0%,transparent_70%)]" />
+      <div className="pointer-events-none absolute -left-25 -top-30 h-110 w-110 rounded-full bg-[radial-gradient(circle,rgba(130,30,107,0.09)_0%,transparent_70%)]" />
+      <div className="pointer-events-none absolute -bottom-20 -right-20 h-90 w-90 rounded-full bg-[radial-gradient(circle,rgba(26,152,143,0.08)_0%,transparent_70%)]" />
 
-      <div className="relative z-[1] mx-auto flex max-w-[1000px] flex-wrap items-start gap-16 px-6 md:px-8">
+      <div className="relative z-[1] mx-auto flex max-w-250 flex-wrap items-start gap-16 px-6 md:px-8">
         <div className="min-w-0 flex-1 basis-[340px]">
           <h3 className="mb-5 font-heading text-2xl font-medium leading-tight tracking-[-0.02em] text-[#0f1f20]">
             Become an <span className="text-purple">EIR</span> at 8thGear

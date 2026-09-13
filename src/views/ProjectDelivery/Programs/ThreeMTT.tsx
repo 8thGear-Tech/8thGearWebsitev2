@@ -115,7 +115,7 @@ function ProgrammeOverview() {
           <h3 className="mb-3.75 text-[1.75rem] font-extrabold text-[#1a1a1a] md:text-[1.9rem] lg:text-[2.2rem]">
             About the 3MTT Talent Programme
           </h3>
-          <div className="mx-auto h-1 w-20 rounded-[2px] bg-linear-to-r from-[#8B1C8D] via-[#1F7A1F] to-[#C8D500]" />
+          <div className="mx-auto h-1 w-20 rounded-xs bg-linear-to-r from-[#8B1C8D] via-[#1F7A1F] to-[#C8D500]" />
           <p className="mt-3">
             Nigeria&apos;s largest government-backed initiative to train tech professionals for MSMEs
           </p>
@@ -210,7 +210,7 @@ function WhyPartnerWithUs() {
           <h3 className="mb-3.75 text-[1.75rem] font-extrabold text-[#1a1a1a] md:text-[1.9rem] lg:text-[2.2rem]">
             Why This Matters for Your Business
           </h3>
-          <div className="mx-auto h-1 w-20 rounded-[2px] bg-linear-to-r from-[#8B1C8D] via-[#1F7A1F] to-[#C8D500]" />
+          <div className="mx-auto h-1 w-20 rounded-xs bg-linear-to-r from-[#8B1C8D] via-[#1F7A1F] to-[#C8D500]" />
           <p className="mt-3">Strategic advantages that help MSMEs compete in the digital economy</p>
         </div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -308,7 +308,7 @@ function TalentApplicationSection() {
               Aspiring Tech Professionals
             </span>
             <h3 className="mt-3">Want to Join the Talent Pipeline?</h3>
-            <div className="mx-auto h-1 w-20 rounded-[2px] bg-linear-to-r from-[#8B1C8D] via-[#1F7A1F] to-[#C8D500]" />
+            <div className="mx-auto h-1 w-20 rounded-xs bg-linear-to-r from-[#8B1C8D] via-[#1F7A1F] to-[#C8D500]" />
             <p className="mt-3 text-secondary">
               If you&apos;re looking to develop in-demand AI and Data Science skills, apply to join the 3MTT
               programme. Training is 100% FREE and government-certified.
@@ -362,14 +362,14 @@ function TalentApplicationSection() {
             )}
 
             {activeTab === "benefits" && (
-              <div className="grid grid-cols-1 gap-5 sm:[grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
+              <div className="grid grid-cols-1 gap-5 sm:grid-cols-[repeat(auto-fit,minmax(280px,1fr))]">
                 {benefits.map((benefit) => (
                   <div
                     key={benefit}
                     className="flex items-start gap-3 rounded-xl bg-[#f8f9fa] p-3.75 transition-all duration-300 hover:bg-white hover:shadow-[0_4px_15px_rgba(139,28,141,0.1)]"
                   >
                     <BsCheckCircleFill className="mt-0.5 shrink-0 text-[1.3rem] text-[#1F7A1F]" />
-                    <span className="text-base leading-[1.5] text-[#4a4a4a]">{benefit}</span>
+                    <span className="text-base leading-normal text-[#4a4a4a]">{benefit}</span>
                   </div>
                 ))}
               </div>

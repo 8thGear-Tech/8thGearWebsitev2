@@ -77,7 +77,7 @@ function VideoColumn({ videos }: { videos: Video[] }) {
 export default function ResourcesContent() {
   return (
     <div className="bg-grey-bg pt-3 pb-10 text-center">
-      <h3 className="py-4 font-heading text-purple">KNOWLEDGE CENTER</h3>
+      <h3 className="py-4 font-heading text-purple font-medium text-2xl">KNOWLEDGE CENTER</h3>
       <div className="mx-auto grid max-w-350 grid-cols-1 gap-10 px-4 lg:grid-cols-12 lg:px-8">
         <div className="lg:col-span-8">
           <VideoColumn videos={knowledgeCenter} />

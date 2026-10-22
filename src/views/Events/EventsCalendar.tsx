@@ -61,7 +61,7 @@ export function EventsCalendar() {
   return (
     <div className="mt-5 flex flex-col pt-4">
       <div className="flex items-center justify-center">
-        <h3 className="pb-3 pt-5 text-center font-heading text-purple">EVENTS CALENDAR</h3>
+        <h3 className="pb-3 pt-5 text-center font-heading text-purple font-medium text-2xl">EVENTS CALENDAR</h3>
       </div>
       <div className="flex items-center justify-center gap-4">
         <button type="button" onClick={() => setShowPast(false)} className={tabClasses(!showPast)}>

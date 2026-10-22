@@ -52,7 +52,7 @@ function WhatWeDo() {
   return (
     <div className="bg-teal/[0.07] px-4 py-12">
       <div className="mx-auto max-w-350">
-        <h3 className="font-heading">What We Do</h3>
+        <h3 className="font-heading font-medium text-2xl">What We Do</h3>
         <p className="max-w-3xl">
           We firmly believe in creating enterprises with a sustainable business strategy at our venture studio. At
           the beginning of the business and throughout its existence, we place a high priority on speaking with
@@ -111,7 +111,7 @@ function HowWeDoIt() {
   return (
     <div className="px-4 py-12">
       <div className="mx-auto max-w-250">
-        <h3 className="font-heading">How We Do It</h3>
+        <h3 className="font-heading font-medium text-2xl">How We Do It</h3>
         <p>
           A business&apos;s development is not a simple stroll in the park; it requires a great deal of grit, guts,
           and resources. It is a voyage that should not be attempted alone. That is why our team of professionals,
@@ -125,8 +125,8 @@ function HowWeDoIt() {
                 <Image src={stage.icon} alt="" className="h-32 w-32 object-contain" />
               </div>
               <div>
-                <h4 className="font-heading text-purple">{stage.number}</h4>
-                <h3 className="font-heading">{stage.title}</h3>
+                <h4 className="font-heading text-purple font-medium text-2xl">{stage.number}</h4>
+                <h3 className="font-heading font-medium text-2xl">{stage.title}</h3>
                 <p>{stage.body}</p>
               </div>
             </div>
@@ -150,7 +150,7 @@ function OurModelTractions() {
       <div className="mx-auto grid max-w-350 grid-cols-2 gap-8 lg:grid-cols-4">
         {tractions.map((t) => (
           <div key={t.label}>
-            <h1 className="font-heading">{t.value}</h1>
+            <h1 className="font-heading font-medium text-2xl">{t.value}</h1>
             <p className="text-sm">{t.label}</p>
           </div>
         ))}

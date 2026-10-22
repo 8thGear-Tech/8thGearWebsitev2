@@ -20,7 +20,7 @@ export function ProjectDeliveryTextHero() {
 export function ProjectDeliveryContentSection({ title, text }: { title: string; text: string }) {
   return (
     <div className="mx-auto max-w-225 px-4 py-14 text-center">
-      <h2 className="mb-4 font-heading text-purple">{title}</h2>
+      <h2 className="mb-4 font-heading text-purple font-medium text-2xl">{title}</h2>
       <p className="text-secondary">{text}</p>
     </div>
   );

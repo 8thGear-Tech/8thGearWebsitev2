@@ -31,7 +31,7 @@ export function PartnersMarquee({
 
   return (
     <div>
-      {title && <h3 className="pb-3 pt-5 text-center font-heading text-purple">{title}</h3>}
+      {title && <h3 className="pb-3 pt-5 text-center font-heading text-purple font-medium text-2xl">{title}</h3>}
       <div className="relative z-[1] mx-auto h-37.5 w-full overflow-hidden">
         <div className="flex w-max flex-nowrap items-center gap-16 [animation:marquee-scroll_45s_linear_infinite]">
           {track.map((src, index) => (

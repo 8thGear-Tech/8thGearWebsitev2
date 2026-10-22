@@ -21,7 +21,7 @@ export function EventGallery() {
   return (
     <div className="bg-teal/5 pt-5">
       <div className="mx-auto max-w-350 px-4 py-12 lg:px-12">
-        <h3 className="pb-6 text-center font-heading text-purple">GALLERY</h3>
+        <h3 className="pb-6 text-center font-heading text-purple font-medium text-2xl">GALLERY</h3>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {galleryItems.map((item) => (
             <Link

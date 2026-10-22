@@ -27,7 +27,7 @@ const pictures = [
 export function FoundersMeetupGalleryPage() {
   return (
     <div>
-      <h3 className="pb-2 pt-10 text-center font-heading text-purple">FOUNDERS MEETUP GALLERY</h3>
+      <h3 className="pb-2 pt-10 text-center font-heading text-purple font-medium text-2xl">FOUNDERS MEETUP GALLERY</h3>
       <GalleryImageGrid images={pictures} />
     </div>
   );

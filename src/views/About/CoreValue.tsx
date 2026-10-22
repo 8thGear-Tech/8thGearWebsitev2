@@ -66,7 +66,7 @@ export function CoreValue() {
 
   return (
     <div className="mx-auto mt-5 max-w-225 px-4 pb-12">
-      <h3 className="mb-2 text-center font-heading text-purple">WHO WE ARE</h3>
+      <h3 className="mb-2 text-center font-heading text-purple font-medium text-2xl">WHO WE ARE</h3>
       <p className="mb-10 text-center text-sm text-secondary">
         8thGear® is a brand owned by 8thGear Partners Limited and operates as 8thGear Hub &amp; Venture Studio
       </p>

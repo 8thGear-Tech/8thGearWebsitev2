@@ -73,7 +73,7 @@ function TeamCard({ image1, name1, title1, link, chatLink, cardClassName = "" }:
 export function Gerians() {
   return (
     <div className="mx-auto max-w-350 px-4">
-      <h3 className="mb-5 mt-5 text-center font-heading text-purple">OUR CORE TEAM</h3>
+      <h3 className="mb-5 mt-5 text-center font-heading text-purple font-medium text-2xl">OUR CORE TEAM</h3>
       <div className="flex flex-wrap justify-center gap-6 pb-5">
         {(teamData.team as TeamMember[]).map((card) => (
           <div key={card.id} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
@@ -88,7 +88,7 @@ export function Gerians() {
 export function EIR() {
   return (
     <div className="mx-auto max-w-350 px-4">
-      <h3 className="mb-5 mt-5 text-center font-heading text-purple">ENTREPRENEURS IN RESIDENCE</h3>
+      <h3 className="mb-5 mt-5 text-center font-heading text-purple font-medium text-2xl">ENTREPRENEURS IN RESIDENCE</h3>
       <div className="flex flex-wrap justify-center gap-6 pb-5">
         {(teamData.EIRcard as TeamMember[]).map((card) => (
           <div key={card.id} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
@@ -125,7 +125,7 @@ export function AdvisoryTeamPic() {
   return (
     <div className="bg-teal/5 py-5">
       <div className="mx-auto max-w-350 px-4">
-        <h3 className="pb-3 pt-5 text-center font-heading text-purple">Advisory Board</h3>
+        <h3 className="pb-3 pt-5 text-center font-heading text-purple font-medium text-2xl">Advisory Board</h3>
         <div className="flex flex-wrap justify-center gap-8 pb-5">
           {(advisoryData.FirstHoverCard as AdvisoryMember[]).map((card) => (
             <AdvisoryCard key={card.id} {...card} />

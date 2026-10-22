@@ -11,7 +11,7 @@ export function LegalPageLayout({ title, children }: { title: string; children: 
     <div>
       <div className="bg-[#f7f7f7] px-4 py-10 lg:px-12">
         <div className="mx-auto max-w-350">
-          <h3 className="text-center font-heading text-[rgba(0,0,0,0.9)] lg:text-left">{title}</h3>
+          <h3 className="text-center font-heading text-[rgba(0,0,0,0.9)] lg:text-left font-medium text-2xl">{title}</h3>
         </div>
       </div>
       <div

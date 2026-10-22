@@ -58,7 +58,7 @@ const track = [...slidesData, ...slidesData];
 export function SliderComponent() {
   return (
     <div className="mx-auto max-w-350 px-4 py-3">
-      <h3 className="mb-5 mt-5 text-center font-heading text-purple">BOARD OF DIRECTORS &amp; ADVISORS</h3>
+      <h3 className="mb-5 mt-5 text-center font-heading text-purple font-medium text-2xl">BOARD OF DIRECTORS &amp; ADVISORS</h3>
       <div className="overflow-hidden whitespace-nowrap">
         <div className="inline-block [animation:marquee-scroll_40s_linear_infinite]">
           {track.map((slide, index) => (

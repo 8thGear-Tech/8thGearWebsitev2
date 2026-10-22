@@ -14,7 +14,7 @@ const videos = [{ id: 1, src: "https://www.youtube.com/embed/PEnuHN-Mqvg" }];
 export function ProjectDeliveryGallery() {
   return (
     <div className="mx-auto max-w-350 px-4 py-12 lg:px-12">
-      <h3 className="pb-6 text-center font-heading text-purple">PROJECT DELIVERY GALLERY</h3>
+      <h3 className="pb-6 text-center font-heading text-purple font-medium text-2xl">PROJECT DELIVERY GALLERY</h3>
       <GalleryVideoGrid videos={videos} />
     </div>
   );

@@ -14,7 +14,7 @@ export function PiggeryTrainingGallery() {
   return (
     <>
       <ProjectDeliveryGalleryHero image={piggeryHeroImg} alt="Piggery training" />
-      <h3 className="pb-2 pt-10 text-center font-heading text-purple">PIGGERY TRAINING GALLERY</h3>
+      <h3 className="pb-2 pt-10 text-center font-heading text-purple font-medium text-2xl">PIGGERY TRAINING GALLERY</h3>
       <GalleryImageGrid images={pictures} />
     </>
   );

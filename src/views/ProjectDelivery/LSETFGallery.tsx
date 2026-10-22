@@ -18,7 +18,7 @@ export function LSETFGallery() {
   return (
     <>
       <ProjectDeliveryGalleryHero image={lsetfHeroImg} alt="LSETF training" />
-      <h3 className="pb-2 pt-10 text-center font-heading text-purple">LSETF GALLERY</h3>
+      <h3 className="pb-2 pt-10 text-center font-heading text-purple font-medium text-2xl">LSETF GALLERY</h3>
       <GalleryImageGrid images={pictures} />
       <GalleryVideoGrid videos={videos} />
     </>

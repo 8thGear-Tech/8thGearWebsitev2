@@ -8,8 +8,8 @@ export function SpotlightSection() {
   const [src, setSrc] = useState("");
 
   return (
-    <div className="pb-3">
-      <h3 className="mt-2 pt-5 text-center font-heading text-purple">
+    <div className="pb-10">
+      <h3 className="mt-2 pt-5 text-center font-heading text-purple font-medium text-2xl">
         8thGear in the Spotlight: Supporting MSMEs Across Nigeria
       </h3>
 

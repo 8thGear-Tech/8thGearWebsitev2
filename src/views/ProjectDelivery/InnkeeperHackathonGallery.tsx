@@ -16,7 +16,7 @@ export function InnkeeperHackathonGallery() {
   return (
     <>
       <ProjectDeliveryGalleryHero image={hackathonHeroImg} alt="Innkeeper Hackathon" />
-      <h3 className="pb-2 pt-10 text-center font-heading text-purple">INNKEEPER HACKATHON GALLERY</h3>
+      <h3 className="pb-2 pt-10 text-center font-heading text-purple font-medium text-2xl">INNKEEPER HACKATHON GALLERY</h3>
       <GalleryImageGrid images={pictures} />
     </>
   );

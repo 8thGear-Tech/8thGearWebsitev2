@@ -26,7 +26,7 @@ export function GIZEmployabilityGallery() {
   return (
     <>
       <GIZHero />
-      <h3 className="pb-2 pt-10 text-center font-heading text-purple">GIZ EMPLOYABILITY GALLERY</h3>
+      <h3 className="pb-2 pt-10 text-center font-heading text-purple font-medium text-2xl">GIZ EMPLOYABILITY GALLERY</h3>
       <GalleryImageGrid images={pictures} />
     </>
   );

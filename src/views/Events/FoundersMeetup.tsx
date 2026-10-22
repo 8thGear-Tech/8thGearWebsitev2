@@ -61,7 +61,7 @@ function EventsWriteUp() {
       </p>
 
       <div className="mt-8">
-        <h3 className="font-heading">WHO SHOULD ATTEND?</h3>
+        <h3 className="font-heading font-medium text-2xl">WHO SHOULD ATTEND?</h3>
         <ul className="ml-5 list-disc space-y-1 pt-2">
           <li>Startup founders</li>
           <li>Business owners</li>

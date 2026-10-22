@@ -17,7 +17,7 @@ export function DemoDayPage() {
         <Image src={demoHeroImg} alt="" fill sizes="100vw" className="object-cover" priority />
         <div className="absolute inset-0 bg-black/[.771]" />
         <div className="relative z-10 flex flex-col items-center text-white">
-          <h2 className="mb-2 font-heading">Demo Day</h2>
+          <h2 className="mb-2 font-heading font-medium text-2xl">Demo Day</h2>
           <h3 className="mb-3 font-heading text-xl font-bold text-white">Showcasing Innovation and Excellence</h3>
           <p className="mb-4 max-w-xl">
             From time to time 8thGear Hub hosts Demo days for all its portfolio and select companies
@@ -73,7 +73,7 @@ function DemoSection({
   return (
     <div className="mx-auto max-w-350 px-4 py-12">
       <div className="mb-10 text-center">
-        <h3 className="font-heading">8thGear Hub Demo Day</h3>
+        <h3 className="font-heading font-medium text-2xl">8thGear Hub Demo Day</h3>
         <p className="mx-auto max-w-2xl text-[#64748b]">
           It is a value-packed day where every member of our ecosystem comes together to witness the brilliance of
           creative minds and hear pitch ideas that have the potential to scale.
@@ -82,7 +82,7 @@ function DemoSection({
 
       <div className="mb-12 grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
         <div>
-          <h3 className="mb-3 font-heading">What is Demo Day?</h3>
+          <h3 className="mb-3 font-heading font-medium text-2xl">What is Demo Day?</h3>
           <div className="space-y-3 text-[#64748b]">
             <p>On Demo Day, 8thGear Hub offers startups an opportunity to pitch their ideas and meet with possible investors.</p>
             <p>Demo Day is open to all startups who are looking for investors and are willing to take their business to the next level!!</p>
@@ -97,7 +97,7 @@ function DemoSection({
           <Image src={imageTwo} alt="Join Demo Day" className="w-full rounded-2xl shadow-brand-lg" />
         </div>
         <div className="order-1 lg:order-2">
-          <h3 className="mb-3 font-heading">Want to be a part of demo day?</h3>
+          <h3 className="mb-3 font-heading font-medium text-2xl">Want to be a part of demo day?</h3>
           <div className="space-y-3 text-[#64748b]">
             <p>1. Must have completed any 8thGear Program (MIRE, DSE, DBN)</p>
             <p>2. Confident speaking in English</p>

@@ -109,14 +109,14 @@ function Blog() {
           </button>
 
           <div className="absolute bottom-[3%] left-[5%] z-2 text-white">
-            <h2 className="font-heading">Blogs</h2>
+            <h2 className="font-heading font-medium text-2xl">Blogs</h2>
             <p>Here you can browse recent blog releases.</p>
           </div>
         </div>
 
         {/* Categories card for large screens */}
         <div className="hidden h-100 border-l border-grey-border bg-grey-bg p-5 lg:col-span-4 lg:block">
-          <h3 className="mb-5 font-heading">Categories</h3>
+          <h3 className="mb-5 font-heading font-medium text-2xl">Categories</h3>
           <CategoriesList />
         </div>
 
@@ -138,7 +138,7 @@ function Blog() {
               >
                 <FaTimes size={24} color="#000" />
               </button>
-              <h3 className="mb-5 text-center font-heading">Categories</h3>
+              <h3 className="mb-5 text-center font-heading font-medium text-2xl">Categories</h3>
               <CategoriesList />
             </div>
           </div>

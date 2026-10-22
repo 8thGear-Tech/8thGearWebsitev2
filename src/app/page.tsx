@@ -57,14 +57,14 @@ const offerings = [
     body: (
       <>
         Supporting your venture with{" "}
-        <Link href="/growth-advisory" className="text-black no-underline">
+        <Link href="/growth-advisory" className="text-shadow-purple-600 no-underline">
           Growth-Advisory,{" "}
         </Link>
-        <Link href="/coworking" className="text-black no-underline">
+        <Link href="/coworking" className="text-shadow-purple-600 no-underline">
           Co-working
         </Link>{" "}
         services &amp; B2B solutions in our{" "}
-        <Link href="/msme-marketplace" className="text-black no-underline">
+        <Link href="/msme-marketplace" className="text-shadow-purple-600 no-underline">
           MSME Marketplace
         </Link>
         .
@@ -86,13 +86,13 @@ const offerings = [
 function Service() {
   return (
     <div className="bg-[#f1f8ed] pb-12">
-      <h3 className="pt-12 text-center font-heading text-purple">OFFERINGS</h3>
+      <h3 className="pt-12 text-center font-heading text-purple font-medium text-2xl">OFFERINGS</h3>
       <div className="mx-auto grid max-w-350 grid-cols-1 gap-6 px-4 pt-6 md:grid-cols-2 lg:grid-cols-3 lg:px-12">
         {offerings.map((offer, i) => (
           <div key={i} className="flex flex-col overflow-hidden rounded-[20px] bg-white text-center shadow-[4px_4px_4px_rgba(0,0,0,0.25)]">
             <Image src={offer.image} alt="" className="w-full rounded-t-[20px]" />
             <div className="px-4 pb-3">
-              <h4 className="mt-4 font-heading">{offer.title}</h4>
+              <h4 className="mt-4 font-heading font-medium text-xl mb-2">{offer.title}</h4>
               <p>{offer.body}</p>
             </div>
           </div>
@@ -107,8 +107,8 @@ function AboutSection() {
     <div className="bg-[#f1f8ed] py-12">
       <div className="mx-auto flex max-w-350 flex-col items-center gap-10 px-4 lg:flex-row lg:justify-center">
         <div className="w-full lg:w-5/12">
-          <h3 className="font-heading text-purple">ABOUT US</h3>
-          <p>
+          <h3 className="font-heading text-purple font-medium text-2xl">ABOUT US</h3>
+          <p className="mb-4">
             Your trusted partner in venture building, guiding startups and businesses towards sustainable growth and
             success.
           </p>

@@ -22,7 +22,7 @@ export function EventsPortfolio() {
   return (
     <div className="flex flex-col">
       <div className="flex items-center justify-center">
-        <h3 className="pb-4 pt-5 text-center font-heading text-purple">MAJOR EVENTS</h3>
+        <h3 className="pb-4 pt-5 text-center font-heading text-purple font-medium text-2xl">MAJOR EVENTS</h3>
       </div>
       <div className="mx-auto grid max-w-350 grid-cols-1 gap-6 px-4 pb-8 md:grid-cols-2 lg:px-12">
         {majorEvents.map((event) => (

@@ -28,7 +28,7 @@ export function DemoDayGalleryPage() {
         </h2>
       </div>
 
-      <h3 className="pb-2 pt-10 text-center font-heading text-purple">DEMO DAY GALLERY</h3>
+      <h3 className="pb-2 pt-10 text-center font-heading text-purple font-medium text-2xl">DEMO DAY GALLERY</h3>
       <GalleryImageGrid images={pictures} />
       <GalleryVideoGrid videos={videos} />
     </>

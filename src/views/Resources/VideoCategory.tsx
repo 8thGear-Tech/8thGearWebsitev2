@@ -53,7 +53,7 @@ export default function VideoDetail() {
       <VideoCategoryHero />
       <div className="mx-auto max-w-350 px-4">
         <DetailsCard />
-        <h2 className="pt-10 text-center font-heading text-purple">Videos In BMC</h2>
+        <h2 className="pt-10 text-center font-heading text-purple font-medium text-2xl">Videos In BMC</h2>
         <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {bmcVideoData.Videoresources.map((video) => (
             <BmcVideoCard key={video.id} {...video} />

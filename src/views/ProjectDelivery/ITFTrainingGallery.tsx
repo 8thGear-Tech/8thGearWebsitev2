@@ -21,7 +21,7 @@ export function ITFTrainingGallery() {
   return (
     <>
       <ProjectDeliveryGalleryHero image={itfHeroImg} alt="ITF training" />
-      <h3 className="pb-2 pt-10 text-center font-heading text-purple">ITF TRAINING GALLERY</h3>
+      <h3 className="pb-2 pt-10 text-center font-heading text-purple font-medium text-2xl">ITF TRAINING GALLERY</h3>
       <GalleryImageGrid images={pictures} />
     </>
   );

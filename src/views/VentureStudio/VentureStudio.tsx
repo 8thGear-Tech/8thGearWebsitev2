@@ -20,7 +20,7 @@ export function VentureStudio() {
       <Hero />
 
       <div className="mx-auto flex max-w-250 flex-col items-center px-4 py-12 text-center">
-        <h3 className="font-heading text-purple">WHAT WE DO</h3>
+        <h3 className="font-heading text-purple font-medium text-2xl">WHAT WE DO</h3>
         <p>
           At our venture studio, we create enterprises with sustainable business strategies. We prioritize engaging
           with potential clients from start and throughout the business lifecycle. Years of iterative learning have
@@ -96,7 +96,7 @@ function CoreServices() {
 
   return (
     <div className="px-4 py-6">
-      <h3 className="pb-8 text-center font-heading text-purple">SHARED SERVICES</h3>
+      <h3 className="pb-8 text-center font-heading text-purple font-medium text-2xl">SHARED SERVICES</h3>
       <div
         ref={scrollerRef}
         className="scrollbar-none -mx-4 flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-6 scroll-px-4"
@@ -147,13 +147,13 @@ const howWeDoItStages = [
 function HowWeDoIt() {
   return (
     <div className="bg-[#f9fff5] px-4 py-12">
-      <h3 className="pb-8 text-center font-heading text-purple">HOW WE DO IT</h3>
+      <h3 className="pb-8 text-center font-heading text-purple font-medium text-2xl">HOW WE DO IT</h3>
       <div className="mx-auto grid max-w-300 grid-cols-1 gap-8 md:grid-cols-2">
         {howWeDoItStages.map((stage) => (
           <div key={stage.title} className="flex gap-4">
             <Image src={stage.imgLink} alt="" width={80} height={80} className="h-20 w-20 shrink-0" />
             <div>
-              <h3 className="font-heading">{stage.title}</h3>
+              <h3 className="font-heading font-medium text-2xl">{stage.title}</h3>
               <p className="text-base">{stage.body}</p>
             </div>
           </div>
@@ -173,11 +173,11 @@ const impactMetrics = [
 function ImpactMetrics() {
   return (
     <div className="mx-auto max-w-225 px-4 py-12 text-center">
-      <h3 className="py-3 font-heading text-purple">IMPACT METRICS</h3>
+      <h3 className="py-3 font-heading text-purple font-medium text-2xl">IMPACT METRICS</h3>
       <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
         {impactMetrics.map((m) => (
           <div key={m.label}>
-            <h2 className="font-heading">{m.value}</h2>
+            <h2 className="font-heading font-medium text-2xl">{m.value}</h2>
             <p>{m.label}</p>
           </div>
         ))}
@@ -259,7 +259,7 @@ function PortfolioCompanies() {
   return (
     <div className="px-4 py-12 text-center">
       <div className="mx-auto max-w-2xl pb-8">
-        <h3 className="font-heading text-purple">HUB MEMBERSHIP</h3>
+        <h3 className="font-heading text-purple font-medium text-2xl">HUB MEMBERSHIP</h3>
         <p>A platform for collaboration and growth</p>
       </div>
 

@@ -33,6 +33,7 @@ const programsLinks = [
   { href: "/migrant-advisory-desk", label: "8thGear Job Center (Advisory Desk)" },
   { href: "/DeepTech_DSN_Google", label: "DeepTech Upskilling (DSN/Google)" },
   { href: "/YDOS", label: "Youth Day of Service (YDOS)" },
+  { href: "/esp", label: "LSETF/GIZ ESP (Employability Support)" },
 ];
 
 const primaryLinks = [

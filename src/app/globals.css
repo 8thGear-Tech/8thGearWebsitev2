@@ -155,6 +155,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* GearUp "Apply Now" hourglass: rest, flip 180°, rest, flip back round to 360°. */
+@keyframes hourglass-flip {
+  0%, 35% {
+    transform: rotate(0deg);
+  }
+  50%, 85% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Used by the Zoho landing page's hero "live" status dot. */
 @keyframes zoho-pulse {
   0%, 100% {

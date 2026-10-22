@@ -296,184 +296,161 @@ function Testimonials() {
 }
 
 /* ── Price Range ──────────────────────────────── */
+/* Mirrors the "8thGear Co-Working Rate Card" flyer: six standalone cards, no tabs. */
 
-type Plan = { title: string; price: string; timeRange?: string; features: string[] };
+type PriceLine = { amount: string; label: string; note?: string };
+type RateCard = { title: string; badge?: string; ratesLabel?: string; prices: PriceLine[]; perks: string[]; pink?: boolean };
 
-const virtualPlans: Plan[] = [
-  {
-    title: "VIRTUAL OFFICE",
-    price: "₦150,000 Per Quarter",
-    features: [
-      "Verified Official Business Address",
-      "Logo displayed at the 8thGear Hub",
-      "Address Verification Documents",
-      "Mail & Parcel Handling",
-      "Guest Reception",
-      "10hrs Meeting Room per quarter",
-      "Professional recognition and credibility for your busines",
-    ],
-  },
-  {
-    title: "DEDICATED DESK",
-    price: "₦50,000 Per Month",
-    features: [
-      "Fast, Reliable Internet Access",
-      "Uninterrupted Power Supply",
-      "Meeting Room - 3hr Free/Month",
-      "Kitchenette",
-      "Lounge Area",
-      "Community Events",
-      "5% Discount on Hub Services",
-    ],
-  },
+const officePerks = [
+  "Fast, Reliable Internet Access",
+  "Uninterrupted Power Supply",
+  "Meeting Room 3hrs Free Per Month",
+  "Kitchenette",
+  "Tea / Coffee",
+  "Community Events",
+  "5% Discount on Hub Services",
+  "2 pages free printing service daily",
+  "Table water daily",
+  "Lounge Area",
 ];
 
-const flexiPlans: Plan[] = [
+const rateCards: RateCard[] = [
   {
-    title: "REGULAR",
-    price: "₦5,000 Per Day",
-    features: ["Fast, Reliable Internet Access", "Uninterrupted Power Supply", "Kitchenette", "Community Events"],
-  },
-  {
-    title: "CLASSIC",
-    price: "₦18,000 (5 Days)",
-    features: ["Fast, Reliable Internet Access", "Uninterrupted Power Supply", "Kitchenette", "Community Events"],
-  },
-  {
-    title: "DELUXE",
-    price: "₦35,000 (10 Days)",
-    features: ["Fast, Reliable Internet Access", "Uninterrupted Power Supply", "Kitchenette", "Community Events"],
-  },
-  {
-    title: "SATURDAYS",
-    price: "₦8,000 Per Day",
-    timeRange: "(10am-3pm)",
-    features: ["Fast, Reliable Internet Access", "Uninterrupted Power Supply", "Kitchenette", "Community Events"],
-  },
-  {
-    title: "NIGHT PLAN",
-    price: "₦15,000",
-    timeRange: "(6pm-6am)",
-    features: ["Fast, Reliable Internet Access", "Uninterrupted Power Supply", "Kitchenette", "Community Events"],
-  },
-  {
-    title: "MEETING ROOM",
-    price: "₦10,000 Per Hour",
-    features: [
+    title: "Meeting Room",
+    prices: [{ amount: "₦15,000", label: "Per Hour" }],
+    perks: [
       "Fast, Reliable Internet Access",
       "Uninterrupted Power Supply",
       "Kitchenette",
-      "Community Events",
+      "Community events",
       "Sits up to 8 persons",
+      "Coffee and Tea",
+      "Table water for 8",
     ],
+  },
+  {
+    title: "Event/Training Hall",
+    pink: true,
+    ratesLabel: "Rates",
+    prices: [
+      { amount: "₦180,000", label: "Per Day" },
+      { amount: "₦100,000", label: "Half Day", note: "(9am-1pm / 1pm-5pm)" },
+      { amount: "₦240,000", label: "Per day with Rollup Banner" },
+    ],
+    perks: [
+      "Uninterrupted Power Supply",
+      "Good Sound System",
+      "Sits up to 50 persons",
+      "Interactive Screens",
+      "White Board & Marker",
+      "3 Stick note of different colours",
+      "Banner printing (Event planning services available on request)",
+    ],
+  },
+  {
+    title: "Private Office",
+    prices: [{ amount: "₦350,000", label: "Per Month" }],
+    perks: officePerks,
+  },
+  {
+    title: "Virtual Office",
+    pink: true,
+    prices: [{ amount: "₦150,000", label: "Per Quarter" }],
+    perks: ["Corporate Address", "Mail Handling", "Community Events", "In-Room Signage (Logo in Hub)"],
+  },
+  {
+    title: "Flexi Plan",
+    badge: "Weekdays 9am-5pm",
+    prices: [
+      { amount: "₦12,000", label: "1 Day" },
+      { amount: "₦55,000", label: "5 Days" },
+      { amount: "₦105,000", label: "10 Days" },
+      { amount: "₦15,000", label: "Saturdays", note: "(10:00am-3:00pm)" },
+      { amount: "₦25,000", label: "Night Plan", note: "(6:00pm-6:00am)" },
+    ],
+    perks: [
+      "Fast, Reliable Internet Access",
+      "Uninterrupted Power Supply",
+      "Kitchenette",
+      "Water (bottle water) per day",
+      "Lunch (Rice + Chicken)",
+      "Coffee & Tea per day",
+    ],
+  },
+  {
+    title: "Dedicated Desk",
+    pink: true,
+    prices: [{ amount: "₦100,000", label: "Per Month" }],
+    perks: officePerks,
   },
 ];
 
-const hallPlans: Plan[] = [
-  {
-    title: "CLASSIC - Per Hour",
-    price: "₦20,000",
-    features: ["Uninterrupted Power Supply", "Screen", "Good Sound System", "Sits up to 50 persons"],
-  },
-  {
-    title: "CLASSIC - Half Day",
-    price: "₦60,000",
-    timeRange: "(9am-1pm)/(1pm-5pm)",
-    features: ["Uninterrupted Power Supply", "Screen", "Good Sound System", "Sits up to 50 persons"],
-  },
-  {
-    title: "CLASSIC - Per Day",
-    price: "₦100,000",
-    timeRange: "(9am-5pm)",
-    features: ["Uninterrupted Power Supply", "Screen", "Good Sound System", "Sits up to 50 persons"],
-  },
-  {
-    title: "PREMIUM - Per Hour",
-    price: "₦35,000",
-    features: [
-      "Uninterrupted Power Supply",
-      "Interactive Screen & White Board",
-      "Good Sound System",
-      "Sits up to 35 persons",
-    ],
-  },
-  {
-    title: "PREMIUM - Half Day",
-    price: "₦95,000",
-    timeRange: "(9am-1pm)/(1pm-5pm)",
-    features: [
-      "Uninterrupted Power Supply",
-      "Interactive Screen & White Board",
-      "Good Sound System",
-      "Sits up to 35 persons",
-    ],
-  },
-  {
-    title: "PREMIUM - Per Day",
-    price: "₦160,000",
-    timeRange: "(9am-5pm)",
-    features: [
-      "Uninterrupted Power Supply",
-      "Interactive Screen & White Board",
-      "Good Sound System",
-      "Sits up to 35 persons",
-    ],
-  },
-];
+function RateCardView({ card }: { card: RateCard }) {
+  return (
+    <div className={`flex flex-col rounded-xl p-6 shadow-brand ${card.pink ? "bg-purple/8" : "bg-white border-2 border-purple/20"}`}>
+      <h5 className="font-bold text-primary">{card.title}</h5>
 
-const packageTabs: Record<string, Plan[]> = {
-  "Quarterly/Monthly/Yearly Plan": virtualPlans,
-  "Flexi Plan": flexiPlans,
-  "Event/Training Hall": hallPlans,
-};
+      {card.badge && (
+        <span className="mt-2 inline-block w-fit rounded-full bg-purple px-3 py-1 text-xs font-bold text-white">
+          {card.badge}
+        </span>
+      )}
+      {card.ratesLabel && <p className="mb-1 mt-3 text-sm font-bold text-secondary">{card.ratesLabel}</p>}
+
+      <div className={`flex flex-col gap-0.5 ${card.badge || card.ratesLabel ? "mt-2" : "mt-2"}`}>
+        {card.prices.length === 1 ? (
+          <span className="w-fit rounded-full bg-purple px-3 py-1 text-sm font-bold text-white">
+            {card.prices[0].amount} {card.prices[0].label}
+          </span>
+        ) : (
+          card.prices.map((p) => (
+            <p key={p.label} className="m-0 text-sm font-bold text-purple">
+              {p.amount}
+              <span className="font-normal text-secondary"> - {p.label}</span>
+              {p.note && <span className="ml-1 text-xs font-normal text-muted">{p.note}</span>}
+            </p>
+          ))
+        )}
+      </div>
+
+      <p className="mb-1 mt-4 text-xs font-bold uppercase tracking-wide text-secondary">Perks</p>
+      <ul className="m-0 list-none space-y-1 p-0">
+        {card.perks.map((perk) => (
+          <li key={perk} className="flex items-start gap-2 text-sm leading-snug text-secondary">
+            <span aria-hidden className="text-teal">
+              ✓
+            </span>
+            {perk}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 function OurPriceRange() {
-  const [currentPackage, setCurrentPackage] = useState<keyof typeof packageTabs>("Quarterly/Monthly/Yearly Plan");
-  const currentCards = packageTabs[currentPackage];
-
   return (
     <div className="mx-auto mt-12 max-w-6xl px-4">
-      <div className="mb-4 text-center uppercase">
-        <h3 className="font-bold text-2xl">Our Price Range</h3>
-        <p className="mt-1 text-sm font-semibold text-secondary">Location: 41 CMD Road</p>
+      <div className="mb-8 text-center">
+        <h3 className="font-bold text-2xl uppercase">8thGear Co-Working Rate Card</h3>
+        <p className="mt-1 text-sm font-semibold text-secondary">
+          8thGear Hub HQ: 41 CMD Road, Secretariat/Magodo, Lagos
+        </p>
       </div>
 
-      <div className="mb-6 flex flex-wrap justify-center gap-2">
-        {Object.keys(packageTabs).map((packageType) => (
-          <button
-            key={packageType}
-            onClick={() => setCurrentPackage(packageType)}
-            className={`rounded-full px-4 py-2 text-sm font-semibold ${
-              currentPackage === packageType ? "bg-purple text-white" : "bg-grey-bg text-secondary"
-            }`}
-          >
-            {packageType}
-          </button>
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {rateCards.map((card) => (
+          <RateCardView key={card.title} card={card} />
         ))}
       </div>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {currentCards.map((card) => (
-          <div
-            key={card.title}
-            className="flex flex-col items-center rounded-xl border-0 p-6 text-center shadow-brand bg-purple-100"
-          >
-            <h5 className="font-bold">{card.title}</h5>
-            {card.timeRange && <p className="text-sm text-secondary">{card.timeRange}</p>}
-            <hr className="my-2 w-1/2" />
-            <ul className="m-0 list-none p-0">
-              {card.features.map((feature) => (
-                <li key={feature} className="py-1 text-center text-sm leading-relaxed text-secondary">
-                  {feature}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-2 text-lg font-bold text-purple">{card.price}</p>
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-4 text-center">
+      <div className="mt-8 text-center">
+        <p className="mb-3 text-sm text-secondary">
+          For more inquiries: 0913 246 2410 | 0809 481 8883 |{" "}
+          <a href="mailto:info@8thgearpartners.com" className="text-purple hover:underline">
+            info@8thgearpartners.com
+          </a>
+        </p>
         <a href="https://forms.gle/pjR1os5hN6WnbzFa9" target="_blank" rel="noopener noreferrer">
           <button className="rounded bg-purple px-4 py-2 text-sm text-white">Book a Space</button>
         </a>

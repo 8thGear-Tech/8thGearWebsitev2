@@ -1,5 +1,7 @@
 "use client";
 
+import { BUSINESS_CHECKUP_FORM_URL } from "@/lib/businessCheckup";
+
 const brokenItems = [
   {
     icon: "🏗️",
@@ -31,7 +33,7 @@ const brokenItems = [
 const steps = [
   {
     icon: "⏱️",
-    title: "5-Minute Diagnostic",
+    title: "5-Minute Business Checkup",
     desc: "Answer focused questions designed to surface your real operational constraints not the symptoms.",
   },
   {
@@ -58,18 +60,15 @@ const ArrowIcon = () => (
   </svg>
 );
 
-const FORM_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSe5l7kRjJTfdzKAAhff_VXCoihQUFwkEaUFZOkx3m5hyHUOpA/viewform?embedded=true";
-
-function handleStartAssessment() {
-  window.open(FORM_URL, "_blank", "noopener,noreferrer");
+function handleStartCheckup() {
+  window.open(BUSINESS_CHECKUP_FORM_URL, "_blank", "noopener,noreferrer");
 }
 
-function AssessmentButton({ children }: { children: React.ReactNode }) {
+function CheckupButton({ children }: { children: React.ReactNode }) {
   return (
     <button
       type="button"
-      onClick={handleStartAssessment}
+      onClick={handleStartCheckup}
       className="inline-flex items-center gap-3 rounded-full bg-purple px-8 py-4 font-heading font-bold text-white shadow-brand-lg transition-transform hover:-translate-y-0.5 hover:bg-purple-hover"
     >
       {children}
@@ -78,7 +77,7 @@ function AssessmentButton({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function FreeDiagnosticsPage() {
+export function BusinessCheckupPage() {
   return (
     <div className="bg-white text-primary">
       <section className="relative overflow-hidden bg-[linear-gradient(135deg,#007d71_0%,#024b30_100%)] px-4 py-16 text-white md:py-24">
@@ -86,7 +85,7 @@ export function FreeDiagnosticsPage() {
         <div className="relative z-10 mx-auto grid max-w-300 grid-cols-1 items-center gap-10 lg:grid-cols-12">
           <div className="lg:col-span-7">
             <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/15 px-5 py-3 text-xs font-bold uppercase tracking-widest">
-              For Founders Ready to Diagnose the Real Problem
+              Full Business Checkup for Founders
             </div>
 
             <h1 className="mb-6 max-w-165 font-heading text-4xl leading-tight md:text-5xl">
@@ -104,7 +103,7 @@ export function FreeDiagnosticsPage() {
             <p className="max-w-155 font-semibold text-white">Money alone won&apos;t fix what&apos;s actually broken.</p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">
-              <AssessmentButton>Take the Free Assessment</AssessmentButton>
+              <CheckupButton>Take the Full Business Checkup</CheckupButton>
               <span className="text-sm text-white/60">Takes only 5 minutes</span>
             </div>
           </div>
@@ -168,7 +167,7 @@ export function FreeDiagnosticsPage() {
       <section className="bg-white px-4 py-16 md:py-20">
         <div className="mx-auto max-w-300">
           <div className="mb-12 text-center">
-            <p className="mb-4 text-xs font-bold uppercase tracking-widest text-teal">Diagnose the Real Problem</p>
+            <p className="mb-4 text-xs font-bold uppercase tracking-widest text-teal">Full Business Checkup</p>
             <h2 className="font-heading text-3xl text-primary">
               Three Steps to Clarity
               <span className="ml-3 inline-flex items-center rounded-full bg-[linear-gradient(135deg,#00a495,#007d71)] px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-white">
@@ -176,7 +175,7 @@ export function FreeDiagnosticsPage() {
               </span>
             </h2>
             <p className="mx-auto mt-4 max-w-150 text-secondary">
-              No fluff. No sales pitch. Just a focused diagnostic that tells you exactly where to look.
+              No fluff. No sales pitch. Just a focused business checkup that tells you exactly where to look.
             </p>
           </div>
 
@@ -198,15 +197,15 @@ export function FreeDiagnosticsPage() {
       <section className="relative overflow-hidden bg-[linear-gradient(135deg,#007d71_0%,#024b30_100%)] px-4 py-16 text-center text-white md:py-20">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,255,255,0.12)_0%,transparent_55%)]" />
         <div className="relative z-10 mx-auto max-w-200">
-          <p className="mb-4 text-xs font-bold uppercase tracking-widest text-teal">The Free Assessment</p>
+          <p className="mb-4 text-xs font-bold uppercase tracking-widest text-teal">The Full Business Checkup</p>
           <h2 className="mb-6 font-heading text-3xl leading-tight">
             Stop Guessing. Start <span className="text-teal">Growing</span>.
           </h2>
           <p className="mx-auto mb-8 max-w-160 text-lg leading-relaxed text-white/85">
-            Take the 5-minute founder diagnostic and walk away knowing exactly which operational constraint is
+            Take the 5-minute Full Business Checkup and walk away knowing exactly which operational constraint is
             slowing your growth and what to do about it.
           </p>
-          <AssessmentButton>Get Started &mdash; It&apos;s Free</AssessmentButton>
+          <CheckupButton>Get Started &mdash; It&apos;s Free</CheckupButton>
         </div>
       </section>
     </div>

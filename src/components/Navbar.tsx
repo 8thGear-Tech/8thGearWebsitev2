@@ -11,7 +11,7 @@ import logo from "@/assets/images/logos.png";
 import { JointheStudioBtn } from "@/components/Buttons/PillButtons";
 
 const hubServicesLinks = [
-  { href: "/free-diagnostics", label: "Free Diagnostics" },
+  { href: "/business-checkup", label: "Full Business Checkup" },
   { href: "/msme-marketplace", label: "MSME Marketplace" },
   { href: "/growth-advisory", label: "Growth Advisory" },
   { href: "/coworking", label: "Coworking" },

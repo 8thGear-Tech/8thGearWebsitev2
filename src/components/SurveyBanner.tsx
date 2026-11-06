@@ -1,9 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-
-const SURVEY_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSe7FjSTjyCKAZQooBHyxkOGWTXx3z_uc-bDn3K8zfhsvcCpsA/viewform?usp=sharing&ouid=115803220851822061793";
+import { BUSINESS_CHECKUP_FORM_URL } from "@/lib/businessCheckup";
 
 export function SurveyBanner() {
   const [showModal, setShowModal] = useState(false);
@@ -11,7 +9,7 @@ export function SurveyBanner() {
   const bannerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const modalShown = sessionStorage.getItem("surveyModalShown");
+    const modalShown = sessionStorage.getItem("businessCheckupModalShown");
     if (!modalShown) {
       const timer = setTimeout(() => setShowModal(true), 2000);
       return () => clearTimeout(timer);
@@ -39,7 +37,7 @@ export function SurveyBanner() {
   }, [showBanner]);
 
   const handleModalClose = () => {
-    sessionStorage.setItem("surveyModalShown", "true");
+    sessionStorage.setItem("businessCheckupModalShown", "true");
     setShowModal(false);
     setTimeout(() => setShowBanner(true), 2000);
   };
@@ -69,28 +67,26 @@ export function SurveyBanner() {
               <CloseIcon />
             </button>
             <div className="mb-4 rounded-full bg-purple px-2.5 py-1 text-center text-[10px] font-bold uppercase tracking-wider text-white">
-              MSME Survey 2026
+              Full Business Checkup
             </div>
             <p className="mb-7 text-left text-sm font-medium leading-[1.7] text-[#d0e8e8]">
-              We&apos;re collecting honest feedback to understand the real impact of sponsored talent and MSME
-              development programmes in Nigeria.
+              When growth slows, the instinct is to raise more capital. But the real constraints are often
+              operational, strategic, or systemic. Find out what&apos;s actually slowing your business down.
               <br />
               <br />
               <span className="text-xs opacity-85">
-                ⏱ Takes <strong>5–7 minutes</strong> &nbsp;·&nbsp; 🔒 Fully Anonymous
-                <br />
-                📊 Findings published <strong>December 2026</strong>
+                ⏱ Takes only <strong>5 minutes</strong> &nbsp;·&nbsp; 💸 100% Free
               </span>
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a
-                href={SURVEY_URL}
+                href={BUSINESS_CHECKUP_FORM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleModalClose}
                 className="inline-flex items-center rounded bg-purple px-6 py-2.5 text-sm font-semibold text-white shadow-[0_2px_6px_rgba(130,30,107,0.2)] transition-all hover:shadow-[0_4px_10px_rgba(130,30,107,0.3)]"
               >
-                Take the Survey →
+                Take the Full Business Checkup →
               </a>
             </div>
           </div>
@@ -105,21 +101,21 @@ export function SurveyBanner() {
           <div className="relative mx-auto flex max-w-350 flex-col items-stretch gap-3 px-3 py-2.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:px-5 sm:pr-5">
             <div className="min-w-0 flex-1 sm:flex sm:flex-col sm:gap-1">
               <h3 className="mb-0.5 text-[10px] font-bold uppercase tracking-wide text-white sm:text-[11px]">
-                MSME Survey 2026
+                Full Business Checkup
               </h3>
               <p className="m-0 text-[11px] leading-[1.4] text-[#e0e0e0] sm:truncate sm:whitespace-nowrap sm:text-xs">
-                Does sponsored talent &amp; MSME development programmes{" "}
-                <span className="mx-0.75 font-semibold text-[#c3ca18]">actually move the needle</span> for your
-                business? Tell us in 5–7 mins · Fully Anonymous · Findings will be published in December 2026.
+                Is it really money your business needs? Find out{" "}
+                <span className="mx-0.75 font-semibold text-[#c3ca18]">what&apos;s actually slowing growth</span> with
+                our Full Business Checkup · Takes only 5 mins.
               </p>
             </div>
             <a
-              href={SURVEY_URL}
+              href={BUSINESS_CHECKUP_FORM_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex shrink-0 items-center justify-center rounded bg-purple px-4 py-2.5 text-center text-[11px] font-semibold text-white shadow-[0_2px_6px_rgba(130,30,107,0.2)] transition-all hover:-translate-y-px hover:shadow-[0_4px_10px_rgba(130,30,107,0.3)] active:translate-y-0 sm:w-auto sm:px-4.5 sm:py-1.75 sm:text-xs"
             >
-              Take Survey
+              Take the Checkup
             </a>
             <button
               type="button"

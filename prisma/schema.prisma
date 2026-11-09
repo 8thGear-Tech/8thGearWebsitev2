@@ -7,12 +7,31 @@ datasource db {
 }
 
 model BusinessCheckupSubmission {
-  id            String   @id @default(uuid())
-  fullName      String
-  email         String
-  whatsappPhone String
-  callPhone     String
-  businessName  String
-  answers       Json
-  createdAt     DateTime @default(now())
+  id           String   @id @default(uuid())
+  fullName     String
+  email        String
+  phone        String
+  businessName String
+
+  /// Raw respondent answers, keyed by question id (G01, B1, EGL03, ...) —
+  /// necessarily variable-shape since which questions apply is conditional.
+  answers Json
+
+  /// Everything below is computed by the recommendation engine (spec Part D),
+  /// never shown to the respondent — for advisors, and future reporting.
+  stage              String
+  mainService        String
+  flags              String[]
+  extrasPrescribeNow String[]
+  extrasLater        String[]
+  alsoFlagged        String[]
+  gatesTriggered     String[]
+  advisorNotes       String[]
+  nextStepType       String
+  urgency            String
+  leadSource         String?
+  sector             String?
+  cacStatus          String?
+
+  createdAt DateTime @default(now())
 }

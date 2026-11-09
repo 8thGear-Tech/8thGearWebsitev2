@@ -1,23 +1,24 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
-import {
-  BUSINESS_CHECKUP_INTRO,
-  BUSINESS_CHECKUP_SECTIONS,
-  type BusinessCheckupQuestion,
-} from "@/lib/businessCheckupQuestions";
+import { type Answers, type AnswerValue, type Question, getAnswer } from "@/lib/businessDiagnostic/types";
+import { GENERAL_QUESTIONS, QUALIFYING_QUESTIONS, finalQuestions } from "@/lib/businessDiagnostic/questions";
+import { getOpenSections } from "@/lib/businessDiagnostic/sections";
+import { isQuestionAnswered } from "@/lib/businessDiagnostic/validation";
 import { submitBusinessCheckup } from "../_actions/submitBusinessCheckup";
 
-type AnswerValue = string | string[];
-type Answers = Record<string, AnswerValue>;
+// A "step" is either one of the two always-shown fixed stages, one of the
+// sections that happens to be open right now, or the final stage — see
+// stepList below, which is the only place this list is actually assembled.
+type FixedStepKey = "GENERAL" | "FINAL";
+type StepKey = FixedStepKey | string;
 
-const TOTAL_STEPS = BUSINESS_CHECKUP_SECTIONS.length; // intro and the success screen aren't counted in the progress bar
-
-function isQuestionAnswered(question: BusinessCheckupQuestion, value: AnswerValue | undefined): boolean {
-  if (!question.required) return true;
-  if (value === undefined) return false;
-  return Array.isArray(value) ? value.length > 0 : value.trim().length > 0;
+function stepContent(stepKey: StepKey, answers: Answers): { title: string; questions: Question[] } {
+  if (stepKey === "GENERAL") return { title: "About You and Your Business", questions: [...GENERAL_QUESTIONS, ...QUALIFYING_QUESTIONS] };
+  if (stepKey === "FINAL") return { title: "A Few Final Questions", questions: finalQuestions(answers) };
+  const section = getOpenSections(answers).find((s) => s.id === stepKey);
+  return { title: section?.title ?? "", questions: section?.questions(answers) ?? [] };
 }
 
 function QuestionField({
@@ -25,7 +26,7 @@ function QuestionField({
   value,
   onChange,
 }: {
-  question: BusinessCheckupQuestion;
+  question: Question;
   value: AnswerValue | undefined;
   onChange: (value: AnswerValue) => void;
 }) {
@@ -36,7 +37,7 @@ function QuestionField({
     case "text":
       return (
         <input
-          type={question.key === "email" ? "email" : "text"}
+          type={question.key === "G02" ? "email" : question.key === "G03" ? "tel" : "text"}
           value={(value as string) ?? ""}
           onChange={(e) => onChange(e.target.value)}
           className={inputClasses}
@@ -134,9 +135,7 @@ function QuestionField({
                 <input
                   type="checkbox"
                   checked={checked}
-                  onChange={() =>
-                    onChange(checked ? selected.filter((v) => v !== option) : [...selected, option])
-                  }
+                  onChange={() => onChange(checked ? selected.filter((v) => v !== option) : [...selected, option])}
                   className="mt-0.5 accent-teal"
                 />
                 {option}
@@ -179,16 +178,19 @@ function QuestionField({
 function IntroStep({ onStart }: { onStart: () => void }) {
   return (
     <div className="mx-auto max-w-2xl text-center">
-      <p className="mb-3 text-xs font-bold uppercase tracking-widest text-teal">{BUSINESS_CHECKUP_INTRO.description}</p>
-      <h1 className="mb-6 font-heading text-3xl text-primary md:text-4xl">{BUSINESS_CHECKUP_INTRO.title}</h1>
-      <p className="mb-4 text-secondary leading-relaxed">{BUSINESS_CHECKUP_INTRO.paragraph}</p>
-      <p className="mb-9 font-semibold text-primary">{BUSINESS_CHECKUP_INTRO.accent}</p>
+      <p className="mb-3 text-xs font-bold uppercase tracking-widest text-teal">Free Diagnostic for MSME Founders &amp; Managers</p>
+      <h1 className="mb-6 font-heading text-3xl text-primary md:text-4xl">8thGear Business Diagnostic</h1>
+      <p className="mb-4 text-secondary leading-relaxed">
+        Not every founder needs the same thing, and we get that. Answer a short set of questions about your business
+        — you&apos;ll only ever see the ones that actually apply to you.
+      </p>
+      <p className="mb-9 font-semibold text-primary">An advisor reviews every response personally before anything is recommended.</p>
       <button
         type="button"
         onClick={onStart}
         className="inline-flex items-center gap-3 rounded-full bg-purple px-8 py-4 font-heading font-bold text-white shadow-brand-lg transition-transform hover:-translate-y-0.5 hover:bg-purple-hover"
       >
-        Start the Checkup
+        Start the Diagnostic
       </button>
     </div>
   );
@@ -198,10 +200,10 @@ function SuccessStep() {
   return (
     <div className="mx-auto max-w-xl text-center">
       <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-teal text-3xl text-white">✓</div>
-      <h1 className="mb-4 font-heading text-3xl text-primary">Thank you, your checkup is in!</h1>
+      <h1 className="mb-4 font-heading text-3xl text-primary">Thank you — we&apos;ve got it.</h1>
       <p className="mb-8 text-secondary leading-relaxed">
-        We&apos;ve got your answers. Within 72 hours you&apos;ll receive a personalized report pinpointing your
-        biggest bottleneck and how 8thGear can help.
+        An 8thGear advisor will review your answers. If there&apos;s a good next step for your business, they&apos;ll
+        be in touch.
       </p>
       <Link
         href="/"
@@ -214,18 +216,26 @@ function SuccessStep() {
 }
 
 export function BusinessCheckupForm() {
-  const [step, setStep] = useState(0); // 0 = intro, 1..TOTAL_STEPS = sections, TOTAL_STEPS + 1 = success
+  const [step, setStep] = useState(0); // 0 = intro, 1..N = stepList, N+1 = success
   const [answers, setAnswers] = useState<Answers>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [touched, setTouched] = useState(false);
 
-  const sectionIndex = step - 1;
-  const section = sectionIndex >= 0 && sectionIndex < TOTAL_STEPS ? BUSINESS_CHECKUP_SECTIONS[sectionIndex] : null;
-  const isLastSection = sectionIndex === TOTAL_STEPS - 1;
+  // Only the qualifying answers can change which sections are open — recompute
+  // the walk off just those, not every keystroke (build rule #7, "recalculate
+  // on change"; the rest of a section's own question list is recomputed at
+  // render time by stepContent() regardless).
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const stepList = useMemo<StepKey[]>(() => ["GENERAL", ...getOpenSections(answers).map((s) => s.id), "FINAL"], [answers.B1, answers.B2, answers.G10, answers.G11]);
 
-  const sectionIsValid =
-    section?.questions.every((q) => isQuestionAnswered(q, answers[q.key])) ?? true;
+  const stepIndex = step - 1;
+  const totalSteps = stepList.length;
+  const currentKey = stepIndex >= 0 && stepIndex < totalSteps ? stepList[stepIndex] : null;
+  const isLastStep = stepIndex === totalSteps - 1;
+
+  const current = currentKey ? stepContent(currentKey, answers) : null;
+  const stepIsValid = current?.questions.every((q) => isQuestionAnswered(q, answers)) ?? true;
 
   function setAnswer(key: string, value: AnswerValue) {
     setAnswers((prev) => ({ ...prev, [key]: value }));
@@ -233,9 +243,9 @@ export function BusinessCheckupForm() {
 
   async function handleNext() {
     setTouched(true);
-    if (!sectionIsValid) return;
+    if (!stepIsValid) return;
 
-    if (!isLastSection) {
+    if (!isLastStep) {
       setTouched(false);
       setStep((s) => s + 1);
       return;
@@ -247,7 +257,7 @@ export function BusinessCheckupForm() {
       const result = await submitBusinessCheckup(answers);
       if (!result.ok) throw new Error(result.error);
       setTouched(false);
-      setStep(TOTAL_STEPS + 1);
+      setStep(totalSteps + 1);
     } catch (error) {
       setSubmitError(error instanceof Error ? error.message : "Something went wrong. Please try again.");
     } finally {
@@ -263,7 +273,7 @@ export function BusinessCheckupForm() {
     );
   }
 
-  if (step > TOTAL_STEPS) {
+  if (step > totalSteps) {
     return (
       <main className="bg-white px-4 py-20 md:py-28">
         <SuccessStep />
@@ -271,7 +281,7 @@ export function BusinessCheckupForm() {
     );
   }
 
-  if (!section) return null;
+  if (!current) return null;
 
   return (
     <main className="bg-grey-bg px-4 py-12 md:py-16">
@@ -279,33 +289,36 @@ export function BusinessCheckupForm() {
         <div className="mb-8">
           <div className="mb-2 flex items-center justify-between text-xs font-semibold text-secondary">
             <span>
-              Section {sectionIndex + 1} of {TOTAL_STEPS}
+              Step {stepIndex + 1} of {totalSteps}
             </span>
-            <span>{Math.round(((sectionIndex + 1) / TOTAL_STEPS) * 100)}%</span>
+            <span>{Math.round(((stepIndex + 1) / totalSteps) * 100)}%</span>
           </div>
           <div className="h-1.5 w-full overflow-hidden rounded-full bg-grey-border">
             <div
               className="h-full rounded-full bg-purple transition-all"
-              style={{ width: `${((sectionIndex + 1) / TOTAL_STEPS) * 100}%` }}
+              style={{ width: `${((stepIndex + 1) / totalSteps) * 100}%` }}
             />
           </div>
         </div>
 
         <div className="rounded-brand border border-grey-border bg-white p-6 shadow-brand md:p-10">
-          <h2 className="mb-7 font-heading text-2xl text-primary">{section.title}</h2>
+          <h2 className="mb-7 font-heading text-2xl text-primary">{current.title}</h2>
 
           <div className="flex flex-col gap-7">
-            {section.questions.map((question) => (
+            {current.questions.map((question) => (
               <div key={question.key}>
                 <p className="mb-1 text-sm font-semibold text-primary">
                   {question.label}
                   {question.required && <span className="ml-1 text-purple">*</span>}
                 </p>
+                {question.key === "MKT05" && getAnswer(answers, "G08") && (
+                  <p className="mb-2 rounded-brand-sm bg-grey-bg px-3 py-2 text-xs italic text-secondary">
+                    From your earlier answer: &ldquo;{getAnswer(answers, "G08")}&rdquo;
+                  </p>
+                )}
                 {question.help && <p className="mb-2 text-xs text-muted">{question.help}</p>}
                 <QuestionField question={question} value={answers[question.key]} onChange={(v) => setAnswer(question.key, v)} />
-                {touched && !isQuestionAnswered(question, answers[question.key]) && (
-                  <p className="mt-1 text-xs text-[#d4333f]">This question is required.</p>
-                )}
+                {touched && !isQuestionAnswered(question, answers) && <p className="mt-1 text-xs text-[#d4333f]">This question is required.</p>}
               </div>
             ))}
           </div>
@@ -327,7 +340,7 @@ export function BusinessCheckupForm() {
               disabled={submitting}
               className="rounded-full bg-purple px-8 py-2.5 text-sm font-bold text-white shadow-brand transition-colors hover:bg-purple-hover disabled:opacity-60"
             >
-              {submitting ? "Submitting…" : isLastSection ? "Submit" : "Next"}
+              {submitting ? "Submitting…" : isLastStep ? "Submit" : "Next"}
             </button>
           </div>
         </div>

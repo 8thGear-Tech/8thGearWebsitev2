@@ -1,6 +1,4 @@
-"use client";
-
-import { BUSINESS_CHECKUP_FORM_URL } from "@/lib/businessCheckup";
+import Link from "next/link";
 
 const noteItems = [
   "No Operational Structure",
@@ -24,10 +22,6 @@ function ArrowIcon() {
       <path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
-}
-
-function startBusinessCheckup() {
-  window.open(BUSINESS_CHECKUP_FORM_URL, "_blank", "noopener,noreferrer");
 }
 
 // Shared by the homepage and the /business-checkup page's own hero, so the pitch reads identically in both places.
@@ -56,14 +50,13 @@ export function BusinessCheckupHero() {
           <p className="max-w-155 font-semibold text-white">Money alone won&apos;t fix what&apos;s actually broken.</p>
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
-            <button
-              type="button"
-              onClick={startBusinessCheckup}
+            <Link
+              href="/business-checkup-form"
               className="inline-flex items-center gap-3 rounded-full bg-purple px-8 py-4 font-heading font-bold text-white shadow-brand-lg transition-transform hover:-translate-y-0.5 hover:bg-purple-hover"
             >
               Take the Full Business Checkup
               <ArrowIcon />
-            </button>
+            </Link>
             <span className="text-sm text-white/60">Takes only 5 minutes</span>
           </div>
         </div>

@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model BusinessCheckupSubmission {
+  id            String   @id @default(uuid())
+  fullName      String
+  email         String
+  whatsappPhone String
+  callPhone     String
+  businessName  String
+  answers       Json
+  createdAt     DateTime @default(now())
+}

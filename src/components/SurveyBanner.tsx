@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { BUSINESS_CHECKUP_FORM_URL } from "@/lib/businessCheckup";
+import Link from "next/link";
 
 export function SurveyBanner() {
   const [showModal, setShowModal] = useState(false);
@@ -79,15 +79,13 @@ export function SurveyBanner() {
               </span>
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <a
-                href={BUSINESS_CHECKUP_FORM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/business-checkup-form"
                 onClick={handleModalClose}
                 className="inline-flex items-center rounded bg-purple px-6 py-2.5 text-sm font-semibold text-white shadow-[0_2px_6px_rgba(130,30,107,0.2)] transition-all hover:shadow-[0_4px_10px_rgba(130,30,107,0.3)]"
               >
                 Take the Full Business Checkup →
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -109,14 +107,12 @@ export function SurveyBanner() {
                 our Full Business Checkup · Takes only 5 mins.
               </p>
             </div>
-            <a
-              href={BUSINESS_CHECKUP_FORM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/business-checkup-form"
               className="inline-flex shrink-0 items-center justify-center rounded bg-purple px-4 py-2.5 text-center text-[11px] font-semibold text-white shadow-[0_2px_6px_rgba(130,30,107,0.2)] transition-all hover:-translate-y-px hover:shadow-[0_4px_10px_rgba(130,30,107,0.3)] active:translate-y-0 sm:w-auto sm:px-4.5 sm:py-1.75 sm:text-xs"
             >
               Take the Checkup
-            </a>
+            </Link>
             <button
               type="button"
               onClick={handleBannerClose}

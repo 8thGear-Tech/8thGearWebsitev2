@@ -1,6 +1,4 @@
-"use client";
-
-import { BUSINESS_CHECKUP_FORM_URL } from "@/lib/businessCheckup";
+import Link from "next/link";
 import { BusinessCheckupHero } from "@/components/BusinessCheckupHero";
 
 const brokenItems = [
@@ -55,20 +53,15 @@ const ArrowIcon = () => (
   </svg>
 );
 
-function handleStartCheckup() {
-  window.open(BUSINESS_CHECKUP_FORM_URL, "_blank", "noopener,noreferrer");
-}
-
 function CheckupButton({ children }: { children: React.ReactNode }) {
   return (
-    <button
-      type="button"
-      onClick={handleStartCheckup}
+    <Link
+      href="/business-checkup-form"
       className="inline-flex items-center gap-3 rounded-full bg-purple px-8 py-4 font-heading font-bold text-white shadow-brand-lg transition-transform hover:-translate-y-0.5 hover:bg-purple-hover"
     >
       {children}
       <ArrowIcon />
-    </button>
+    </Link>
   );
 }
 

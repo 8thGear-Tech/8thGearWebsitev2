@@ -30,10 +30,13 @@ const legalLinks = [
   { href: "/genderpolicy", label: "Gender Policy" },
 ];
 
+const internalToolsLinks = [{ href: "https://internal.8thgearpartners.com", label: "Internal Tools", external: true }];
+
 const mobileGroups = [
   { label: "Hub Services", links: hubServicesLinks },
   { label: "Explore", links: exploreLinks },
   { label: "Legal", links: legalLinks },
+  { label: "Internal Tools", links: internalToolsLinks },
 ];
 
 const socials = [
@@ -62,18 +65,30 @@ function SocialLinks() {
   );
 }
 
-function NavLinks({ links }: { links: { href: string; label: string }[] }) {
+function NavLinks({ links }: { links: { href: string; label: string; external?: boolean }[] }) {
   return (
     <>
-      {links.map((link) => (
-        <Link
-          key={link.href}
-          href={link.href}
-          className="mb-[0.45rem] block text-[0.83rem] text-[#444] transition-colors hover:pl-1 hover:text-teal-dark"
-        >
-          {link.label}
-        </Link>
-      ))}
+      {links.map((link) =>
+        link.external ? (
+          <a
+            key={link.href}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mb-[0.45rem] block text-[0.83rem] text-[#444] transition-colors hover:pl-1 hover:text-teal-dark"
+          >
+            {link.label}
+          </a>
+        ) : (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="mb-[0.45rem] block text-[0.83rem] text-[#444] transition-colors hover:pl-1 hover:text-teal-dark"
+          >
+            {link.label}
+          </Link>
+        ),
+      )}
     </>
   );
 }
@@ -149,6 +164,11 @@ export function Footer() {
           <div className="pl-8">
             <p className="mb-[0.7rem] text-[0.65rem] font-bold uppercase tracking-[0.14em] text-teal-dark">Legal</p>
             <NavLinks links={legalLinks} />
+            <hr className="my-[0.9rem] border-t border-teal-dark/15" />
+            <p className="mb-[0.7rem] text-[0.65rem] font-bold uppercase tracking-[0.14em] text-teal-dark">
+              Internal Tools
+            </p>
+            <NavLinks links={internalToolsLinks} />
           </div>
         </div>
 
